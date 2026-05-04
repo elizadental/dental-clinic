@@ -1,0 +1,117 @@
+{
+  "home": {
+    "topBar": {
+  "hours": "Pzt - Cmt: 09:00 - 18:00",
+  "location": "Atatürk Mh. Nazım Hikmet Ran Cd. Şaban Fırıncı Plaza No:21/1, Samandağ/Hatay" 
+},
+    "nav": {
+      "home": "Ana Sayfa",
+      "services": "Hizmetler",
+      "gallery": "Galeri",
+      "doctors": "Hekimlerimiz",
+      "contact": "İletişim"
+    },
+    "hero": {
+      "title": "Güvenli Gülüşler Burada Başlar",
+      "subtitle": "Uzman ekiple modern diş tedavileri",
+      "cta": "Hemen İletişime Geç",
+      "secondary": "Hizmetleri Gör"
+    },
+     "services": {
+      "title": "Hizmetlerimiz",
+       "subtitle": "Modern teknoloji ve kişiye özel yaklaşımla yüksek kaliteli diş tedavileri sunuyoruz.",
+      "implant": {
+        "title": "İmplant",
+        "desc": "Eksik dişler için kalıcı çözümler"
+      },
+      "whitening": {
+        "title": "Diş Beyazlatma",
+        "desc": "Gülüşünüzü güvenle parlatın"
+      },
+      "ortho": {
+        "title": "Ortodonti",
+        "desc": "Dişlerinizi düzgün hizalayın"
+      },
+      "smile": {
+        "title": "Gülüş Tasarımı",
+        "desc": "Size özel estetik çözümler"
+      }
+     
+    },
+    "doctors": {
+      "title": "Hekimlerimiz",
+      "subtitle": "Modern ve kişiye özel tedavi yaklaşımı sunan deneyimli diş hekimi ekibimizle tanışın.",
+      "viewMore": "Biyografiyi Gör",
+      "items": {
+        "ahmet": {
+          "expertise": "Estetik Diş Hekimliği ve Gülüş Tasarımı"
+        },
+        "elif": {
+          "expertise": "İmplantoloji ve Ağız Cerrahisi"
+        },
+        "mehmet": {
+          "expertise": "Ortodonti"
+        }
+      }
+    },
+    "gallery": {
+  "title": "Öncesi & Sonrası",
+  "subtitle": "Kliniğimizden seçilmiş gülüş dönüşümlerini ve tedavi sonuçlarını inceleyin.",
+  "button": "Tüm Galeriyi Gör",
+  "labels": {
+    "before": "Öncesi",
+    "after": "Sonrası",
+    "image": "Görsel"
+  },
+  "cases": {
+    "smile": {
+      "title": "Gülüş Dönüşümü",
+      "desc": "Doğal ve güven veren bir sonuç için estetik iyileştirme."
+    },
+    "whitening": {
+      "title": "Diş Beyazlatma Sonucu",
+      "desc": "Temiz ve hassas bir tedavi süreciyle daha parlak bir gülüş görünümü."
+    },
+    "implant": {
+      "title": "İmplant Uygulaması",
+      "desc": "Uzun süreli konfor için tasarlanmış fonksiyonel ve estetik restorasyon."
+    }
+  }
+},
+    "cta": {
+      "title": "Gülüş Yolculuğunuza Başlayın",
+      "subtitle": "Danışma için hemen iletişime geçin",
+      "whatsapp": "WhatsApp ile İletişim",
+      "call": "Bizi Arayın"
+    },
+    "contact": {
+      "title": "İletişim",
+      "addressLabel": "Adres",
+      "phoneLabel": "Telefon",
+      "emailLabel": "E-posta",
+      "address": "Atatürk Mh. Nazım Hikmet Ran Cd. Şaban Fırıncı Plaza No:21/1, Samandağ/Hatay",
+      "mapLabel": "Konumu Gör"
+    },
+  "footer": {
+  "brand": "ELİZADENT Ağız ve Diş Sağlığı Polikliniği",
+  "desc": "Modern teknoloji ve kişiye özel tedavilerle profesyonel diş bakımı.",
+  "links": "Hızlı Bağlantılar",
+  "contact": "İletişim",
+  "social": "Bizi Takip Edin",
+  "address": "Atatürk Mh. Nazım Hikmet Ran Cd. Şaban Fırıncı Plaza No:21/1, Samandağ/Hatay",
+  "phone": "+90 501 266 31 31",
+  "email":"E-Posta",
+  "ctaTitle": "Randevu Alın",
+  "ctaDesc": "Sağlıklı bir gülüş için ilk adımı atın, hemen bizimle iletişime geçin.",
+  "whatsapp": "WhatsApp",
+  "whatsappLink": "https://wa.me/905012663131",
+  "privacy": "Gizlilik",
+  "terms": "Şartlar",
+  "copyright": "© 2026 ElizaDent Ağız ve Diş Sağlığı Polikliniği"
+}
+    
+    
+  }
+   
+  
+}

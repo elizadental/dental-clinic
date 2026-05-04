@@ -1,0 +1,114 @@
+{
+  "home": {
+    "topBar": {
+  "hours": "Mon - Sat: 09:00 - 18:00",
+  "location": "Atatürk Mh. Nazım Hikmet Ran Cd. Şaban Fırıncı Plaza No:21/1, Samandağ/Hatay"
+},
+    "nav": {
+      "home": "Home",
+      "services": "Services",
+      "gallery": "Gallery",
+      "doctors": "Doctors",
+      "contact": "Contact"
+    },
+    "hero": {
+      "title": "Confident Smiles Start Here",
+      "subtitle": "Modern dental treatments with expert care",
+      "cta": "Contact Now",
+      "secondary": "View Services"
+    },
+    "services": {
+      "title": "Our Services",
+       "subtitle": "We provide high-quality dental treatments using modern technology and personalized care.",
+      "implant": {
+        "title": "Dental Implants",
+        "desc": "Permanent solutions for missing teeth"
+      },
+      "whitening": {
+        "title": "Teeth Whitening",
+        "desc": "Brighten your smile safely"
+      },
+      "ortho": {
+        "title": "Orthodontics",
+        "desc": "Straighten your teeth effectively"
+      },
+      "smile": {
+        "title": "Smile Design",
+        "desc": "Customized aesthetic treatments"
+      }
+    },
+    "doctors": {
+      "title": "Our Doctors",
+      "subtitle": "Meet our experienced dental team focused on modern, personalized care.",
+      "viewMore": "View Biography",
+      "items": {
+        "ahmet": {
+          "expertise": "Aesthetic Dentistry & Smile Design"
+        },
+        "elif": {
+          "expertise": "Implantology & Oral Surgery"
+        },
+        "mehmet": {
+          "expertise": "Orthodontics"
+        }
+      }
+    },
+    "gallery": {
+  "title": "Before & After",
+  "subtitle": "Explore selected smile transformations and treatment results from our clinic.",
+  "button": "View Full Gallery",
+  "labels": {
+    "before": "Before",
+    "after": "After",
+    "image": "Image"
+  },
+  "cases": {
+    "smile": {
+      "title": "Smile Transformation",
+      "desc": "Aesthetic improvement with a natural, confident result."
+    },
+    "whitening": {
+      "title": "Whitening Result",
+      "desc": "Brighter smile appearance with a clean and gentle treatment process."
+    },
+    "implant": {
+      "title": "Implant Case",
+      "desc": "Functional and aesthetic restoration designed for long-term comfort."
+    }
+  }
+},
+    "cta": {
+      "title": "Start Your Smile Journey Today",
+      "subtitle": "Contact us now for consultation",
+      "whatsapp": "Contact via WhatsApp",
+      "call": "Call Us"
+    },
+     "contact": {
+      "title": "Contact Us",
+      "addressLabel": "Atatürk Mh. Nazım Hikmet Ran Cd. Şaban Fırıncı Plaza No:21/1, Samandağ/Hatay",
+      "phoneLabel": "Phone",
+      "emailLabel": "Email",
+      "address": "Hatay, Turkey",
+      "mapLabel": "View Location"
+    },
+"footer": {
+  "brand": "ELIZADENT Oral and Dental Polyclinic",
+  "desc": "Professional dental care with modern technology and personalized treatment.",
+  "links": "Quick Links",
+  "contact": "Contact",
+  "social": "Follow Us",
+  "address": "Atatürk Mh. Nazım Hikmet Ran Cd. Şaban Fırıncı Plaza No:21/1, Samandağ/Hatay",
+  "phone": "+90 501 266 31 31",
+  "email":"E-mail",
+  "ctaTitle": "Book an Appointment",
+  "ctaDesc": "Contact us now and take the first step toward a healthier smile.",
+  "whatsapp": "WhatsApp",
+  "whatsappLink": "https://wa.me/905012663131",
+  "privacy": "Privacy",
+  "terms": "Terms",
+  "copyright": "© 2026 ElizaDent Ağız ve Diş Sağlığı Polikliniği"
+}
+  
+    
+  }
+}
