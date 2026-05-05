@@ -9,6 +9,7 @@
       "services": "Hizmetler",
       "gallery": "Galeri",
       "doctors": "Hekimlerimiz",
+      "team": "Ekibimiz",
       "contact": "İletişim"
     },
     "hero": {
@@ -17,27 +18,52 @@
       "cta": "Hemen İletişime Geç",
       "secondary": "Hizmetleri Gör"
     },
-     "services": {
-      "title": "Hizmetlerimiz",
-       "subtitle": "Modern teknoloji ve kişiye özel yaklaşımla yüksek kaliteli diş tedavileri sunuyoruz.",
-      "implant": {
-        "title": "İmplant",
-        "desc": "Eksik dişler için kalıcı çözümler"
-      },
-      "whitening": {
-        "title": "Diş Beyazlatma",
-        "desc": "Gülüşünüzü güvenle parlatın"
-      },
-      "ortho": {
-        "title": "Ortodonti",
-        "desc": "Dişlerinizi düzgün hizalayın"
-      },
-      "smile": {
-        "title": "Gülüş Tasarımı",
-        "desc": "Size özel estetik çözümler"
-      }
-     
+    "services": {
+  "title": "Hizmetlerimiz",
+  "subtitle": "Modern teknoloji ve kişiye özel yaklaşımla yüksek kaliteli diş tedavileri sunuyoruz.",
+  "items": {
+    "esthetic": {
+      "title": "Estetik Diş Hekimliği",
+      "desc": "Modern estetik çözümlerle gülüşünüzü iyileştiriyoruz."
     },
+    "implant": {
+      "title": "İmplant Tedavisi",
+      "desc": "Eksik dişler için kalıcı ve doğal çözümler."
+    },
+    "whitening": {
+      "title": "Diş Beyazlatma",
+      "desc": "Daha parlak bir gülüş için güvenli beyazlatma."
+    },
+    "surgery": {
+      "title": "Ağız, Diş ve Çene Cerrahisi",
+      "desc": "Ağız sağlığı için gelişmiş cerrahi tedaviler."
+    },
+    "endo": {
+      "title": "Endodonti",
+      "desc": "Dişi korumaya yönelik kanal tedavileri."
+    },
+    "smile": {
+      "title": "Gülüş Tasarımı",
+      "desc": "Kişiye özel estetik gülüş planlaması."
+    },
+    "prosthesis": {
+      "title": "Diş Protezleri",
+      "desc": "Fonksiyonel ve estetik diş restorasyonları."
+    },
+    "pedodonti": {
+      "title": "Pedodonti (Çocuk Diş Hekimliği)",
+      "desc": "Çocuklara özel nazik ve güvenli diş tedavileri."
+    },
+    "periodontoloji": {
+      "title": "Periodontoloji (Diş Eti Tedavisi)",
+      "desc": "Diş eti hastalıklarının tedavisi ve bakımı."
+    },
+    "ortho": {
+      "title": "Ortodonti",
+      "desc": "Diş dizilimi ve çene yapısının düzeltilmesi."
+    }
+  }
+},
     "doctors": {
       "title": "Hekimlerimiz",
       "subtitle": "Modern ve kişiye özel tedavi yaklaşımı sunan deneyimli diş hekimi ekibimizle tanışın.",

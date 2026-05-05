@@ -154,7 +154,10 @@ onUnmounted(() => {
           {{ $t('home.nav.doctors') }}
           <span class="absolute left-1/2 -bottom-1 h-[1px] w-0 bg-sky-400 transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
         </NuxtLink>
-
+        <NuxtLink to="/ekibimiz" class="relative group transition-colors duration-200 hover:text-sky-500">
+          {{ $t('home.nav.team') }}
+          <span class="absolute left-1/2 -bottom-1 h-[1px] w-0 bg-sky-400 transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+        </NuxtLink>
         <NuxtLink to="/#contact" class="relative group transition-colors duration-200 hover:text-sky-500">
           {{ $t('home.nav.contact') }}
           <span class="absolute left-1/2 -bottom-1 h-[1px] w-0 bg-sky-400 transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
@@ -214,7 +217,9 @@ onUnmounted(() => {
       <NuxtLink @click="closeMobile" to="/#doctors" class="hover:text-sky-500 transition">
         {{ $t('home.nav.doctors') }}
       </NuxtLink>
-
+      <NuxtLink @click="closeMobile" to="/ekibimiz" class="hover:text-sky-500 transition">
+        {{ $t('home.nav.team') }}
+      </NuxtLink>
       <NuxtLink @click="closeMobile" to="/#contact" class="hover:text-sky-500 transition">
         {{ $t('home.nav.contact') }}
       </NuxtLink>

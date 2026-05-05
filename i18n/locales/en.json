@@ -9,6 +9,7 @@
       "services": "Services",
       "gallery": "Gallery",
       "doctors": "Doctors",
+      "team": "Our Team",
       "contact": "Contact"
     },
     "hero": {
@@ -17,26 +18,52 @@
       "cta": "Contact Now",
       "secondary": "View Services"
     },
-    "services": {
-      "title": "Our Services",
-       "subtitle": "We provide high-quality dental treatments using modern technology and personalized care.",
-      "implant": {
-        "title": "Dental Implants",
-        "desc": "Permanent solutions for missing teeth"
-      },
-      "whitening": {
-        "title": "Teeth Whitening",
-        "desc": "Brighten your smile safely"
-      },
-      "ortho": {
-        "title": "Orthodontics",
-        "desc": "Straighten your teeth effectively"
-      },
-      "smile": {
-        "title": "Smile Design",
-        "desc": "Customized aesthetic treatments"
-      }
+   "services": {
+  "title": "Our Services",
+  "subtitle": "We provide high-quality dental treatments using modern technology and personalized care.",
+  "items": {
+    "esthetic": {
+      "title": "Aesthetic Dentistry",
+      "desc": "Enhancing your smile with modern aesthetic solutions."
     },
+    "implant": {
+      "title": "Implant Treatment",
+      "desc": "Permanent and natural-looking tooth replacement solutions."
+    },
+    "whitening": {
+      "title": "Teeth Whitening",
+      "desc": "Safe and effective whitening for a brighter smile."
+    },
+    "surgery": {
+      "title": "Oral & Maxillofacial Surgery",
+      "desc": "Advanced surgical treatments for oral health."
+    },
+    "endo": {
+      "title": "Endodontics",
+      "desc": "Root canal treatments to preserve natural teeth."
+    },
+    "smile": {
+      "title": "Smile Design",
+      "desc": "Customized smile transformations."
+    },
+    "prosthesis": {
+      "title": "Dental Prosthetics",
+      "desc": "Functional and aesthetic restorations."
+    },
+    "pedodonti": {
+      "title": "Pediatric Dentistry",
+      "desc": "Gentle care for children's dental health."
+    },
+    "periodontoloji": {
+      "title": "Periodontology",
+      "desc": "Gum disease treatment and care."
+    },
+    "ortho": {
+      "title": "Orthodontics",
+      "desc": "Teeth alignment and bite correction."
+    }
+  }
+},
     "doctors": {
       "title": "Our Doctors",
       "subtitle": "Meet our experienced dental team focused on modern, personalized care.",
