@@ -894,5 +894,987 @@ export const services: ServiceDetail[] = [
       ]
     }
   }
+},
+{
+  slug: 'smile-design',
+  image: '/images/services/smile-design.jpg',
+  icon: 'lucide:smile',
+  related: ['esthetic-dentistry', 'teeth-whitening', 'dental-prosthetics'],
+  content: {
+    tr: {
+      eyebrow: 'Gülüş Tasarımı',
+      title: 'Gülüş Tasarımı',
+      shortDescription:
+        'Dişlerin, diş etlerinin, dudak yapısının ve yüz hatlarının birlikte değerlendirilerek daha dengeli, doğal ve kişiye özel bir gülüş planlanmasıdır.',
+      introTitle: 'Yüzünüzle uyumlu, size özel bir gülüş planı',
+      intro:
+        'Gülüş tasarımı, yalnızca dişleri güzelleştirmeye odaklanan tek bir işlem değildir. Diş rengi, diş formu, diş eti görünümü, dudak hareketleri, yüz şekli, yaş, cinsiyet ve kişinin beklentileri birlikte değerlendirilir. Amaç herkese aynı görünen bir gülüş yapmak değil; kişinin yüzüne, ifadesine ve karakterine doğal şekilde uyum sağlayan estetik bir sonuç oluşturmaktır. Bu nedenle süreç, detaylı bir analiz ve kişiye özel planlama ile ilerler.',
+      whoTitle: 'Kimler için uygundur?',
+      who: [
+        'Gülüşünün genel görünümünden memnun olmayan kişiler',
+        'Dişlerinde renk, form, boyut veya dizilim açısından estetik kaygı yaşayanlar',
+        'Diş eti görünümü fazla olan veya diş eti seviyelerinde düzensizlik bulunan hastalar',
+        'Fotoğraflarda veya konuşurken gülüşünü saklama ihtiyacı hisseden kişiler',
+        'Özel bir dönem öncesinde daha özgüvenli bir gülüş isteyenler',
+        'Diş beyazlatma, lamina, zirkonyum, bonding veya diş eti düzenlemesi gibi işlemleri birlikte değerlendirmek isteyen hastalar',
+        'Doğal görünümü koruyarak daha canlı ve estetik bir ifade kazanmak isteyen kişiler'
+      ],
+      processTitle: 'Gülüş tasarımı süreci nasıl ilerler?',
+      process: [
+        {
+          title: 'Gülüş analizi',
+          desc: 'Dişlerin görünümü, diş eti seviyesi, dudak hattı, yüz oranları ve gülüş sırasında ortaya çıkan detaylar birlikte değerlendirilir.'
+        },
+        {
+          title: 'Beklentilerin anlaşılması',
+          desc: 'Hastanın nasıl bir gülüş istediği, doğal mı daha belirgin mi bir sonuç beklediği ve estetik öncelikleri dinlenir.'
+        },
+        {
+          title: 'Fotoğraf ve ölçü değerlendirmesi',
+          desc: 'Gerekli durumlarda fotoğraf, dijital kayıt veya ağız içi ölçüler üzerinden dişlerin ve gülüş hattının planlaması yapılır.'
+        },
+        {
+          title: 'Kişiye özel tasarım planı',
+          desc: 'Diş rengi, diş formu, diş boyu, diş eti görünümü ve yüzle uyum dikkate alınarak uygulanabilecek tedaviler belirlenir.'
+        },
+        {
+          title: 'Uygun tedavilerin seçilmesi',
+          desc: 'Beyazlatma, bonding, porselen lamina, zirkonyum, diş eti düzenlemesi veya ortodontik destek gibi seçenekler ihtiyaca göre planlanabilir.'
+        },
+        {
+          title: 'Uygulama aşaması',
+          desc: 'Planlanan işlemler, ağız sağlığı ve estetik hedefler dikkate alınarak kontrollü şekilde uygulanır.'
+        },
+        {
+          title: 'Son dokunuşlar ve uyum kontrolü',
+          desc: 'Tedavi sonunda gülüşün yüzle uyumu, kapanış konforu, renk ve form dengesi kontrol edilir. Gerekirse küçük düzenlemeler yapılır.'
+        }
+      ],
+      benefitsTitle: 'Gülüş tasarımının avantajları',
+      benefits: [
+        'Kişinin yüz hatlarıyla daha uyumlu bir gülüş görünümü sağlar.',
+        'Diş rengi, formu ve dizilimiyle ilgili estetik kaygıları azaltabilir.',
+        'Gülüş sırasında daha dengeli ve canlı bir ifade oluşturabilir.',
+        'Tek bir işlem yerine ihtiyaçlara göre bütüncül bir tedavi planı sunar.',
+        'Doğal görünümü koruyarak estetik bir yenilenme sağlayabilir.',
+        'Fotoğraf, konuşma ve sosyal hayat sırasında özgüveni artırabilir.',
+        'Diş eti ve diş oranlarının daha düzenli görünmesine yardımcı olabilir.'
+      ],
+      faqTitle: 'Sık sorulan sorular',
+      faq: [
+        {
+          q: 'Gülüş tasarımı herkese aynı şekilde mi yapılır?',
+          a: 'Hayır. Gülüş tasarımı kişiye özel planlanır. Yüz şekli, dudak hattı, diş yapısı, diş eti görünümü ve kişinin beklentileri birlikte değerlendirilir.'
+        },
+        {
+          q: 'Gülüş tasarımı tek bir işlem midir?',
+          a: 'Genellikle tek bir işlem değildir. Kişinin ihtiyacına göre beyazlatma, bonding, porselen lamina, zirkonyum, diş eti düzenlemesi veya ortodontik tedaviler birlikte planlanabilir.'
+        },
+        {
+          q: 'Sonuç doğal görünür mü?',
+          a: 'Doğru planlama yapıldığında amaç yapay veya abartılı bir görünüm değil, kişinin yüz ifadesiyle uyumlu doğal ve estetik bir gülüş elde etmektir.'
+        },
+        {
+          q: 'Gülüş tasarımı ne kadar sürer?',
+          a: 'Süre uygulanacak işlemlere göre değişir. Sadece beyazlatma veya bonding gibi işlemler daha kısa sürebilirken, lamina, zirkonyum veya diş eti düzenlemesi içeren planlar daha fazla seans gerektirebilir.'
+        },
+        {
+          q: 'Gülüş tasarımı öncesinde diş sağlığı önemli midir?',
+          a: 'Evet. Estetik işlemlerden önce çürük, diş eti hastalığı, enfeksiyon veya kapanış problemleri değerlendirilmelidir. Sağlıklı bir temel, daha başarılı ve uzun ömürlü sonuçlar için önemlidir.'
+        },
+        {
+          q: 'Gülüş tasarımı kalıcı mıdır?',
+          a: 'Kalıcılık kullanılan tedavi yöntemine, ağız bakımına ve düzenli kontrollere bağlıdır. İyi bakım ve doğru alışkanlıklarla estetik sonuçlar uzun süre korunabilir.'
+        }
+      ]
+    },
+    en: {
+      eyebrow: 'Smile Design',
+      title: 'Smile Design',
+      shortDescription:
+        'A personalized smile planning approach that evaluates teeth, gums, lip structure, and facial features together for a balanced and natural result.',
+      introTitle: 'A personalized smile plan that harmonizes with your face',
+      intro:
+        'Smile design is not a single treatment focused only on making teeth look better. Tooth color, tooth shape, gum appearance, lip movement, facial proportions, age, gender, and personal expectations are evaluated together. The aim is not to create the same smile for everyone, but to design a natural-looking result that suits the person’s face, expression, and character. That is why the process begins with detailed analysis and personalized planning.',
+      whoTitle: 'Who is it suitable for?',
+      who: [
+        'People who are not satisfied with the overall appearance of their smile',
+        'Patients with concerns about tooth color, shape, size, or alignment',
+        'Those with excessive gum display or uneven gum levels',
+        'People who feel the need to hide their smile in photos or while speaking',
+        'Patients who want a more confident smile before a special period or event',
+        'Those who want to evaluate whitening, veneers, zirconium, bonding, or gum contouring together',
+        'People who want a more vibrant and aesthetic expression while preserving a natural look'
+      ],
+      processTitle: 'How does the smile design process work?',
+      process: [
+        {
+          title: 'Smile analysis',
+          desc: 'Tooth appearance, gum level, lip line, facial proportions, and details visible during smiling are evaluated together.'
+        },
+        {
+          title: 'Understanding expectations',
+          desc: 'The patient’s desired smile style, preference for a natural or more noticeable result, and aesthetic priorities are discussed.'
+        },
+        {
+          title: 'Photo and measurement assessment',
+          desc: 'When needed, photographs, digital records, or intraoral measurements are used to plan the teeth and smile line.'
+        },
+        {
+          title: 'Personalized design planning',
+          desc: 'Tooth shade, shape, length, gum visibility, and facial harmony are considered when creating the treatment plan.'
+        },
+        {
+          title: 'Choosing suitable treatments',
+          desc: 'Whitening, bonding, porcelain veneers, zirconium crowns, gum contouring, or orthodontic support may be planned depending on the need.'
+        },
+        {
+          title: 'Treatment phase',
+          desc: 'The planned procedures are carried out in a controlled way, considering both oral health and aesthetic goals.'
+        },
+        {
+          title: 'Final refinements and harmony check',
+          desc: 'At the end of treatment, facial harmony, bite comfort, shade, and tooth form are reviewed. Small refinements can be made when needed.'
+        }
+      ],
+      benefitsTitle: 'Benefits of smile design',
+      benefits: [
+        'Creates a smile appearance that is more harmonious with facial features.',
+        'Can reduce aesthetic concerns related to tooth color, shape, and alignment.',
+        'May create a more balanced and vibrant facial expression while smiling.',
+        'Offers a comprehensive treatment plan rather than a single isolated procedure.',
+        'Can provide an aesthetic renewal while preserving a natural appearance.',
+        'May improve confidence in photos, conversations, and social life.',
+        'Helps gum and tooth proportions appear more balanced.'
+      ],
+      faqTitle: 'Frequently asked questions',
+      faq: [
+        {
+          q: 'Is smile design the same for everyone?',
+          a: 'No. Smile design is planned individually. Facial shape, lip line, tooth structure, gum appearance, and personal expectations are evaluated together.'
+        },
+        {
+          q: 'Is smile design a single treatment?',
+          a: 'Usually not. Depending on the patient’s needs, whitening, bonding, porcelain veneers, zirconium crowns, gum contouring, or orthodontic treatments may be planned together.'
+        },
+        {
+          q: 'Will the result look natural?',
+          a: 'With proper planning, the goal is not an artificial or exaggerated look, but a natural and aesthetic smile that suits the person’s facial expression.'
+        },
+        {
+          q: 'How long does smile design take?',
+          a: 'The duration depends on the treatments involved. Whitening or bonding may take less time, while plans involving veneers, zirconium, or gum contouring may require more appointments.'
+        },
+        {
+          q: 'Is dental health important before smile design?',
+          a: 'Yes. Cavities, gum disease, infections, and bite problems should be evaluated before aesthetic procedures. A healthy foundation supports better and longer-lasting results.'
+        },
+        {
+          q: 'Is smile design permanent?',
+          a: 'Longevity depends on the treatment methods used, oral hygiene, and regular dental check-ups. With good care and proper habits, aesthetic results can be maintained for a long time.'
+        }
+      ]
+    }
+  }
+},
+{
+  slug: 'dental-prosthetics',
+  image: '/images/services/dental-prosthetics.jpg',
+  icon: 'lucide:layers',
+  related: ['dental-implant', 'esthetic-dentistry', 'smile-design'],
+  content: {
+    tr: {
+      eyebrow: 'Diş Protezleri',
+      title: 'Diş Protezleri',
+      shortDescription:
+        'Eksik, aşınmış veya ciddi madde kaybı olan dişlerin estetik ve fonksiyonel olarak yeniden düzenlenmesini sağlayan kişiye özel restoratif çözümlerdir.',
+      introTitle: 'Çiğneme konforunu ve gülüş estetiğini yeniden destekleyen çözümler',
+      intro:
+        'Diş protezleri, eksik dişlerin tamamlanması, zayıflamış dişlerin güçlendirilmesi veya estetik görünümün iyileştirilmesi amacıyla planlanan restoratif tedavilerdir. Protez denildiğinde yalnızca takılıp çıkarılan dişler akla gelmemelidir; sabit kaplamalar, köprüler, implant üstü protezler, zirkonyum restorasyonlar ve hareketli protezler bu alanın içinde değerlendirilebilir. Amaç, kişinin ağız yapısına uygun, doğal görünümlü, rahat kullanılan ve günlük yaşamda güven veren bir diş yapısı oluşturmaktır.',
+      whoTitle: 'Kimler için uygundur?',
+      who: [
+        'Bir veya birden fazla diş eksikliği bulunan kişiler',
+        'Dişlerinde kırık, aşınma veya ciddi madde kaybı olan hastalar',
+        'Eski kaplama, köprü veya protezlerinden memnun olmayan kişiler',
+        'Çiğneme sırasında zorlanan veya tek taraflı çiğnemeye başlayan hastalar',
+        'Dişlerinin formu, rengi veya dizilimi nedeniyle estetik kaygı yaşayanlar',
+        'İmplant tedavisi sonrası implant üstü protez ihtiyacı olan kişiler',
+        'Hareketli protez kullanan ancak daha konforlu veya daha sabit bir çözüm arayan hastalar',
+        'Ağız yapısına uygun, fonksiyonel ve estetik bir restorasyon isteyen kişiler'
+      ],
+      processTitle: 'Protez tedavisi süreci nasıl ilerler?',
+      process: [
+        {
+          title: 'Ağız yapısının değerlendirilmesi',
+          desc: 'Dişlerin durumu, eksik diş bölgeleri, diş eti sağlığı, kapanış ilişkisi ve çiğneme fonksiyonu birlikte değerlendirilir.'
+        },
+        {
+          title: 'İhtiyacın belirlenmesi',
+          desc: 'Hastanın sabit köprü, kaplama, implant üstü protez, zirkonyum restorasyon veya hareketli protez gibi hangi çözüme ihtiyaç duyduğu belirlenir.'
+        },
+        {
+          title: 'Estetik ve fonksiyon planlaması',
+          desc: 'Diş rengi, diş formu, yüzle uyum, konuşma rahatlığı ve çiğneme dengesi dikkate alınarak kişiye özel bir plan oluşturulur.'
+        },
+        {
+          title: 'Ölçü ve prova aşamaları',
+          desc: 'Ağız yapısına uygun ölçüler alınır. Gerektiğinde prova aşamalarıyla protezin uyumu, kapanışı ve görünümü kontrol edilir.'
+        },
+        {
+          title: 'Restorasyonun hazırlanması',
+          desc: 'Planlanan protez veya kaplama laboratuvar süreciyle hazırlanır. Malzeme seçimi estetik beklentiye, dayanıklılık ihtiyacına ve bölgenin fonksiyonuna göre yapılır.'
+        },
+        {
+          title: 'Uygulama ve uyum kontrolü',
+          desc: 'Hazırlanan restorasyon ağıza uygulanır. Kapanış, temas noktaları, konuşma rahatlığı ve estetik görünüm kontrol edilir.'
+        },
+        {
+          title: 'Alışma süreci ve bakım önerileri',
+          desc: 'Yeni proteze alışma süreci takip edilir. Temizlik, kullanım ve düzenli kontrol önerileri hastaya aktarılır.'
+        }
+      ],
+      benefitsTitle: 'Diş protezlerinin avantajları',
+      benefits: [
+        'Eksik dişlerin oluşturduğu boşlukları estetik ve fonksiyonel olarak tamamlar.',
+        'Çiğneme konforunu ve beslenme rahatlığını artırabilir.',
+        'Konuşma sırasında oluşabilecek bazı zorlukların azalmasına yardımcı olabilir.',
+        'Yüz desteğini ve gülüş görünümünü iyileştirebilir.',
+        'Aşınmış veya zayıflamış dişlerin daha güçlü hale gelmesini sağlayabilir.',
+        'Kişiye özel planlandığında daha doğal ve uyumlu bir görünüm sunar.',
+        'İmplant tedavisiyle birlikte sabit ve daha konforlu çözümler oluşturulabilir.',
+        'Eski, uyumsuz veya estetik olarak rahatsız eden restorasyonların yenilenmesine imkân sağlar.'
+      ],
+      faqTitle: 'Sık sorulan sorular',
+      faq: [
+        {
+          q: 'Diş protezi sadece takıp çıkarılan protez anlamına mı gelir?',
+          a: 'Hayır. Diş protezleri sabit kaplamaları, köprüleri, implant üstü protezleri, zirkonyum restorasyonları ve hareketli protezleri kapsayabilir. Hangi seçeneğin uygun olduğu ağız yapısına ve diş eksikliğine göre belirlenir.'
+        },
+        {
+          q: 'Protez dişler doğal görünür mü?',
+          a: 'Doğru renk, form ve ölçü planlamasıyla protez dişler doğal dişlerle uyumlu görünebilir. Estetik sonuç; kullanılan malzeme, diş eti yapısı ve yüzle uyum dikkate alınarak planlanır.'
+        },
+        {
+          q: 'Protezlere alışmak zor olur mu?',
+          a: 'Sabit protezlere alışmak çoğu zaman daha kolaydır. Hareketli protezlerde ise ilk günlerde konuşma, çiğneme veya ağızda doluluk hissi olabilir. Düzenli kullanım ve gerekli kontrollerle alışma süreci daha rahat ilerler.'
+        },
+        {
+          q: 'Sabit protez mi hareketli protez mi daha iyidir?',
+          a: 'Bu tamamen hastanın ağız yapısına, kemik desteğine, diş eksikliğinin durumuna ve beklentisine göre değişir. Uygun hastalarda sabit çözümler daha konforlu olabilir; ancak bazı durumlarda hareketli protezler daha doğru seçenek olabilir.'
+        },
+        {
+          q: 'İmplant üstü protez nedir?',
+          a: 'İmplant üstü protez, çene kemiğine yerleştirilen implantlardan destek alan protez türüdür. Bu yöntem, uygun hastalarda daha sabit ve konforlu bir kullanım sağlayabilir.'
+        },
+        {
+          q: 'Protezlerin bakımı nasıl yapılır?',
+          a: 'Sabit protezlerde düzenli fırçalama, ara yüz temizliği ve diş hekimi kontrolleri önemlidir. Hareketli protezlerde ise protezin günlük temizliği, gece kullanımı ve saklama koşulları hekimin önerilerine göre düzenlenmelidir.'
+        },
+        {
+          q: 'Eski protezim yenilenebilir mi?',
+          a: 'Evet. Eski protezlerde uyum kaybı, estetik sorun, kırık, renk değişimi veya çiğneme rahatsızlığı varsa yeniden değerlendirme yapılabilir ve daha uygun bir restorasyon planlanabilir.'
+        }
+      ]
+    },
+    en: {
+      eyebrow: 'Dental Prosthetics',
+      title: 'Dental Prosthetics',
+      shortDescription:
+        'Personalized restorative solutions designed to rebuild missing, worn, or heavily damaged teeth with both function and aesthetics in mind.',
+      introTitle: 'Restorative solutions that support chewing comfort and smile aesthetics',
+      intro:
+        'Dental prosthetics are restorative treatments planned to replace missing teeth, strengthen weakened teeth, or improve the appearance of the smile. Prosthetic dentistry does not only mean removable dentures. Fixed crowns, bridges, implant-supported prosthetics, zirconium restorations, and removable dentures can all be part of this field. The goal is to create a tooth structure that fits the patient’s mouth, looks natural, feels comfortable, and gives confidence in daily life.',
+      whoTitle: 'Who is it suitable for?',
+      who: [
+        'People with one or more missing teeth',
+        'Patients with broken, worn, or heavily damaged teeth',
+        'Those who are not satisfied with old crowns, bridges, or dentures',
+        'Patients who have difficulty chewing or have started chewing mostly on one side',
+        'People with aesthetic concerns about tooth shape, color, or alignment',
+        'Patients who need implant-supported restorations after implant treatment',
+        'Those who use removable dentures but want a more comfortable or more stable option',
+        'People looking for a functional and aesthetic restoration planned specifically for their mouth'
+      ],
+      processTitle: 'How does prosthetic treatment work?',
+      process: [
+        {
+          title: 'Evaluation of oral structure',
+          desc: 'The condition of the teeth, missing tooth areas, gum health, bite relationship, and chewing function are evaluated together.'
+        },
+        {
+          title: 'Determining the need',
+          desc: 'The most suitable option is identified, such as a fixed bridge, crown, implant-supported prosthesis, zirconium restoration, or removable denture.'
+        },
+        {
+          title: 'Aesthetic and functional planning',
+          desc: 'Tooth shade, shape, facial harmony, speech comfort, and chewing balance are considered when creating a personalized plan.'
+        },
+        {
+          title: 'Impressions and try-in stages',
+          desc: 'Measurements are taken according to the mouth structure. Try-in appointments may be used to check fit, bite, and appearance.'
+        },
+        {
+          title: 'Preparation of the restoration',
+          desc: 'The planned prosthesis or restoration is prepared through a laboratory process. Material selection depends on aesthetic goals, durability needs, and the function of the area.'
+        },
+        {
+          title: 'Placement and fit control',
+          desc: 'The prepared restoration is placed in the mouth. Bite, contact points, speech comfort, and aesthetic appearance are checked.'
+        },
+        {
+          title: 'Adaptation and care guidance',
+          desc: 'The adaptation process is followed. Cleaning, usage, and regular check-up recommendations are explained to the patient.'
+        }
+      ],
+      benefitsTitle: 'Benefits of dental prosthetics',
+      benefits: [
+        'Restores missing tooth spaces both aesthetically and functionally.',
+        'Can improve chewing comfort and eating ability.',
+        'May help reduce some speech difficulties caused by missing teeth.',
+        'Can improve facial support and smile appearance.',
+        'Helps strengthen worn or weakened teeth.',
+        'Provides a more natural and harmonious appearance when planned individually.',
+        'Can create fixed and more comfortable solutions when combined with implant treatment.',
+        'Allows old, uncomfortable, or aesthetically unsatisfying restorations to be renewed.'
+      ],
+      faqTitle: 'Frequently asked questions',
+      faq: [
+        {
+          q: 'Does dental prosthetics only mean removable dentures?',
+          a: 'No. Dental prosthetics can include fixed crowns, bridges, implant-supported prosthetics, zirconium restorations, and removable dentures. The suitable option depends on the mouth structure and the type of tooth loss.'
+        },
+        {
+          q: 'Will prosthetic teeth look natural?',
+          a: 'With proper shade, shape, and measurement planning, prosthetic teeth can look harmonious with natural teeth. The aesthetic result is planned by considering material choice, gum structure, and facial harmony.'
+        },
+        {
+          q: 'Is it difficult to get used to prosthetic teeth?',
+          a: 'Fixed restorations are usually easier to adapt to. With removable dentures, there may be a feeling of fullness, speech changes, or chewing adjustment in the first days. Regular use and follow-up adjustments help the adaptation process.'
+        },
+        {
+          q: 'Is a fixed prosthesis better than a removable denture?',
+          a: 'It depends on the patient’s mouth structure, bone support, tooth loss pattern, and expectations. Fixed options may be more comfortable in suitable patients, but removable dentures may be the better choice in some cases.'
+        },
+        {
+          q: 'What is an implant-supported prosthesis?',
+          a: 'An implant-supported prosthesis is a restoration supported by implants placed in the jawbone. In suitable patients, this option can provide a more stable and comfortable use.'
+        },
+        {
+          q: 'How should prosthetic teeth be cared for?',
+          a: 'For fixed prosthetics, regular brushing, interdental cleaning, and dental check-ups are important. For removable dentures, daily cleaning, nighttime use, and storage should follow the dentist’s instructions.'
+        },
+        {
+          q: 'Can my old prosthesis be renewed?',
+          a: 'Yes. If an old prosthesis has lost its fit, causes discomfort, looks unaesthetic, is broken, or affects chewing, it can be evaluated and replaced with a more suitable restoration.'
+        }
+      ]
+    }
+  }
+},
+{
+  slug: 'pediatric-dentistry',
+  image: '/images/services/pediatric-dentistry.jpg',
+  icon: 'lucide:baby',
+  related: ['esthetic-dentistry', 'orthodontics', 'periodontology'],
+  content: {
+    tr: {
+      eyebrow: 'Pedodonti',
+      title: 'Pedodonti',
+      shortDescription:
+        'Çocukların süt dişleri, kalıcı diş gelişimi, ağız hijyeni ve diş hekimiyle güvenli bağ kurması için planlanan nazik ve koruyucu diş hekimliği alanıdır.',
+      introTitle: 'Çocuklar için sakin, güven veren ve koruyucu diş bakımı',
+      intro:
+        'Pedodonti, bebeklikten ergenlik dönemine kadar çocukların ağız ve diş sağlığını takip eden diş hekimliği alanıdır. Bu süreç yalnızca çürük tedavisi yapmakla sınırlı değildir; çocuğun diş hekimine alışması, korku geliştirmemesi, doğru fırçalama alışkanlığı kazanması ve süt dişlerinden kalıcı dişlere geçişin sağlıklı ilerlemesi de önemlidir. Çocuklarda tedavi yaklaşımı yetişkinlerden farklıdır. Daha sabırlı, açıklayıcı, oyunlaştırılmış ve güven duygusunu koruyan bir iletişim gerekir.',
+      whoTitle: 'Kimler için uygundur?',
+      who: [
+        'İlk dişleri çıkmaya başlayan bebekler ve küçük çocuklar',
+        'Süt dişlerinde çürük, renklenme, kırık veya hassasiyet bulunan çocuklar',
+        'Diş hekimi korkusu yaşayan veya ilk kez muayeneye gelecek çocuklar',
+        'Diş fırçalama alışkanlığı kazanmakta zorlanan çocuklar',
+        'Süt dişi erken kaybı, yer darlığı veya diş dizilimi takibi gereken hastalar',
+        'Okul döneminde düzenli diş kontrolü ve koruyucu uygulamalara ihtiyaç duyan çocuklar',
+        'Diş sıkma, parmak emme, uzun süre emzik kullanımı gibi alışkanlıkları olan çocuklar',
+        'Kalıcı dişleri çıkmaya başlayan ve gelişimi takip edilmesi gereken çocuklar'
+      ],
+      processTitle: 'Çocuk diş tedavisi süreci nasıl ilerler?',
+      process: [
+        {
+          title: 'Tanışma ve güven oluşturma',
+          desc: 'Çocuğun kliniğe ve hekime alışması için sakin bir iletişim kurulur. İlk görüşmede amaç yalnızca tedavi değil, güven duygusunu güçlendirmektir.'
+        },
+        {
+          title: 'Yaşa uygun muayene',
+          desc: 'Süt dişleri, kalıcı dişlerin gelişimi, diş eti sağlığı, çene gelişimi ve ağız hijyeni çocuğun yaşına uygun şekilde değerlendirilir.'
+        },
+        {
+          title: 'Aileden bilgi alınması',
+          desc: 'Beslenme alışkanlıkları, fırçalama düzeni, gece beslenmesi, emzik veya parmak emme gibi alışkanlıklar ve varsa ağrı şikâyetleri dinlenir.'
+        },
+        {
+          title: 'Koruyucu planlama',
+          desc: 'Çürük riskine göre flor uygulaması, fissür örtücü, beslenme önerileri ve fırçalama eğitimi gibi koruyucu adımlar planlanabilir.'
+        },
+        {
+          title: 'Gerekli tedavilerin uygulanması',
+          desc: 'Çürük, kırık, ağrı veya enfeksiyon varsa çocuğun yaşı ve uyumu dikkate alınarak uygun tedavi seçenekleri uygulanır.'
+        },
+        {
+          title: 'Alışkanlık takibi',
+          desc: 'Parmak emme, diş sıkma, ağız solunumu veya uzun süreli emzik kullanımı gibi durumlar takip edilerek gerekli yönlendirmeler yapılabilir.'
+        },
+        {
+          title: 'Düzenli kontrol sistemi',
+          desc: 'Çocuğun diş gelişimi ve ağız hijyeni belirli aralıklarla takip edilir. Böylece problemler büyümeden fark edilebilir.'
+        }
+      ],
+      benefitsTitle: 'Pedodontinin sağladığı avantajlar',
+      benefits: [
+        'Çocukların diş hekimiyle daha güvenli ve olumlu bir ilişki kurmasına yardımcı olur.',
+        'Süt dişlerindeki çürük ve enfeksiyonların erken fark edilmesini sağlar.',
+        'Kalıcı dişlerin sağlıklı gelişimini destekler.',
+        'Doğru fırçalama ve ağız bakım alışkanlıklarının erken yaşta kazanılmasına yardımcı olur.',
+        'Koruyucu uygulamalarla çürük oluşma riskini azaltabilir.',
+        'Diş hekimi korkusunun ilerlemesini önleyebilir.',
+        'Süt dişi erken kaybına bağlı yer problemlerinin takip edilmesine yardımcı olur.',
+        'Ailenin beslenme, bakım ve kontrol süreci konusunda daha bilinçli hareket etmesini sağlar.'
+      ],
+      faqTitle: 'Sık sorulan sorular',
+      faq: [
+        {
+          q: 'Çocuklar ilk ne zaman diş hekimine götürülmelidir?',
+          a: 'İlk dişlerin çıkmasıyla birlikte veya en geç bir yaş civarında ilk diş hekimi kontrolü önerilir. Bu ziyaret, sorun olmasa bile aileyi bilgilendirmek ve çocuğun diş hekimine alışmasını sağlamak açısından değerlidir.'
+        },
+        {
+          q: 'Süt dişleri zaten düşecekse tedavi edilmeli mi?',
+          a: 'Evet. Süt dişleri çocuğun çiğnemesi, konuşması, çene gelişimi ve kalıcı dişlere yer tutması açısından önemlidir. Tedavi edilmeyen süt dişi problemleri ağrıya, enfeksiyona ve ileride dizilim sorunlarına yol açabilir.'
+        },
+        {
+          q: 'Çocuklarda diş tedavisi ağrılı olur mu?',
+          a: 'Tedavi çocuğun yaşına, ihtiyacına ve uyumuna göre planlanır. Gerekli durumlarda lokal anestezi uygulanabilir. Amaç işlemi çocuğa mümkün olduğunca konforlu ve korkutmadan tamamlamaktır.'
+        },
+        {
+          q: 'Flor uygulaması çocuklar için gerekli midir?',
+          a: 'Flor uygulaması çürük riskine göre önerilebilir. Diş minesinin güçlenmesine ve çürük oluşum riskinin azalmasına yardımcı olabilir. Uygunluk çocuğun ağız yapısı ve çürük riskine göre değerlendirilir.'
+        },
+        {
+          q: 'Fissür örtücü nedir?',
+          a: 'Fissür örtücü, özellikle azı dişlerinin çiğneme yüzeylerindeki derin girintileri kapatmaya yardımcı olan koruyucu bir uygulamadır. Amaç gıda birikimini azaltmak ve çürük riskini düşürmektir.'
+        },
+        {
+          q: 'Çocuğum diş hekiminden korkuyorsa ne yapılmalı?',
+          a: 'Çocuğa baskı yapmak yerine yavaş, sakin ve güven veren bir yaklaşım tercih edilmelidir. İlk randevunun tanışma ve alışma amacıyla geçmesi, ilerleyen tedavilerin daha rahat yapılmasına yardımcı olabilir.'
+        },
+        {
+          q: 'Çocuklarda diş fırçalama ne zaman başlamalıdır?',
+          a: 'İlk dişlerin çıkmasıyla ağız bakımına başlanabilir. Yaşa uygun fırça ve macun seçimi önemlidir. Küçük çocuklarda fırçalama mutlaka aile desteğiyle yapılmalıdır.'
+        },
+        {
+          q: 'Parmak emme veya uzun süre emzik kullanımı dişleri etkiler mi?',
+          a: 'Uzun süre devam eden alışkanlıklar diş dizilimini, çene gelişimini ve kapanışı etkileyebilir. Bu nedenle alışkanlığın süresi ve şiddeti değerlendirilerek gerekirse yönlendirme yapılmalıdır.'
+        }
+      ]
+    },
+    en: {
+      eyebrow: 'Pediatric Dentistry',
+      title: 'Pediatric Dentistry',
+      shortDescription:
+        'Gentle and preventive dental care focused on children’s baby teeth, permanent tooth development, oral hygiene, and building trust with the dentist.',
+      introTitle: 'Calm, reassuring, and preventive dental care for children',
+      intro:
+        'Pediatric dentistry follows children’s oral and dental health from infancy through adolescence. It is not limited to treating cavities. Helping the child feel safe at the dentist, preventing fear, building proper brushing habits, and supporting the healthy transition from baby teeth to permanent teeth are all part of the process. Children need a different approach than adults: more patience, simple explanations, gentle communication, and a sense of trust.',
+      whoTitle: 'Who is it suitable for?',
+      who: [
+        'Babies and young children whose first teeth have started to erupt',
+        'Children with cavities, discoloration, fractures, or sensitivity in baby teeth',
+        'Children who are visiting the dentist for the first time or feel afraid of dental care',
+        'Children who struggle to build regular brushing habits',
+        'Patients who need monitoring for early baby tooth loss, spacing, or tooth alignment',
+        'School-age children who need regular check-ups and preventive dental applications',
+        'Children with habits such as teeth grinding, thumb sucking, or long-term pacifier use',
+        'Children whose permanent teeth are erupting and need development follow-up'
+      ],
+      processTitle: 'How does pediatric dental care work?',
+      process: [
+        {
+          title: 'Introduction and trust-building',
+          desc: 'A calm connection is created so the child can get used to the clinic and the dentist. The first visit is not only about treatment, but also about building trust.'
+        },
+        {
+          title: 'Age-appropriate examination',
+          desc: 'Baby teeth, permanent tooth development, gum health, jaw growth, and oral hygiene are evaluated according to the child’s age.'
+        },
+        {
+          title: 'Listening to the family',
+          desc: 'Eating habits, brushing routine, night feeding, pacifier or thumb-sucking habits, and any pain complaints are discussed with the family.'
+        },
+        {
+          title: 'Preventive planning',
+          desc: 'Depending on cavity risk, fluoride application, fissure sealants, nutrition advice, and brushing education may be planned.'
+        },
+        {
+          title: 'Necessary treatments',
+          desc: 'If cavities, fractures, pain, or infection are present, suitable treatments are performed according to the child’s age and cooperation.'
+        },
+        {
+          title: 'Habit monitoring',
+          desc: 'Thumb sucking, teeth grinding, mouth breathing, or long-term pacifier use can be monitored, and guidance can be provided when needed.'
+        },
+        {
+          title: 'Regular follow-up system',
+          desc: 'Tooth development and oral hygiene are checked at regular intervals so problems can be noticed before they become more serious.'
+        }
+      ],
+      benefitsTitle: 'Benefits of pediatric dentistry',
+      benefits: [
+        'Helps children build a safer and more positive relationship with dental care.',
+        'Allows cavities and infections in baby teeth to be noticed early.',
+        'Supports healthy development of permanent teeth.',
+        'Helps children gain proper brushing and oral care habits at an early age.',
+        'Preventive applications may reduce the risk of cavities.',
+        'Can help prevent dental fear from becoming stronger.',
+        'Supports monitoring of spacing problems caused by early baby tooth loss.',
+        'Helps families make more informed decisions about nutrition, care, and regular check-ups.'
+      ],
+      faqTitle: 'Frequently asked questions',
+      faq: [
+        {
+          q: 'When should children first visit the dentist?',
+          a: 'A first dental visit is recommended when the first teeth erupt or around the age of one at the latest. Even if there is no problem, this visit is valuable for guiding the family and helping the child get used to the dentist.'
+        },
+        {
+          q: 'Do baby teeth need treatment if they will fall out anyway?',
+          a: 'Yes. Baby teeth are important for chewing, speech, jaw development, and holding space for permanent teeth. Untreated problems can lead to pain, infection, and future alignment issues.'
+        },
+        {
+          q: 'Is dental treatment painful for children?',
+          a: 'Treatment is planned according to the child’s age, needs, and cooperation. Local anesthesia can be used when needed. The aim is to make the procedure as comfortable and non-frightening as possible.'
+        },
+        {
+          q: 'Is fluoride application necessary for children?',
+          a: 'Fluoride may be recommended depending on cavity risk. It can help strengthen tooth enamel and reduce the risk of cavities. Suitability is evaluated according to the child’s oral condition.'
+        },
+        {
+          q: 'What is a fissure sealant?',
+          a: 'A fissure sealant is a preventive application that helps cover the deep grooves on the chewing surfaces of molars. The goal is to reduce food accumulation and lower cavity risk.'
+        },
+        {
+          q: 'What if my child is afraid of the dentist?',
+          a: 'Instead of pressure, a slow, calm, and reassuring approach is preferred. A first appointment focused on meeting and getting used to the clinic can make future treatments easier.'
+        },
+        {
+          q: 'When should children start brushing their teeth?',
+          a: 'Oral care can begin when the first teeth erupt. Age-appropriate toothbrush and toothpaste selection is important. Young children should brush with family support.'
+        },
+        {
+          q: 'Can thumb sucking or long-term pacifier use affect teeth?',
+          a: 'Long-lasting habits may affect tooth alignment, jaw development, and bite. The duration and intensity of the habit should be evaluated, and guidance may be needed.'
+        }
+      ]
+    }
+  }
+},
+{
+  slug: 'periodontology',
+  image: '/images/services/periodontology.jpg',
+  icon: 'lucide:heart-pulse',
+  related: ['dental-implant', 'esthetic-dentistry', 'teeth-whitening'],
+  content: {
+    tr: {
+      eyebrow: 'Periodontoloji',
+      title: 'Periodontoloji',
+      shortDescription:
+        'Diş eti hastalıklarının, dişi destekleyen kemik dokusunun ve ağız sağlığını etkileyen çevre dokuların teşhis ve tedavisine odaklanan diş hekimliği alanıdır.',
+      introTitle: 'Sağlıklı dişlerin temeli sağlıklı diş etleridir',
+      intro:
+        'Periodontoloji, diş etleri ve dişleri çevreleyen destek dokularla ilgilenir. Diş eti kanaması, kızarıklık, şişlik, diş eti çekilmesi, ağız kokusu, dişlerde sallanma veya diş taşı birikimi gibi sorunlar bu alanın içinde değerlendirilir. Diş eti hastalıkları bazen sessiz ilerleyebilir; ağrı olmadan da kemik kaybı ve diş desteğinde zayıflama gelişebilir. Bu nedenle erken teşhis, düzenli temizlik ve kişiye uygun bakım alışkanlıkları uzun vadeli ağız sağlığı için oldukça önemlidir.',
+      whoTitle: 'Kimler için uygundur?',
+      who: [
+        'Diş eti kanaması yaşayan kişiler',
+        'Diş etlerinde kızarıklık, şişlik veya hassasiyet bulunan hastalar',
+        'Diş eti çekilmesi fark eden veya diş kökleri görünür hale gelen kişiler',
+        'Ağız kokusu, kötü tat veya sürekli plak birikimi problemi yaşayanlar',
+        'Diş taşı temizliğine düzenli ihtiyaç duyan hastalar',
+        'Dişlerinde sallanma, yer değiştirme veya aralanma fark eden kişiler',
+        'İmplant tedavisi öncesinde diş eti ve kemik sağlığı değerlendirilmesi gereken hastalar',
+        'Diş eti sağlığını koruyarak doğal dişlerini uzun süre ağızda tutmak isteyen kişiler'
+      ],
+      processTitle: 'Periodontal tedavi süreci nasıl ilerler?',
+      process: [
+        {
+          title: 'Diş eti muayenesi',
+          desc: 'Diş etlerinin rengi, kanama durumu, çekilme seviyesi, diş taşı birikimi ve dişlerin destek dokuları detaylı şekilde değerlendirilir.'
+        },
+        {
+          title: 'Cep ölçümü ve destek dokuların incelenmesi',
+          desc: 'Diş eti cepleri ölçülerek hastalığın derinliği anlaşılmaya çalışılır. Gerekli durumlarda kemik desteği röntgenle değerlendirilir.'
+        },
+        {
+          title: 'Diş taşı ve plak temizliği',
+          desc: 'Diş yüzeylerinde ve diş eti çevresinde biriken plak ve diş taşları temizlenir. Bu adım diş eti iyileşmesinin temelini oluşturur.'
+        },
+        {
+          title: 'Derin temizlik planı',
+          desc: 'Diş eti hastalığı ilerlemişse kök yüzeyi temizliği ve diş eti altı bölgelerin daha detaylı temizlenmesi gerekebilir.'
+        },
+        {
+          title: 'Ağız bakım eğitimi',
+          desc: 'Fırçalama tekniği, ara yüz fırçası, diş ipi veya ağız duşu gibi yardımcı bakım araçları hastanın ihtiyacına göre anlatılır.'
+        },
+        {
+          title: 'İyileşme takibi',
+          desc: 'Tedavi sonrası diş eti kanaması, şişlik ve cep derinlikleri takip edilir. İyileşme durumuna göre ek tedavi gerekebilir.'
+        },
+        {
+          title: 'Koruyucu bakım dönemi',
+          desc: 'Diş eti hastalıkları tekrar edebileceği için düzenli kontrol ve profesyonel temizlik aralıkları kişiye özel planlanır.'
+        }
+      ],
+      benefitsTitle: 'Diş eti tedavisinin avantajları',
+      benefits: [
+        'Diş eti kanaması, şişlik ve hassasiyetin azalmasına yardımcı olabilir.',
+        'Dişleri destekleyen kemik ve çevre dokuların korunmasını destekler.',
+        'Diş taşı ve plak birikimini kontrol altına almaya yardımcı olur.',
+        'Ağız kokusu ve kötü tat gibi şikâyetlerin azalmasına katkı sağlayabilir.',
+        'Diş eti çekilmesi ve dişlerde sallanma gibi problemlerin ilerlemesini yavaşlatabilir.',
+        'İmplant, estetik veya protez tedavileri öncesinde daha sağlıklı bir ağız zemini oluşturur.',
+        'Doğal dişlerin uzun süre korunmasına katkı sağlar.',
+        'Kişiye özel bakım eğitimiyle günlük ağız hijyenini daha etkili hale getirir.'
+      ],
+      faqTitle: 'Sık sorulan sorular',
+      faq: [
+        {
+          q: 'Diş eti kanaması normal midir?',
+          a: 'Diş eti kanaması genellikle normal kabul edilmez. Fırçalama sırasında kanama, diş eti iltihabı veya plak birikimi gibi sorunların belirtisi olabilir. Düzenli devam ediyorsa diş hekimi tarafından değerlendirilmelidir.'
+        },
+        {
+          q: 'Diş taşı temizliği dişlere zarar verir mi?',
+          a: 'Profesyonel şekilde yapılan diş taşı temizliği dişlere zarar vermez. Aksine diş eti sağlığını korumaya ve plak birikimini azaltmaya yardımcı olur.'
+        },
+        {
+          q: 'Diş eti çekilmesi geri düzelir mi?',
+          a: 'Diş eti çekilmesinin nedeni ve seviyesi önemlidir. Bazı durumlarda ilerlemesi durdurulabilir veya estetik/cerrahi seçenekler değerlendirilebilir. Erken değerlendirme bu nedenle önemlidir.'
+        },
+        {
+          q: 'Diş eti hastalığı ağrı yapar mı?',
+          a: 'Her zaman ağrı yapmayabilir. Diş eti hastalıkları bazen kanama, ağız kokusu, diş eti çekilmesi veya dişlerde sallanma gibi belirtilerle sessiz ilerleyebilir.'
+        },
+        {
+          q: 'Periodontal tedavi ne kadar sürer?',
+          a: 'Süre hastalığın seviyesine göre değişir. Basit temizlik tek seansta tamamlanabilirken, ilerlemiş diş eti hastalıklarında birkaç seans ve düzenli takip gerekebilir.'
+        },
+        {
+          q: 'Diş eti hastalığı tekrar eder mi?',
+          a: 'Evet, bakım yetersiz kalırsa veya düzenli kontroller aksatılırsa tekrar edebilir. Bu nedenle tedavi sonrası koruyucu bakım ve kişiye uygun temizlik alışkanlıkları önemlidir.'
+        },
+        {
+          q: 'İmplant yaptırmadan önce diş eti sağlığı önemli midir?',
+          a: 'Evet. İmplant tedavisinde diş eti ve kemik sağlığı çok önemlidir. Sağlıklı çevre dokular, implantın uzun vadeli başarısını destekleyen temel faktörlerdendir.'
+        }
+      ]
+    },
+    en: {
+      eyebrow: 'Periodontology',
+      title: 'Periodontology',
+      shortDescription:
+        'A dental specialty focused on diagnosing and treating gum disease, supporting bone tissue, and the surrounding structures that affect oral health.',
+      introTitle: 'Healthy gums are the foundation of healthy teeth',
+      intro:
+        'Periodontology focuses on the gums and the supporting tissues around the teeth. Gum bleeding, redness, swelling, gum recession, bad breath, tooth mobility, or tartar buildup are all evaluated within this field. Gum disease can sometimes progress silently; bone loss and weakened tooth support may develop even without pain. That is why early diagnosis, regular cleaning, and personalized oral care habits are essential for long-term oral health.',
+      whoTitle: 'Who is it suitable for?',
+      who: [
+        'People who experience gum bleeding',
+        'Patients with redness, swelling, or sensitivity in the gums',
+        'Those who notice gum recession or exposed tooth roots',
+        'People with bad breath, unpleasant taste, or frequent plaque buildup',
+        'Patients who need regular professional tartar cleaning',
+        'Those who notice tooth mobility, shifting, or spacing between teeth',
+        'Patients who need gum and bone health evaluation before implant treatment',
+        'People who want to protect their natural teeth by maintaining healthy gums'
+      ],
+      processTitle: 'How does periodontal treatment work?',
+      process: [
+        {
+          title: 'Gum examination',
+          desc: 'Gum color, bleeding, recession level, tartar buildup, and the supporting tissues around the teeth are carefully evaluated.'
+        },
+        {
+          title: 'Pocket measurement and tissue assessment',
+          desc: 'Gum pockets are measured to understand the depth of the disease. When needed, bone support is evaluated with X-rays.'
+        },
+        {
+          title: 'Tartar and plaque removal',
+          desc: 'Plaque and tartar buildup around the teeth and gumline are removed. This step forms the basis of gum healing.'
+        },
+        {
+          title: 'Deep cleaning plan',
+          desc: 'If gum disease is more advanced, root surface cleaning and more detailed cleaning below the gumline may be needed.'
+        },
+        {
+          title: 'Oral care guidance',
+          desc: 'Brushing technique, interdental brushes, dental floss, or oral irrigators are explained according to the patient’s needs.'
+        },
+        {
+          title: 'Healing follow-up',
+          desc: 'After treatment, gum bleeding, swelling, and pocket depths are monitored. Additional treatment may be needed depending on healing.'
+        },
+        {
+          title: 'Maintenance phase',
+          desc: 'Because gum disease can recur, regular check-ups and professional cleaning intervals are planned individually.'
+        }
+      ],
+      benefitsTitle: 'Benefits of gum treatment',
+      benefits: [
+        'May help reduce gum bleeding, swelling, and sensitivity.',
+        'Supports the protection of bone and tissues that hold the teeth in place.',
+        'Helps control tartar and plaque buildup.',
+        'Can contribute to reducing bad breath and unpleasant taste.',
+        'May slow the progression of gum recession and tooth mobility.',
+        'Creates a healthier foundation before implant, aesthetic, or prosthetic treatments.',
+        'Supports long-term preservation of natural teeth.',
+        'Makes daily oral hygiene more effective through personalized care guidance.'
+      ],
+      faqTitle: 'Frequently asked questions',
+      faq: [
+        {
+          q: 'Is gum bleeding normal?',
+          a: 'Gum bleeding is generally not considered normal. Bleeding while brushing may be a sign of gum inflammation or plaque buildup. If it continues regularly, it should be evaluated by a dentist.'
+        },
+        {
+          q: 'Does tartar cleaning damage the teeth?',
+          a: 'Professional tartar cleaning does not damage the teeth. On the contrary, it helps protect gum health and reduce plaque accumulation.'
+        },
+        {
+          q: 'Can gum recession be reversed?',
+          a: 'The cause and level of gum recession are important. In some cases, progression can be stopped or aesthetic/surgical options may be considered. Early evaluation is important.'
+        },
+        {
+          q: 'Does gum disease cause pain?',
+          a: 'Not always. Gum disease can progress silently with signs such as bleeding, bad breath, gum recession, or tooth mobility, even without significant pain.'
+        },
+        {
+          q: 'How long does periodontal treatment take?',
+          a: 'The duration depends on the severity of the disease. Simple cleaning may be completed in one visit, while advanced gum disease may require several sessions and regular follow-up.'
+        },
+        {
+          q: 'Can gum disease come back?',
+          a: 'Yes. If oral care is insufficient or regular check-ups are missed, gum disease can recur. Maintenance care and personalized hygiene habits are important after treatment.'
+        },
+        {
+          q: 'Is gum health important before implant treatment?',
+          a: 'Yes. Gum and bone health are very important for implant treatment. Healthy surrounding tissues are one of the key factors supporting long-term implant success.'
+        }
+      ]
+    }
+  }
+},
+{
+  slug: 'orthodontics',
+  image: '/images/services/orthodontics.jpg',
+  icon: 'lucide:align-justify',
+  related: ['smile-design', 'pediatric-dentistry', 'esthetic-dentistry'],
+  content: {
+    tr: {
+      eyebrow: 'Ortodonti',
+      title: 'Ortodonti',
+      shortDescription:
+        'Diş dizilimi, kapanış problemleri ve çene ilişkilerini değerlendirerek daha düzenli, sağlıklı ve dengeli bir ağız yapısı oluşturmayı amaçlayan tedavi alanıdır.',
+      introTitle: 'Daha düzgün bir diş dizilimi ve dengeli kapanış için planlı tedavi',
+      intro:
+        'Ortodonti, çapraşık dişler, aralıklı dişler, kapanış bozuklukları ve çene ilişkilerindeki uyumsuzluklarla ilgilenir. Tedavinin amacı yalnızca daha estetik bir gülüş elde etmek değildir; dişlerin daha doğru konumlanması, çiğneme fonksiyonunun desteklenmesi, diş temizliğinin kolaylaşması ve uzun vadeli ağız sağlığının korunması da önemlidir. Ortodontik tedavi çocukluk döneminde başlayabileceği gibi yetişkin yaşlarda da planlanabilir. Her hastada süreç; diş yapısı, çene gelişimi, yaş, beklenti ve kullanılacak yönteme göre kişiye özel ilerler.',
+      whoTitle: 'Kimler için uygundur?',
+      who: [
+        'Dişlerinde çapraşıklık veya düzensiz dizilim bulunan kişiler',
+        'Dişleri arasında belirgin boşluklar olan hastalar',
+        'Alt ve üst dişleri düzgün kapanmayan kişiler',
+        'Çiğneme sırasında zorlanan veya kapanışında rahatsızlık hisseden hastalar',
+        'Çene gelişimi takip edilmesi gereken çocuklar ve gençler',
+        'Gülüş estetiğini daha düzenli bir diş dizilimiyle iyileştirmek isteyen yetişkinler',
+        'Diş temizliğini zorlaştıran sıkışık diş yapısına sahip kişiler',
+        'Şeffaf plak veya tel tedavisi gibi ortodontik seçenekleri değerlendirmek isteyen hastalar'
+      ],
+      processTitle: 'Ortodontik tedavi süreci nasıl ilerler?',
+      process: [
+        {
+          title: 'İlk muayene ve kapanış analizi',
+          desc: 'Dişlerin dizilimi, alt-üst çene ilişkisi, kapanış şekli, yüz oranları ve gülüş hattı birlikte değerlendirilir.'
+        },
+        {
+          title: 'Görüntüleme ve ölçü alma',
+          desc: 'Röntgen, fotoğraf, dijital tarama veya ölçüler yardımıyla dişlerin ve çene yapısının detaylı analizi yapılır.'
+        },
+        {
+          title: 'Tedavi seçeneğinin belirlenmesi',
+          desc: 'Hastanın ihtiyacına göre metal braket, estetik braket, şeffaf plak veya farklı ortodontik yaklaşımlar değerlendirilebilir.'
+        },
+        {
+          title: 'Kişiye özel tedavi planı',
+          desc: 'Dişlerin hangi yönde hareket edeceği, tedavinin yaklaşık süresi, kontrol aralıkları ve hedeflenen sonuç hastaya açıklanır.'
+        },
+        {
+          title: 'Tedavinin başlatılması',
+          desc: 'Seçilen yönteme göre braketler uygulanır veya şeffaf plaklar teslim edilir. Hastaya kullanım ve bakım kuralları anlatılır.'
+        },
+        {
+          title: 'Düzenli kontroller',
+          desc: 'Tedavi boyunca diş hareketleri takip edilir. Gerektiğinde tel aktivasyonları, plak değişimleri veya küçük düzenlemeler yapılır.'
+        },
+        {
+          title: 'Son hizalama ve kapanış kontrolü',
+          desc: 'Tedavinin son aşamasında dişlerin dizilimi, kapanış dengesi ve gülüş estetiği detaylı şekilde kontrol edilir.'
+        },
+        {
+          title: 'Pekiştirme dönemi',
+          desc: 'Dişlerin yeni konumunu koruması için pekiştirme apareyleri veya plakları kullanılabilir. Bu aşama tedavinin kalıcılığı için önemlidir.'
+        }
+      ],
+      benefitsTitle: 'Ortodontinin avantajları',
+      benefits: [
+        'Dişlerin daha düzenli ve estetik görünmesine yardımcı olur.',
+        'Çapraşık dişlerin temizliğini kolaylaştırarak ağız hijyenini destekleyebilir.',
+        'Kapanış problemlerinin düzeltilmesine katkı sağlayabilir.',
+        'Çiğneme fonksiyonunun daha dengeli hale gelmesine yardımcı olabilir.',
+        'Dişlerde düzensiz aşınma veya bazı baskı problemlerinin azalmasını destekleyebilir.',
+        'Gülüş estetiğini doğal ve kalıcı bir şekilde iyileştirebilir.',
+        'Çocuklarda çene gelişiminin doğru yönde takip edilmesine imkân sağlar.',
+        'Şeffaf plak gibi seçeneklerle bazı hastalarda daha konforlu ve estetik bir tedavi süreci sunabilir.'
+      ],
+      faqTitle: 'Sık sorulan sorular',
+      faq: [
+        {
+          q: 'Ortodontik tedavi sadece çocuklara mı yapılır?',
+          a: 'Hayır. Ortodontik tedavi çocuklarda, gençlerde ve yetişkinlerde uygulanabilir. Yetişkinlerde diş ve diş eti sağlığı uygun olduğu sürece tedavi planlanabilir.'
+        },
+        {
+          q: 'Tel tedavisi ağrılı mıdır?',
+          a: 'Braketler takıldıktan veya teller aktive edildikten sonra birkaç gün baskı ve hassasiyet hissedilebilir. Bu durum genellikle geçicidir ve dişlerin hareket etmeye başlamasıyla ilgilidir.'
+        },
+        {
+          q: 'Ortodontik tedavi ne kadar sürer?',
+          a: 'Tedavi süresi çapraşıklığın seviyesine, kapanış problemine, kullanılan yönteme ve hastanın tedaviye uyumuna göre değişir. Bazı basit vakalar daha kısa sürebilirken, daha kapsamlı tedaviler daha uzun zaman alabilir.'
+        },
+        {
+          q: 'Şeffaf plak mı tel tedavisi mi daha iyidir?',
+          a: 'Bu hastanın diş yapısına, tedavi ihtiyacına ve beklentisine göre değişir. Şeffaf plaklar bazı hastalar için estetik ve konforlu bir seçenek olabilir; ancak her vaka için uygun olmayabilir.'
+        },
+        {
+          q: 'Ortodonti sonrası dişler tekrar bozulur mu?',
+          a: 'Pekiştirme dönemi ihmal edilirse dişler zamanla eski konumlarına dönme eğilimi gösterebilir. Bu nedenle tedavi sonrası verilen plak veya apareylerin düzenli kullanılması önemlidir.'
+        },
+        {
+          q: 'Ortodontik tedavi sırasında yemek yerken nelere dikkat etmeliyim?',
+          a: 'Tel tedavisinde çok sert, yapışkan veya braketlere zarar verebilecek yiyeceklerden kaçınmak gerekir. Şeffaf plak kullanımında ise plaklar genellikle yemek sırasında çıkarılır ve dişler temizlendikten sonra tekrar takılır.'
+        },
+        {
+          q: 'Diş teli varken diş temizliği zor olur mu?',
+          a: 'Braketler nedeniyle temizlik daha dikkatli yapılmalıdır. Ortodontik fırça, ara yüz fırçası ve uygun bakım araçlarıyla hijyen sağlanabilir.'
+        },
+        {
+          q: 'Ortodontik tedavi gülüş tasarımıyla birlikte planlanabilir mi?',
+          a: 'Evet. Bazı hastalarda önce diş dizilimi ortodontik olarak düzenlenir, ardından beyazlatma, bonding veya estetik restorasyonlarla gülüş tasarımı tamamlanabilir.'
+        }
+      ]
+    },
+    en: {
+      eyebrow: 'Orthodontics',
+      title: 'Orthodontics',
+      shortDescription:
+        'A treatment field focused on tooth alignment, bite problems, and jaw relationships to create a more balanced, healthy, and well-organized oral structure.',
+      introTitle: 'Planned treatment for straighter teeth and a balanced bite',
+      intro:
+        'Orthodontics deals with crowded teeth, gaps, bite problems, and jaw relationship irregularities. The goal is not only to create a more aesthetic smile. Better tooth positioning can also support chewing function, make oral hygiene easier, and help protect long-term dental health. Orthodontic treatment can begin in childhood, but it can also be planned for adults. For every patient, the process is shaped according to tooth structure, jaw development, age, expectations, and the treatment method used.',
+      whoTitle: 'Who is it suitable for?',
+      who: [
+        'People with crowded or irregularly aligned teeth',
+        'Patients with noticeable gaps between teeth',
+        'Those whose upper and lower teeth do not close properly',
+        'Patients who feel discomfort while chewing or notice bite imbalance',
+        'Children and teenagers whose jaw development needs monitoring',
+        'Adults who want to improve smile aesthetics through better tooth alignment',
+        'People whose crowded teeth make proper cleaning difficult',
+        'Patients who want to evaluate orthodontic options such as clear aligners or braces'
+      ],
+      processTitle: 'How does orthodontic treatment work?',
+      process: [
+        {
+          title: 'Initial examination and bite analysis',
+          desc: 'Tooth alignment, upper-lower jaw relationship, bite pattern, facial proportions, and smile line are evaluated together.'
+        },
+        {
+          title: 'Imaging and measurements',
+          desc: 'X-rays, photographs, digital scans, or impressions are used to analyze the teeth and jaw structure in detail.'
+        },
+        {
+          title: 'Choosing the treatment option',
+          desc: 'Depending on the patient’s needs, metal braces, aesthetic braces, clear aligners, or other orthodontic approaches may be considered.'
+        },
+        {
+          title: 'Personalized treatment planning',
+          desc: 'The planned tooth movements, estimated treatment duration, control intervals, and expected result are explained to the patient.'
+        },
+        {
+          title: 'Starting treatment',
+          desc: 'Depending on the chosen method, braces are placed or clear aligners are delivered. Usage and care instructions are explained.'
+        },
+        {
+          title: 'Regular follow-ups',
+          desc: 'Tooth movements are monitored throughout treatment. Wire activations, aligner changes, or minor adjustments are made when needed.'
+        },
+        {
+          title: 'Final alignment and bite check',
+          desc: 'In the final stage, tooth alignment, bite balance, and smile aesthetics are carefully reviewed.'
+        },
+        {
+          title: 'Retention phase',
+          desc: 'Retainers or retention aligners may be used to help preserve the new tooth positions. This phase is important for long-term stability.'
+        }
+      ],
+      benefitsTitle: 'Benefits of orthodontics',
+      benefits: [
+        'Helps teeth look straighter and more aesthetic.',
+        'Can make crowded teeth easier to clean and support oral hygiene.',
+        'Contributes to correction of bite problems.',
+        'May help chewing function become more balanced.',
+        'Can reduce uneven tooth wear or pressure-related issues in some cases.',
+        'Improves smile aesthetics in a natural and long-lasting way.',
+        'Allows jaw development to be monitored properly in children.',
+        'Options such as clear aligners may offer a more comfortable and aesthetic treatment experience for some patients.'
+      ],
+      faqTitle: 'Frequently asked questions',
+      faq: [
+        {
+          q: 'Is orthodontic treatment only for children?',
+          a: 'No. Orthodontic treatment can be applied to children, teenagers, and adults. In adults, treatment can be planned as long as tooth and gum health are suitable.'
+        },
+        {
+          q: 'Is braces treatment painful?',
+          a: 'After braces are placed or wires are activated, pressure and sensitivity may be felt for a few days. This is usually temporary and related to the beginning of tooth movement.'
+        },
+        {
+          q: 'How long does orthodontic treatment take?',
+          a: 'Treatment duration depends on the level of crowding, bite problem, method used, and the patient’s cooperation. Simple cases may take less time, while more comprehensive treatments may take longer.'
+        },
+        {
+          q: 'Are clear aligners better than braces?',
+          a: 'It depends on the tooth structure, treatment need, and patient expectations. Clear aligners can be an aesthetic and comfortable option for some patients, but they may not be suitable for every case.'
+        },
+        {
+          q: 'Can teeth shift back after orthodontic treatment?',
+          a: 'If the retention phase is neglected, teeth may tend to move back over time. That is why using retainers or retention aligners as recommended is important.'
+        },
+        {
+          q: 'What should I avoid eating during braces treatment?',
+          a: 'With braces, very hard, sticky, or bracket-damaging foods should be avoided. With clear aligners, the aligners are usually removed during meals and worn again after cleaning the teeth.'
+        },
+        {
+          q: 'Is it difficult to clean teeth with braces?',
+          a: 'Cleaning requires more care because of the brackets. Orthodontic brushes, interdental brushes, and suitable hygiene tools can help maintain oral cleanliness.'
+        },
+        {
+          q: 'Can orthodontics be planned together with smile design?',
+          a: 'Yes. In some patients, tooth alignment is corrected first with orthodontics, and then smile design can be completed with whitening, bonding, or aesthetic restorations.'
+        }
+      ]
+    }
+  }
 }
 ]

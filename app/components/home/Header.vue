@@ -2,13 +2,60 @@
 <script setup lang="ts">
 import { onMounted, onUnmounted, ref, computed } from 'vue'
 
-const whatsappLink = "https://wa.me/905xxxxxxxxx"
+const whatsappLink = 'https://wa.me/905xxxxxxxxx'
+
+const localePath = useLocalePath()
 const switchLocalePath = useSwitchLocalePath()
 const { locale } = useI18n()
 
 const isOpen = ref(false)
 const isMobileOpen = ref(false)
+const isMobileServicesOpen = ref(false)
+
 const dropdownRef = ref<HTMLElement | null>(null)
+
+const serviceLinks = [
+  {
+    labelKey: 'home.services.items.esthetic.title',
+    to: '/services/esthetic-dentistry'
+  },
+  {
+    labelKey: 'home.services.items.implant.title',
+    to: '/services/dental-implant'
+  },
+  {
+    labelKey: 'home.services.items.whitening.title',
+    to: '/services/teeth-whitening'
+  },
+  {
+    labelKey: 'home.services.items.surgery.title',
+    to: '/services/oral-surgery'
+  },
+  {
+    labelKey: 'home.services.items.endo.title',
+    to: '/services/root-canal-treatment'
+  },
+  {
+    labelKey: 'home.services.items.smile.title',
+    to: '/services/smile-design'
+  },
+  {
+    labelKey: 'home.services.items.prosthesis.title',
+    to: '/services/dental-prosthetics'
+  },
+  {
+    labelKey: 'home.services.items.pedodonti.title',
+    to: '/services/pediatric-dentistry'
+  },
+  {
+    labelKey: 'home.services.items.periodontoloji.title',
+    to: '/services/periodontology'
+  },
+  {
+    labelKey: 'home.services.items.ortho.title',
+    to: '/services/orthodontics'
+  }
+]
 
 const currentLang = computed(() => {
   return locale.value === 'tr'
@@ -26,10 +73,19 @@ function closeDropdown() {
 
 function toggleMobile() {
   isMobileOpen.value = !isMobileOpen.value
+
+  if (!isMobileOpen.value) {
+    isMobileServicesOpen.value = false
+  }
 }
 
 function closeMobile() {
   isMobileOpen.value = false
+  isMobileServicesOpen.value = false
+}
+
+function toggleMobileServices() {
+  isMobileServicesOpen.value = !isMobileServicesOpen.value
 }
 
 function handleClickOutside(event: MouseEvent) {
@@ -43,6 +99,7 @@ function handleClickOutside(event: MouseEvent) {
 function handleEscape(event: KeyboardEvent) {
   if (event.key === 'Escape') {
     closeDropdown()
+    isMobileServicesOpen.value = false
   }
 }
 
@@ -140,10 +197,46 @@ onUnmounted(() => {
           <span class="absolute left-1/2 -bottom-1 h-[1px] w-0 bg-sky-400 transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
         </NuxtLink>
 
-        <NuxtLink to="/#services" class="relative group transition-colors duration-200 hover:text-sky-500">
-          {{ $t('home.nav.services') }}
-          <span class="absolute left-1/2 -bottom-1 h-[1px] w-0 bg-sky-400 transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+        <div class="relative group">
+  <NuxtLink
+    :to="localePath('/#services')"
+    class="relative inline-flex items-center gap-1 transition-colors duration-200 hover:text-sky-500"
+  >
+    {{ $t('home.nav.services') }}
+
+    <Icon
+      name="lucide:chevron-down"
+      class="h-3.5 w-3.5 transition-transform duration-300 group-hover:rotate-180"
+    />
+
+    <span class="absolute left-1/2 -bottom-1 h-[1px] w-0 bg-sky-400 transition-all duration-300 group-hover:left-0 group-hover:w-full" />
+  </NuxtLink>
+
+  <!-- Desktop services dropdown -->
+  <div
+    class="invisible absolute left-1/2 top-full z-50 mt-5 w-[680px] -translate-x-1/2 translate-y-3 opacity-0 transition-all duration-300 ease-out group-hover:visible group-hover:translate-y-0 group-hover:opacity-100"
+  >
+    <div
+      class="overflow-hidden rounded-3xl border border-slate-200 bg-white/95 p-4 shadow-2xl shadow-slate-200/70 backdrop-blur-xl"
+    >
+      <div class="grid grid-cols-2 gap-2">
+        <NuxtLink
+          v-for="service in serviceLinks"
+          :key="service.to"
+          :to="localePath(service.to)"
+          class="group/item flex items-center justify-between rounded-2xl px-4 py-3 text-sm font-medium text-slate-600 transition hover:bg-sky-50 hover:text-sky-600"
+        >
+          <span>{{ $t(service.labelKey) }}</span>
+
+          <Icon
+            name="lucide:arrow-right"
+            class="h-4 w-4 opacity-0 transition duration-200 group-hover/item:translate-x-1 group-hover/item:opacity-100"
+          />
         </NuxtLink>
+      </div>
+    </div>
+  </div>
+</div>
 
         <NuxtLink to="/#gallery" class="relative group transition-colors duration-200 hover:text-sky-500">
           {{ $t('home.nav.gallery') }}
@@ -206,9 +299,51 @@ onUnmounted(() => {
         {{ $t('home.nav.home') }}
       </NuxtLink>
 
-      <NuxtLink @click="closeMobile" to="/#services" class="hover:text-sky-500 transition">
-        {{ $t('home.nav.services') }}
-      </NuxtLink>
+      <div>
+  <button
+    type="button"
+    class="flex w-full items-center justify-between text-left transition hover:text-sky-500"
+    @click="isMobileServicesOpen = !isMobileServicesOpen"
+  >
+    <span>{{ $t('home.nav.services') }}</span>
+
+    <Icon
+      name="lucide:chevron-down"
+      class="h-4 w-4 transition-transform duration-300"
+      :class="isMobileServicesOpen ? 'rotate-180 text-sky-500' : ''"
+    />
+  </button>
+
+  <!-- Mobile expandable services -->
+  <div
+    class="grid overflow-hidden transition-all duration-300 ease-out"
+    :class="isMobileServicesOpen ? 'grid-rows-[1fr] opacity-100 mt-3' : 'grid-rows-[0fr] opacity-0 mt-0'"
+  >
+    <div class="min-h-0 overflow-hidden">
+      <div class="space-y-1 rounded-2xl border border-slate-100 bg-sky-50/60 p-2">
+        <NuxtLink
+          :to="localePath('/#services')"
+          @click="closeMobile"
+          class="flex items-center justify-between rounded-xl px-3 py-2.5 text-sm text-slate-600 transition hover:bg-white hover:text-sky-600"
+        >
+          <span>{{ locale === 'en' ? 'All Services' : 'Tüm Hizmetler' }}</span>
+          <Icon name="lucide:list" class="h-4 w-4 text-sky-500" />
+        </NuxtLink>
+
+        <NuxtLink
+          v-for="service in serviceLinks"
+          :key="service.to"
+          :to="localePath(service.to)"
+          @click="closeMobile"
+          class="flex items-center justify-between rounded-xl px-3 py-2.5 text-sm text-slate-600 transition hover:bg-white hover:text-sky-600"
+        >
+          <span>{{ $t(service.labelKey) }}</span>
+          <Icon name="lucide:arrow-right" class="h-4 w-4 text-sky-500" />
+        </NuxtLink>
+      </div>
+    </div>
+  </div>
+</div>
 
       <NuxtLink @click="closeMobile" to="/#gallery" class="hover:text-sky-500 transition">
         {{ $t('home.nav.gallery') }}
@@ -232,7 +367,7 @@ onUnmounted(() => {
         </p>
 
         <a
-          href="https://www.google.com/maps?q=Hatay+Samandag"
+          href="https://www.google.com/maps?q=Atatürk+Mahallesi+Nazım+Hikmet+Ran+Caddesi+No:21/1+Samandağ+Hatay+Türkiye"
           target="_blank"
           class="flex items-center gap-2 hover:text-sky-500 transition"
         >
