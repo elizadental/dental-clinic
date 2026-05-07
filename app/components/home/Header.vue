@@ -126,7 +126,7 @@ onUnmounted(() => {
     <!-- LOGO -->
     <div class="flex items-center">
       <img
-        src="/elizadent.jpeg"
+        src="/elizadentpng.png"
         alt="Eliza Dental Clinic"
         class="h-14 md:h-20 w-auto object-contain"
       />

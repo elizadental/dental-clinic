@@ -18,49 +18,51 @@
       "cta": "Hemen İletişime Geç",
       "secondary": "Hizmetleri Gör"
     },
-    "services": {
+"services": {
+  "eyebrow": "Tedaviler",
   "title": "Hizmetlerimiz",
   "subtitle": "Modern teknoloji ve kişiye özel yaklaşımla yüksek kaliteli diş tedavileri sunuyoruz.",
+  "readMore": "Tedaviyi incele",
   "items": {
     "esthetic": {
       "title": "Estetik Diş Hekimliği",
-      "desc": "Modern estetik çözümlerle gülüşünüzü iyileştiriyoruz."
+      "desc": "Modern estetik çözümlerle gülüşünüzün doğal güzelliğini ön plana çıkarıyoruz."
     },
     "implant": {
       "title": "İmplant Tedavisi",
-      "desc": "Eksik dişler için kalıcı ve doğal çözümler."
+      "desc": "Eksik dişler için kalıcı, konforlu ve doğal görünümlü çözümler sunuyoruz."
     },
     "whitening": {
       "title": "Diş Beyazlatma",
-      "desc": "Daha parlak bir gülüş için güvenli beyazlatma."
+      "desc": "Daha parlak bir gülüş için güvenli ve etkili beyazlatma uygulamaları yapıyoruz."
     },
     "surgery": {
       "title": "Ağız, Diş ve Çene Cerrahisi",
-      "desc": "Ağız sağlığı için gelişmiş cerrahi tedaviler."
+      "desc": "Ağız ve çene sağlığına yönelik gelişmiş cerrahi tedaviler uyguluyoruz."
     },
     "endo": {
       "title": "Endodonti",
-      "desc": "Dişi korumaya yönelik kanal tedavileri."
+      "desc": "Doğal dişi korumaya yönelik kanal tedavileriyle diş sağlığınızı destekliyoruz."
     },
     "smile": {
       "title": "Gülüş Tasarımı",
-      "desc": "Kişiye özel estetik gülüş planlaması."
+      "desc": "Yüz hatlarınıza ve beklentilerinize uygun kişiye özel gülüş planlaması yapıyoruz."
     },
     "prosthesis": {
       "title": "Diş Protezleri",
-      "desc": "Fonksiyonel ve estetik diş restorasyonları."
+      "desc": "Eksik veya hasarlı dişler için fonksiyonel ve estetik protez çözümleri sunuyoruz."
     },
     "pedodonti": {
-      "title": "Pedodonti (Çocuk Diş Hekimliği)",
-      "desc": "Çocuklara özel nazik ve güvenli diş tedavileri."
+      "title": "Pedodonti",
+      "desc": "Çocukların diş sağlığı için nazik, güvenli ve yaşlarına uygun tedaviler sunuyoruz."
     },
     "periodontoloji": {
-      "title": "Periodontoloji (Diş Eti Tedavisi)",
-      "desc": "Diş eti hastalıklarının tedavisi ve bakımı."
+      "title": "Periodontoloji",
+      "desc": "Diş eti hastalıklarının teşhis, tedavi ve bakım süreçlerini özenle yönetiyoruz."
     },
     "ortho": {
       "title": "Ortodonti",
-      "desc": "Diş dizilimi ve çene yapısının düzeltilmesi."
+      "desc": "Diş dizilimi ve kapanış problemlerine yönelik ortodontik tedaviler uyguluyoruz."
     }
   }
 },

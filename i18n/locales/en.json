@@ -18,9 +18,11 @@
       "cta": "Contact Now",
       "secondary": "View Services"
     },
-   "services": {
+"services": {
+  "eyebrow": "Treatments",
   "title": "Our Services",
   "subtitle": "We provide high-quality dental treatments using modern technology and personalized care.",
+  "readMore": "View treatment",
   "items": {
     "esthetic": {
       "title": "Aesthetic Dentistry",
@@ -40,27 +42,27 @@
     },
     "endo": {
       "title": "Endodontics",
-      "desc": "Root canal treatments to preserve natural teeth."
+      "desc": "Root canal treatments designed to preserve natural teeth."
     },
     "smile": {
       "title": "Smile Design",
-      "desc": "Customized smile transformations."
+      "desc": "Personalized smile transformations planned around your facial features."
     },
     "prosthesis": {
       "title": "Dental Prosthetics",
-      "desc": "Functional and aesthetic restorations."
+      "desc": "Functional and aesthetic restorations for missing or damaged teeth."
     },
     "pedodonti": {
       "title": "Pediatric Dentistry",
-      "desc": "Gentle care for children's dental health."
+      "desc": "Gentle and safe dental care for children."
     },
     "periodontoloji": {
       "title": "Periodontology",
-      "desc": "Gum disease treatment and care."
+      "desc": "Diagnosis, treatment, and care for gum diseases."
     },
     "ortho": {
       "title": "Orthodontics",
-      "desc": "Teeth alignment and bite correction."
+      "desc": "Teeth alignment and bite correction treatments."
     }
   }
 },
