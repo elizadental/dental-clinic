@@ -125,7 +125,7 @@ onUnmounted(() => {
         </span>
 
         <a
-  href="https://www.google.com/maps?q=Atatürk+Mahallesi+Nazım+Hikmet+Ran+Caddesi+No:21/1+Samandağ+Hatay+Türkiye"
+  href=" https://maps.app.goo.gl/Qx3oFsYytPyJEn5FA?g_st=iw"
   target="_blank"
   rel="noopener noreferrer"
   class="flex items-center gap-2 hover:text-sky-500 transition"
@@ -367,7 +367,7 @@ onUnmounted(() => {
         </p>
 
         <a
-          href="https://www.google.com/maps?q=Atatürk+Mahallesi+Nazım+Hikmet+Ran+Caddesi+No:21/1+Samandağ+Hatay+Türkiye"
+          href=" https://maps.app.goo.gl/Qx3oFsYytPyJEn5FA?g_st=iw"
           target="_blank"
           class="flex items-center gap-2 hover:text-sky-500 transition"
         >

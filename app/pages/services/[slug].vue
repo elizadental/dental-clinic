@@ -51,7 +51,7 @@ useSeoMeta({
       <div class="relative mx-auto max-w-7xl px-5 py-24 sm:px-6 lg:px-8 lg:py-32">
         <NuxtLink
           :to="localePath('/')"
-          class="mb-8 inline-flex items-center gap-2 text-sm font-semibold text-sky-100 transition hover:text-white"
+          class="mb-8 inline-flex items-center gap-2 btn-clinic text-sm font-semibold text-sky-100 transition hover:text-white"
         >
           <Icon name="lucide:arrow-left" class="h-4 w-4 shrink-0" />
           <span>{{ locale === 'en' ? 'Back to home' : 'Ana sayfaya dön' }}</span>

@@ -1,29 +1,20 @@
+<!-- /components/Doctors.vue -->
 <script setup lang="ts">
 import { computed, nextTick, onBeforeUnmount, onMounted, ref } from 'vue'
 
-const doctors = [
-  {
-    name: 'Dr. Ahmet Yılmaz',
-    expertiseKey: 'home.doctors.items.ahmet.expertise',
-    image: '/doctors/doctor-1.png',
-    bioLink: '/doctors/ahmet-yilmaz'
-  },
-  {
-    name: 'Dr. Elif Kaya',
-    expertiseKey: 'home.doctors.items.elif.expertise',
-    image: '/doctors/doctor-2.png',
-    bioLink: '/doctors/elif-kaya'
-  },
-  {
-    name: 'Dr. Mehmet Demir',
-    expertiseKey: 'home.doctors.items.mehmet.expertise',
-    image: '/doctors/doctor-3.png',
-    bioLink: '/doctors/mehmet-demir'
-  }
-]
+const {
+  doctors,
+  getLocalizedText,
+  getDoctorBioLink
+} = useDoctors()
 
 const carouselRef = ref<HTMLElement | null>(null)
-const loopedDoctors = computed(() => [...doctors, ...doctors, ...doctors])
+
+const loopedDoctors = computed(() => [
+  ...doctors.value,
+  ...doctors.value,
+  ...doctors.value
+])
 
 let groupWidth = 0
 let isAdjusting = false
@@ -107,7 +98,7 @@ onBeforeUnmount(() => {
           <div class="absolute bottom-0 left-0 right-0 p-6 md:p-8">
   <div class="bg-white/10 backdrop-blur-md rounded-xl p-5 md:p-6 text-white border border-white/10">
             <p class="text-sm uppercase tracking-wider text-sky-300 mb-2">
-             {{ $t(doctor.expertiseKey) }}
+            {{ getLocalizedText(doctor.specialty) }}
             </p>
 
             <h3 class="text-2xl font-semibold mb-5 leading  ">
@@ -115,7 +106,7 @@ onBeforeUnmount(() => {
             </h3>
 
             <NuxtLink
-              :to="doctor.bioLink"
+              :to="getDoctorBioLink(doctor.slug)"
 class="inline-flex items-center gap-2 bg-white text-black px-5 py-2 rounded-full text-sm font-medium hover:bg-sky-100 hover:scale-105 transition-all duration-300"            >
               {{ $t('home.doctors.viewMore') }}
               <Icon name="lucide:arrow-right" class="w-4 h-4" />

@@ -90,19 +90,39 @@
       </div>
 
       <!-- Bottom -->
-      <div class="flex flex-col md:flex-row justify-between items-center mt-6 text-sm text-slate-500">
-        <p>{{ $t('home.footer.copyright') }}</p>
+<div
+  class="mt-6 flex flex-col gap-4 border-t border-slate-200 pt-6 text-sm text-slate-500 md:flex-row md:items-center md:justify-between"
+>
+  <!-- Left: Copyright + Created By -->
+  <div class="text-center md:text-left">
+    <p>
+      {{ $t('home.footer.copyright') }}
+    </p>
 
-        <div class="flex gap-4 mt-3 md:mt-0">
-          <NuxtLink to="/privacy" class="footer-link">
-            {{ $t('home.footer.privacy') }}
-          </NuxtLink>
+    <p class="mt-1 text-xs text-slate-400">
+     
+      <!-- <a
+        href="https://seleuciapieria.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="font-normal text-slate-400 transition font- hover:text-sky-300"
+      >
+       <code class="font-bold tracking-tight leading-tight"> {{ $t('home.footer.createdBy') }} </code>
+      </a> -->
+    </p>
+  </div>
 
-          <NuxtLink to="/terms" class="footer-link">
-            {{ $t('home.footer.terms') }}
-          </NuxtLink>
-        </div>
-      </div>
+  <!-- Right: Legal Links -->
+  <div class="flex justify-center gap-4 md:justify-end">
+    <NuxtLink to="/privacy" class="footer-link">
+      {{ $t('home.footer.privacy') }}
+    </NuxtLink>
+
+    <NuxtLink to="/terms" class="footer-link">
+      {{ $t('home.footer.terms') }}
+    </NuxtLink>
+  </div>
+</div>
     </div>
   </footer>
 </template>

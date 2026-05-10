@@ -13,8 +13,8 @@
       "contact": "Contact"
     },
     "hero": {
-      "title": "Confident Smiles Start Here",
-      "subtitle": "Modern dental treatments with expert care",
+      "title": "Expert care for confident, healthy smiles",
+      "subtitle": "At Elizadent, advanced technology and trusted dentists keep your smile in safe hands",
       "cta": "Contact Now",
       "secondary": "View Services"
     },
@@ -135,9 +135,29 @@
   "whatsappLink": "https://wa.me/905012663131",
   "privacy": "Privacy",
   "terms": "Terms",
-  "copyright": "© 2026 ElizaDent Ağız ve Diş Sağlığı Polikliniği"
+  "copyright": "© 2026 ElizaDent Ağız ve Diş Sağlığı Polikliniği. All rights reserved.",
+  "createdBy": "Designed & Developed by Selxxx Pieria"
 }
   
     
+  },
+"doctorPage": {
+  "spokenLanguagesTitle": "Spoken Languages",
+  "expertiseTitle": "Areas of Expertise",
+  "educationTitle": "Education & Experience",
+  "contactTitle": "Contact",
+  "titleLabel": "Title",
+  "phoneLabel": "Phone",
+  "appointmentButton": "Book an Appointment",
+  "emailLabel": "Email",
+  "backToTeam": "Back to Team"
+},
+"common": {
+  
+  "languages": {
+    "tr": "Turkish",
+    "en": "English",
+    "ar": "Arabic"
   }
+}
 }

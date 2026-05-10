@@ -13,8 +13,8 @@
       "contact": "İletişim"
     },
     "hero": {
-      "title": "Güvenli Gülüşler Burada Başlar",
-      "subtitle": "Uzman ekiple modern diş tedavileri",
+      "title": " Uzman kadromuz ile sağlıklı gülüşlere profesyonel dokunuş",
+      "subtitle": "Elizadent’in modern teknolojisi ve deneyimli hekimleriyle diş sağlığınız emin ellerde",
       "cta": "Hemen İletişime Geç",
       "secondary": "Hizmetleri Gör"
     },
@@ -135,11 +135,31 @@
   "whatsappLink": "https://wa.me/905012663131",
   "privacy": "Gizlilik",
   "terms": "Şartlar",
-  "copyright": "© 2026 ElizaDent Ağız ve Diş Sağlığı Polikliniği"
+  "copyright": "© 2026 ElizaDent Ağız ve Diş Sağlığı Polikliniği. Tüm hakları saklıdır.",
+  "createdBy": "Web tasarım ve geliştirme: Seleucia Pieria"
 }
     
     
+  },
+"doctorPage": {
+  "spokenLanguagesTitle": "Konuşulan Diller",
+  "expertiseTitle": "Uzmanlık Alanları",
+  "educationTitle": "Eğitim ve Deneyim",
+  "contactTitle": "İletişim",
+  "titleLabel": "Unvan",
+  "phoneLabel": "Telefon",
+  "appointmentButton": "Randevu Al",
+  "emailLabel": "E-posta",
+  "backToTeam": "Ekibimize Geri Dön"
+},
+"common": {
+  
+  "languages": {
+    "tr": "Türkçe",
+    "en": "İngilizce",
+    "ar": "Arapça"
   }
+}
    
   
 }

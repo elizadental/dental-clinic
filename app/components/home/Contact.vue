@@ -12,15 +12,20 @@
         <div class="rounded-3xl bg-white border border-slate-100 shadow-sm p-6 md:p-8 space-y-6">
           <div class="flex gap-4">
             <div class="h-12 w-12 shrink-0 rounded-full bg-sky-50 flex items-center justify-center">
+             
               <Icon name="lucide:map-pin" class="h-6 w-6 text-sky-500" />
+              
             </div>
 
             <div>
               <h3 class="font-semibold text-slate-900 mb-1">
+               
                 {{ $t('home.contact.addressLabel') }}
               </h3>
               <p class="text-slate-600 leading-7">
+                 <a href=" https://maps.app.goo.gl/Qx3oFsYytPyJEn5FA?g_st=iw" class="hover:text-sky-500 tracking-wide leading-tight ">
                 {{ $t('home.contact.address') }}
+                </a>
               </p>
             </div>
           </div>
@@ -34,7 +39,7 @@
               <h3 class="font-semibold text-slate-900 mb-1">
                 {{ $t('home.contact.phoneLabel') }}
               </h3>
-              <a href="tel:+905012663131" class="text-slate-600 hover:text-sky-600 transition">
+              <a href="tel:+905012663131" class="text-slate-600  tracking-wide leading-relaxed hover:text-sky-500 transition">
                 +90 501 266 31 31
               </a>
             </div>
@@ -49,7 +54,7 @@
               <h3 class="font-semibold text-slate-900 mb-1">
                 {{ $t('home.contact.emailLabel') }}
               </h3>
-              <a href="mailto:info@elizadent.com" class="text-slate-600 hover:text-sky-600 transition">
+              <a href="mailto:info@elizadent.com" class="text-slate-600 tracking-wide leading-tight  hover:text-sky-500 transition">
                 info@elizadent.com
               </a>
             </div>
