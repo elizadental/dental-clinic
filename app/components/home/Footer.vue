@@ -15,11 +15,20 @@
 
           <!-- Social -->
           <div class="flex gap-4 mt-6 text-slate-400 items-center">
-            <a href="#" aria-label="Instagram" class="footer-social">
+            <a href="https://www.instagram.com/elizadentpoliklinik?igsh=cWt3NHJ4NmdkemV4&utm_source=qr" 
+              target="_blank" 
+              rel="noopener" 
+              aria-label="Instagram" 
+              class="footer-social">
               <Icon name="lucide:instagram" class="w-5 h-5" />
             </a>
 
-            <a href="#" aria-label="LinkedIn" class="footer-social">
+            <a href="https://www.linkedin.com/in/özel-hatay-elizadent-ağız-ve-diş-sağlığı-polikliniği-956804409" 
+            aria-label="LinkedIn" 
+            class="footer-social"
+             target="_blank" 
+              rel="noopener" 
+            >
               <Icon name="lucide:linkedin" class="w-5 h-5" />
             </a>
 

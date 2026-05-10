@@ -2,75 +2,114 @@
 <script setup lang="ts">
 import { computed, nextTick, onBeforeUnmount, onMounted, ref } from 'vue'
 
-const {
-  doctors,
-  getLocalizedText,
-  getDoctorBioLink
-} = useDoctors()
+const { doctors, getLocalizedText, getDoctorBioLink } = useDoctors()
 
 const carouselRef = ref<HTMLElement | null>(null)
 
 const loopedDoctors = computed(() => [
   ...doctors.value,
   ...doctors.value,
-  ...doctors.value
+  ...doctors.value,
 ])
 
 let groupWidth = 0
 let isAdjusting = false
+let scrollEndTimer: ReturnType<typeof setTimeout> | null = null
+
+function isMobileCarousel() {
+  return window.innerWidth < 1024
+}
 
 function setupMobileLoop() {
   const el = carouselRef.value
-  if (!el) return
+
+  if (!el || !isMobileCarousel()) return
 
   groupWidth = el.scrollWidth / 3
+
+  el.classList.add('is-loop-jumping')
   el.scrollLeft = groupWidth
+
+  requestAnimationFrame(() => {
+    el.classList.remove('is-loop-jumping')
+  })
 }
 
-function handleMobileScroll() {
+function correctMobileLoopPosition() {
   const el = carouselRef.value
-  if (!el || !groupWidth || isAdjusting) return
 
-  const leftBoundary = groupWidth * 0.35
-  const rightBoundary = groupWidth * 1.65
+  if (!el || !groupWidth || isAdjusting || !isMobileCarousel()) return
+
+  const leftBoundary = groupWidth * 0.5
+  const rightBoundary = groupWidth * 1.5
+
+  let targetScrollLeft: number | null = null
 
   if (el.scrollLeft < leftBoundary) {
-    isAdjusting = true
-    el.scrollLeft += groupWidth
-    requestAnimationFrame(() => {
-      isAdjusting = false
-    })
+    targetScrollLeft = el.scrollLeft + groupWidth
   }
 
   if (el.scrollLeft > rightBoundary) {
-    isAdjusting = true
-    el.scrollLeft -= groupWidth
+    targetScrollLeft = el.scrollLeft - groupWidth
+  }
+
+  if (targetScrollLeft === null) return
+
+  isAdjusting = true
+
+  el.classList.add('is-loop-jumping')
+
+  const previousScrollBehavior = el.style.scrollBehavior
+  el.style.scrollBehavior = 'auto'
+
+  el.scrollLeft = targetScrollLeft
+
+  requestAnimationFrame(() => {
     requestAnimationFrame(() => {
+      el.style.scrollBehavior = previousScrollBehavior
+      el.classList.remove('is-loop-jumping')
       isAdjusting = false
     })
+  })
+}
+
+function handleMobileScroll() {
+  if (!isMobileCarousel() || isAdjusting) return
+
+  if (scrollEndTimer) {
+    clearTimeout(scrollEndTimer)
   }
+
+  scrollEndTimer = setTimeout(() => {
+    correctMobileLoopPosition()
+  }, 120)
 }
 
 onMounted(async () => {
   await nextTick()
   setupMobileLoop()
+
   window.addEventListener('resize', setupMobileLoop)
 })
 
 onBeforeUnmount(() => {
   window.removeEventListener('resize', setupMobileLoop)
+
+  if (scrollEndTimer) {
+    clearTimeout(scrollEndTimer)
+  }
 })
 </script>
 
 <template>
-  <section id="doctors" class="py-24 bg-slate-50 overflow-hidden">
-    <div class="max-w-7xl mx-auto px-4">
-      <div class="text-center mb-14">
-        <h2 class="text-3xl md:text-4xl font-bold mb-4">
+  <section id="doctors" class="overflow-hidden bg-slate-50 py-24">
+    <div class="mx-auto max-w-7xl px-4">
+      <div class="mb-14 text-center">
+        <h2 class="mb-4 text-3xl font-bold md:text-4xl">
           {{ $t('home.doctors.title') }}
         </h2>
 
-        <p class="text-gray-500 max-w-2xl mx-auto">
+        <p class="mx-auto max-w-2xl text-gray-500">
           {{ $t('home.doctors.subtitle') }}
         </p>
       </div>
@@ -78,40 +117,46 @@ onBeforeUnmount(() => {
 
     <div
       ref="carouselRef"
-      class="doctors-window overflow-x-auto lg:overflow-hidden scrollbar-hide snap-x snap-mandatory"
-      @scroll="handleMobileScroll"
+      class="doctors-window scrollbar-hide overflow-x-auto snap-x snap-mandatory lg:overflow-hidden"
+      @scroll.passive="handleMobileScroll"
     >
       <div class="doctors-track flex w-max">
         <article
           v-for="(doctor, index) in loopedDoctors"
           :key="`${doctor.name}-${index}`"
-        class="doctor-card group"
+          class="doctor-card group"
         >
           <img
             :src="doctor.image"
             :alt="doctor.name"
-           class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+            class="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
           />
 
-          <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 to-transparent"></div>
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 to-transparent"
+          ></div>
 
           <div class="absolute bottom-0 left-0 right-0 p-6 md:p-8">
-  <div class="bg-white/10 backdrop-blur-md rounded-xl p-5 md:p-6 text-white border border-white/10">
-            <p class="text-sm uppercase tracking-wider text-sky-300 mb-2">
-            {{ getLocalizedText(doctor.specialty) }}
-            </p>
+            <div
+              class="rounded-xl border border-white/10 bg-white/10 p-5 text-white backdrop-blur-md md:p-6"
+            >
+              <p class="mb-2 text-sm uppercase tracking-wider text-sky-300">
+                {{ getLocalizedText(doctor.specialty) }}
+              </p>
 
-            <h3 class="text-2xl font-semibold mb-5 leading  ">
-              {{ doctor.name }}
-            </h3>
+              <h3 class="mb-5 text-2xl font-semibold leading-tight">
+                {{ doctor.name }}
+              </h3>
 
-            <NuxtLink
-              :to="getDoctorBioLink(doctor.slug)"
-class="inline-flex items-center gap-2 bg-white text-black px-5 py-2 rounded-full text-sm font-medium hover:bg-sky-100 hover:scale-105 transition-all duration-300"            >
-              {{ $t('home.doctors.viewMore') }}
-              <Icon name="lucide:arrow-right" class="w-4 h-4" />
-            </NuxtLink>
-          </div>
+              <NuxtLink
+                :to="getDoctorBioLink(doctor.slug)"
+                class="inline-flex items-center gap-2 rounded-full bg-white px-5 py-2 text-sm font-medium text-black transition-all duration-300 hover:scale-105 hover:bg-sky-100"
+              >
+                {{ $t('home.doctors.viewMore') }}
+
+                <Icon name="lucide:arrow-right" class="h-4 w-4" />
+              </NuxtLink>
+            </div>
           </div>
         </article>
       </div>
@@ -143,6 +188,7 @@ class="inline-flex items-center gap-2 bg-white text-black px-5 py-2 rounded-full
     width: 80vw;
     max-width: 1180px;
     margin-inline: auto;
+    overflow: hidden;
     mask-image: linear-gradient(
       to right,
       transparent 0%,
@@ -189,12 +235,30 @@ class="inline-flex items-center gap-2 bg-white text-black px-5 py-2 rounded-full
 }
 
 @media (max-width: 1023px) {
-  .doctors-track {
-    animation: none;
+  .doctors-window {
+    overscroll-behavior-x: contain;
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-x;
   }
 
-  .doctor-card:active {
-    transform: scale(0.98);
+  .doctors-window.is-loop-jumping {
+    scroll-snap-type: none;
+  }
+
+  .doctors-track {
+    animation: none;
+    transform: translate3d(0, 0, 0);
+    will-change: transform;
+  }
+
+  .doctor-card {
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+  }
+
+  .doctor-card img {
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
   }
 }
 </style>
