@@ -152,6 +152,25 @@
   "emailLabel": "Email",
   "backToTeam": "Back to Team"
 },
+"teamPage": {
+  "hero": {
+    "title": "Our Team",
+    "subtitle": "Meet the clinical and administrative team behind Eliza Dental Clinic."
+  },
+  "doctors": {
+    "title": "Our Doctors",
+    "subtitle": "Learn more about our dentists and their areas of expertise.",
+    "viewProfile": "View Profile"
+  },
+  "admin": {
+    "title": "Administrative Team",
+    "subtitle": "Our team members who support the clinic experience and daily operations."
+  },
+  "staff": {
+  "title": "Clinic Team",
+  "subtitle": "Meet the team members who support patient experience and daily clinic operations."
+}
+},
 "common": {
   
   "languages": {

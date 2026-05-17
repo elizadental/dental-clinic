@@ -1,3 +1,16 @@
+<script setup lang="ts">
+import { computed } from 'vue'
+import { teamMembers } from '~/data/team'
+
+const { doctors, getLocalizedText, getDoctorBioLink } = useDoctors()
+
+const staffMembers = computed(() => {
+  return teamMembers
+    .filter((member) => member.role !== 'doctor')
+    .sort((a, b) => a.order - b.order)
+})
+</script>
+
 <template>
   <main>
     <!-- PAGE HERO -->
@@ -20,101 +33,98 @@
           <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-slate-900 mb-4">
             {{ $t('teamPage.doctors.title') }}
           </h2>
-        </div>
-
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          <article class="team-card">
-            <div class="team-image bg-slate-200">
-              <img src="/doctors/doctor-1.png" alt="Dr. Ahmet Yılmaz" class="h-full w-full object-cover" />
-            </div>
-            <div class="p-6">
-              <p class="text-sm uppercase tracking-wider text-sky-500 mb-2">
-                {{ $t('teamPage.doctors.ahmet.expertise') }}
-              </p>
-              <h3 class="text-xl font-semibold text-slate-900">Dr. Ahmet Yılmaz</h3>
-            </div>
-          </article>
-
-          <article class="team-card">
-            <div class="team-image bg-slate-200">
-              <img src="/doctors/doctor-2.png" alt="Dr. Elif Kaya" class="h-full w-full object-cover" />
-            </div>
-            <div class="p-6">
-              <p class="text-sm uppercase tracking-wider text-sky-500 mb-2">
-                {{ $t('teamPage.doctors.elif.expertise') }}
-              </p>
-              <h3 class="text-xl font-semibold text-slate-900">Dr. Elif Kaya</h3>
-            </div>
-          </article>
-
-          <article class="team-card">
-            <div class="team-image bg-slate-200">
-              <img src="/doctors/doctor-3.png" alt="Dr. Mehmet Demir" class="h-full w-full object-cover" />
-            </div>
-            <div class="p-6">
-              <p class="text-sm uppercase tracking-wider text-sky-500 mb-2">
-                {{ $t('teamPage.doctors.mehmet.expertise') }}
-              </p>
-              <h3 class="text-xl font-semibold text-slate-900">Dr. Mehmet Demir</h3>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ADMINISTRATIVE TEAM -->
-    <section class="py-24 bg-gradient-to-b from-white to-sky-50/60">
-      <div class="max-w-7xl mx-auto px-4">
-        <div class="text-center mb-16">
-          <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-slate-900 mb-4">
-            {{ $t('teamPage.admin.title') }}
-          </h2>
 
           <p class="max-w-2xl mx-auto text-slate-600 leading-7">
-            {{ $t('teamPage.admin.subtitle') }}
+            {{ $t('teamPage.doctors.subtitle') }}
           </p>
         </div>
 
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          <article class="team-card">
-            <div class="team-image bg-slate-200 flex items-center justify-center text-slate-400">
-              Image
+          <NuxtLink
+            v-for="doctor in doctors"
+            :key="doctor.id"
+            :to="getDoctorBioLink(doctor.slug)"
+            class="team-card group"
+          >
+            <div class="team-image bg-slate-200">
+              <img
+                :src="doctor.image"
+                :alt="doctor.name"
+                class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+              />
             </div>
-            <div class="p-6">
-              <p class="text-sm uppercase tracking-wider text-sky-500 mb-2">
-                {{ $t('teamPage.admin.member1.role') }}
-              </p>
-              <h3 class="text-xl font-semibold text-slate-900">
-                {{ $t('teamPage.admin.member1.name') }}
-              </h3>
-            </div>
-          </article>
 
-          <article class="team-card">
-            <div class="team-image bg-slate-200 flex items-center justify-center text-slate-400">
-              Image
-            </div>
             <div class="p-6">
               <p class="text-sm uppercase tracking-wider text-sky-500 mb-2">
-                {{ $t('teamPage.admin.member2.role') }}
+                {{ getLocalizedText(doctor.specialty) }}
               </p>
-              <h3 class="text-xl font-semibold text-slate-900">
-                {{ $t('teamPage.admin.member2.name') }}
-              </h3>
-            </div>
-          </article>
 
-          <article class="team-card">
-            <div class="team-image bg-slate-200 flex items-center justify-center text-slate-400">
-              Image
+              <h3 class="text-xl font-semibold text-slate-900 mb-4">
+                {{ doctor.name }}
+              </h3>
+
+              <span class="inline-flex items-center gap-2 text-sm font-semibold text-sky-600">
+                {{ $t('teamPage.doctors.viewProfile') }}
+                <Icon
+                  name="lucide:arrow-right"
+                  class="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1"
+                />
+              </span>
             </div>
+          </NuxtLink>
+        </div>
+      </div>
+    </section>
+
+    <!-- STAFF MEMBERS -->
+    <section
+      v-if="staffMembers.length"
+      class="py-24 bg-gradient-to-b from-white to-sky-50/60"
+    >
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-slate-900 mb-4">
+            {{ $t('teamPage.staff.title') }}
+          </h2>
+
+          <p class="max-w-2xl mx-auto text-slate-600 leading-7">
+            {{ $t('teamPage.staff.subtitle') }}
+          </p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <article
+            v-for="member in staffMembers"
+            :key="member.id"
+            class="team-card"
+          >
+            <div class="team-image bg-slate-200">
+              <img
+                :src="member.image"
+                :alt="member.name"
+                class="h-full w-full object-cover"
+              />
+            </div>
+
             <div class="p-6">
               <p class="text-sm uppercase tracking-wider text-sky-500 mb-2">
-                {{ $t('teamPage.admin.member3.role') }}
+                {{ getLocalizedText(member.title) }}
               </p>
-              <h3 class="text-xl font-semibold text-slate-900">
-                {{ $t('teamPage.admin.member3.name') }}
+
+              <h3 class="text-xl font-semibold text-slate-900 mb-3">
+                {{ member.name }}
               </h3>
+
+              <p class="text-sm font-medium text-slate-600 mb-3">
+                {{ getLocalizedText(member.specialty) }}
+              </p>
+
+              <p
+                v-if="member.shortBio"
+                class="text-sm text-slate-500 leading-7"
+              >
+                {{ getLocalizedText(member.shortBio) }}
+              </p>
             </div>
           </article>
         </div>

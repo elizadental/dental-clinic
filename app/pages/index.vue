@@ -5,13 +5,13 @@
 <template>
   <div>
     <!-- HEADER -->
-      <HomeHeader />
+      
       <HomeHero />
       <HomeServices  />
       <HomeDoctors  />
       <HomeGallery />
       <HomeCta />
       <HomeContact />
-      <HomeFooter /> 
+       
     </div>
 </template>

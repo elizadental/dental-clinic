@@ -1,6 +1,6 @@
 
 <script setup lang="ts">
-import { onMounted, onUnmounted, ref, computed } from 'vue'
+import { computed, onMounted, onUnmounted, ref } from 'vue'
 
 const whatsappLink = 'https://wa.me/905xxxxxxxxx'
 
@@ -11,8 +11,11 @@ const { locale } = useI18n()
 const isOpen = ref(false)
 const isMobileOpen = ref(false)
 const isMobileServicesOpen = ref(false)
+const isHeaderHidden = ref(false)
 
 const dropdownRef = ref<HTMLElement | null>(null)
+
+let lastScrollY = 0
 
 const serviceLinks = [
   {
@@ -103,18 +106,47 @@ function handleEscape(event: KeyboardEvent) {
   }
 }
 
+function handleHeaderScroll() {
+  const currentScrollY = window.scrollY
+
+  if (currentScrollY < 80) {
+    isHeaderHidden.value = false
+    lastScrollY = currentScrollY
+    return
+  }
+
+  if (isMobileOpen.value) {
+    isHeaderHidden.value = false
+    lastScrollY = currentScrollY
+    return
+  }
+
+  const isScrollingDown = currentScrollY > lastScrollY
+  const scrollDifference = Math.abs(currentScrollY - lastScrollY)
+
+  if (scrollDifference < 8) return
+
+  isHeaderHidden.value = isScrollingDown
+  lastScrollY = currentScrollY
+}
+
 onMounted(() => {
   document.addEventListener('click', handleClickOutside)
   document.addEventListener('keydown', handleEscape)
+  window.addEventListener('scroll', handleHeaderScroll, { passive: true })
 })
 
 onUnmounted(() => {
   document.removeEventListener('click', handleClickOutside)
   document.removeEventListener('keydown', handleEscape)
+  window.removeEventListener('scroll', handleHeaderScroll)
 })
 </script>
 <template>
-<header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b">
+<header
+  class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b transition-transform duration-300 ease-out will-change-transform"
+  :class="isHeaderHidden ? '-translate-y-full' : 'translate-y-0'"
+>
   <!-- DESKTOP TOP BAR -->
   <div class="hidden md:block border-b bg-slate-50/80">
     <div class="max-w-7xl mx-auto px-4 h-9 flex items-center justify-between text-xs text-gray-500">
@@ -192,7 +224,7 @@ onUnmounted(() => {
     <!-- DESKTOP NAV -->
     <nav class="hidden md:flex flex-1 justify-center">
       <div class="flex items-center gap-8 text-sm font-medium tracking-wide text-gray-600">
-        <NuxtLink to="/" class="relative group transition-colors duration-200 hover:text-sky-500">
+        <NuxtLink :to="localePath('/')" class="relative group transition-colors duration-200 hover:text-sky-500">
           {{ $t('home.nav.home') }}
           <span class="absolute left-1/2 -bottom-1 h-[1px] w-0 bg-sky-400 transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
         </NuxtLink>
@@ -238,20 +270,20 @@ onUnmounted(() => {
   </div>
 </div>
 
-        <NuxtLink to="/#gallery" class="relative group transition-colors duration-200 hover:text-sky-500">
+        <NuxtLink :to="localePath('/#gallery')" class="relative group transition-colors duration-200 hover:text-sky-500">
           {{ $t('home.nav.gallery') }}
           <span class="absolute left-1/2 -bottom-1 h-[1px] w-0 bg-sky-400 transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
         </NuxtLink>
 
-        <NuxtLink to="/#doctors" class="relative group transition-colors duration-200 hover:text-sky-500">
+        <NuxtLink :to="localePath('/#doctors')" class="relative group transition-colors duration-200 hover:text-sky-500">
           {{ $t('home.nav.doctors') }}
           <span class="absolute left-1/2 -bottom-1 h-[1px] w-0 bg-sky-400 transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
         </NuxtLink>
-        <NuxtLink to="/ekibimiz" class="relative group transition-colors duration-200 hover:text-sky-500">
+        <NuxtLink :to="localePath('/ekibimiz')" class="relative group transition-colors duration-200 hover:text-sky-500">
           {{ $t('home.nav.team') }}
           <span class="absolute left-1/2 -bottom-1 h-[1px] w-0 bg-sky-400 transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
         </NuxtLink>
-        <NuxtLink to="/#contact" class="relative group transition-colors duration-200 hover:text-sky-500">
+        <NuxtLink :to="localePath('/#contact')" class="relative group transition-colors duration-200 hover:text-sky-500">
           {{ $t('home.nav.contact') }}
           <span class="absolute left-1/2 -bottom-1 h-[1px] w-0 bg-sky-400 transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
         </NuxtLink>
@@ -295,7 +327,7 @@ onUnmounted(() => {
   <!-- MOBILE MENU -->
   <div v-if="isMobileOpen" class="md:hidden border-t bg-white/95 backdrop-blur-md">
     <div class="flex flex-col px-6 py-5 gap-4 text-sm font-medium text-gray-600">
-      <NuxtLink @click="closeMobile" to="/" class="hover:text-sky-500 transition">
+      <NuxtLink @click="closeMobile" :to="localePath('/')" class="hover:text-sky-500 transition">
         {{ $t('home.nav.home') }}
       </NuxtLink>
 
@@ -345,17 +377,17 @@ onUnmounted(() => {
   </div>
 </div>
 
-      <NuxtLink @click="closeMobile" to="/#gallery" class="hover:text-sky-500 transition">
+      <NuxtLink @click="closeMobile" :to="localePath('/#gallery')" class="hover:text-sky-500 transition">
         {{ $t('home.nav.gallery') }}
       </NuxtLink>
 
-      <NuxtLink @click="closeMobile" to="/#doctors" class="hover:text-sky-500 transition">
+      <NuxtLink @click="closeMobile" :to="localePath('/#doctors')" class="hover:text-sky-500 transition">
         {{ $t('home.nav.doctors') }}
       </NuxtLink>
-      <NuxtLink @click="closeMobile" to="/ekibimiz" class="hover:text-sky-500 transition">
+      <NuxtLink @click="closeMobile" :to="localePath('/ekibimiz')" class="hover:text-sky-500 transition">
         {{ $t('home.nav.team') }}
       </NuxtLink>
-      <NuxtLink @click="closeMobile" to="/#contact" class="hover:text-sky-500 transition">
+      <NuxtLink @click="closeMobile" :to="localePath('/#contact')" class="hover:text-sky-500 transition">
         {{ $t('home.nav.contact') }}
       </NuxtLink>
 

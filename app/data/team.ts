@@ -242,5 +242,128 @@ export const teamMembers: TeamMember[] = [
     featured: true,
 
     order: 3
-  }
+  },
+{
+  id: '4',
+
+  slug: 'ayse-karaca',
+
+  name: 'Ayşe Karaca',
+
+  role: 'admin',
+
+  title: {
+    tr: 'Klinik Koordinatörü',
+    en: 'Clinic Coordinator'
+  },
+
+  specialty: {
+    tr: 'Hasta Kabul ve Klinik Koordinasyonu',
+    en: 'Patient Reception & Clinic Coordination'
+  },
+
+  shortBio: {
+    tr: 'Hasta kabul, randevu planlaması ve klinik içi süreçlerin düzenli ilerlemesine destek olur.',
+    en: 'Supports patient reception, appointment planning, and smooth daily clinic operations.'
+  },
+
+  expertiseAreas: [],
+
+  education: [],
+
+  spokenLanguages: ['tr'],
+
+  image: '/team/admin-1.png',
+
+  contact: {
+    email: 'info@elizadent.com',
+    phone: '+905012663131'
+  },
+
+  showContact: false,
+
+  featured: false,
+
+  order: 4
+},
+{
+  id: '5',
+
+  slug: 'zeynep-arslan',
+
+  name: 'Zeynep Arslan',
+
+  role: 'clinic',
+
+  title: {
+    tr: 'Klinik Asistanı',
+    en: 'Clinical Assistant'
+  },
+
+  specialty: {
+    tr: 'Klinik Destek ve Hasta Konforu',
+    en: 'Clinical Support & Patient Comfort'
+  },
+
+  shortBio: {
+    tr: 'Tedavi süreçlerinde klinik ekibe destek olur ve hastaların konforlu bir deneyim yaşamasına yardımcı olur.',
+    en: 'Supports the clinical team during treatment processes and helps patients have a comfortable experience.'
+  },
+
+  expertiseAreas: [],
+
+  education: [],
+
+  spokenLanguages: ['tr'],
+
+  image: '/team/clinic-1.png',
+
+  showContact: false,
+
+  featured: false,
+
+  order: 5
+},
+{
+  id: '6',
+
+  slug: 'murat-demir',
+
+  name: 'Murat Demir',
+
+  role: 'admin',
+
+  title: {
+    tr: 'Hasta İlişkileri Sorumlusu',
+    en: 'Patient Relations Specialist'
+  },
+
+  specialty: {
+    tr: 'Hasta İletişimi ve Bilgilendirme',
+    en: 'Patient Communication & Guidance'
+  },
+
+  shortBio: {
+    tr: 'Hasta iletişimi, bilgilendirme ve klinik deneyiminin düzenli ilerlemesi konusunda destek sağlar.',
+    en: 'Supports patient communication, guidance, and a smooth clinic experience.'
+  },
+
+  expertiseAreas: [],
+
+  education: [],
+
+  spokenLanguages: ['tr'],
+
+  image: '/team/admin-2.png',
+
+  contact: {
+    email: 'info@elizadent.com'
+  },
+
+  showContact: false,
+
+  featured: false,
+
+  order: 6
+}
 ]

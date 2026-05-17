@@ -152,6 +152,25 @@
   "emailLabel": "E-posta",
   "backToTeam": "Ekibimize Geri Dön"
 },
+"teamPage": {
+  "hero": {
+    "title": "Ekibimiz",
+    "subtitle": "ElizaDent`in klinik ve idari ekibiyle tanışın."
+  },
+  "doctors": {
+    "title": "Doktorlarımız",
+    "subtitle": "Diş hekimlerimizi ve uzmanlık alanlarını daha yakından inceleyin.",
+    "viewProfile": "Profili Gör"
+  },
+  "admin": {
+    "title": "İdari Kadro",
+    "subtitle": "Klinik deneyimini ve günlük işleyişi destekleyen ekip üyelerimiz."
+  },
+  "staff": {
+  "title": "Klinik Ekibi",
+  "subtitle": "Hasta deneyimini ve günlük klinik işleyişini destekleyen ekip üyelerimizle tanışın."
+}
+},
 "common": {
   
   "languages": {
