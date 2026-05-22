@@ -2,7 +2,7 @@
 <script setup lang="ts">
 import { computed, onMounted, onUnmounted, ref } from 'vue'
 
-const whatsappLink = 'https://wa.me/905xxxxxxxxx'
+const whatsappLink = 'https://wa.me/905012663131'
 
 const localePath = useLocalePath()
 const switchLocalePath = useSwitchLocalePath()

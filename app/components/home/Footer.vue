@@ -125,11 +125,11 @@
 
   <!-- Right: Legal Links -->
   <div class="flex justify-center gap-4 md:justify-end">
-    <NuxtLink to="/privacy" class="footer-link">
+    <NuxtLink :to="$localePath('/privacy')" class="footer-link">
       {{ $t('home.footer.privacy') }}
     </NuxtLink>
 
-    <NuxtLink to="/terms" class="footer-link">
+    <NuxtLink :to="$localePath('/terms')" class="footer-link">
       {{ $t('home.footer.terms') }}
     </NuxtLink>
   </div>

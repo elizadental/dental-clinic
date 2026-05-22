@@ -51,9 +51,9 @@ export const teamMembers: TeamMember[] = [
   {
     id: '1',
 
-    slug: 'ahmet-yilmaz',
+    slug: 'eyup-micoogullari',
 
-    name: 'Dr. Ahmet Yılmaz',
+    name: 'Dr. Eyüp Miçooğulları',
 
     role: 'doctor',
 
@@ -68,8 +68,8 @@ export const teamMembers: TeamMember[] = [
     },
 
     shortBio: {
-      tr: 'Dr. Ahmet Yılmaz, Eliza Dental Clinic bünyesinde estetik diş hekimliği ve gülüş tasarımı alanlarında hasta odaklı bir yaklaşımla hizmet vermektedir.',
-      en: 'Dr. Ahmet Yılmaz provides patient-focused care at Eliza Dental Clinic with a focus on aesthetic dentistry and smile design.'
+      tr: 'Dr. Eyüp Miçoğulları, Eliza Dental Clinic bünyesinde estetik diş hekimliği ve gülüş tasarımı alanlarında hasta odaklı bir yaklaşımla hizmet vermektedir.',
+      en: 'Dr. Eyüp Miçoğulları provides patient-focused care at Eliza Dental Clinic with a focus on aesthetic dentistry and smile design.'
     },
 
     expertiseAreas: [
@@ -84,6 +84,14 @@ export const teamMembers: TeamMember[] = [
       {
         tr: 'Diş Beyazlatma',
         en: 'Teeth Whitening'
+      },
+      {
+        tr: 'Lamina ve Porselen Kaplamalar',
+        en: 'Veneers & Porcelain Crowns'
+      },
+      {
+        tr: 'İmplant Destekli Estetik Restorasyonlar',
+        en: 'Implant-Supported Aesthetic Restorations'
       }
     ],
 
@@ -98,12 +106,12 @@ export const teamMembers: TeamMember[] = [
       }
     ],
 
-    spokenLanguages: ['tr', 'en'],
+    spokenLanguages: ['tr', 'en', 'ar'],
 
     image: '/doctors/doctor-1.png',
 
     contact: {
-      email: 'ahmetyilmaz@elizadent.com'
+      email: 'eyupmico@elizadent.com'
     },
 
     showContact: true,
@@ -116,9 +124,9 @@ export const teamMembers: TeamMember[] = [
   {
     id: '2',
 
-    slug: 'elif-kaya',
+    slug: 'zehra-pasa',
 
-    name: 'Dr. Elif Kaya',
+    name: 'Dr. Zehra Paşa',
 
     role: 'doctor',
 
@@ -133,8 +141,8 @@ export const teamMembers: TeamMember[] = [
     },
 
     shortBio: {
-      tr: 'Dr. Elif Kaya, implant tedavisi ve ağız cerrahisi uygulamalarında modern tedavi planlaması ve hasta konforunu ön planda tutmaktadır.',
-      en: 'Dr. Elif Kaya focuses on implant treatment and oral surgery with modern treatment planning and patient comfort in mind.'
+      en: 'Dr. Zehra Paşa focuses on implant treatment and oral surgery with modern treatment planning and patient comfort in mind.',
+      tr: 'Dr. Zehra Paşa, implant tedavisi ve ağız cerrahisi uygulamalarında modern tedavi planlaması ve hasta konforunu ön planda tutmaktadır.',
     },
 
     expertiseAreas: [
@@ -164,7 +172,7 @@ export const teamMembers: TeamMember[] = [
     image: '/doctors/doctor-2.png',
 
     contact: {
-      email: 'elifkaya@elizadent.com'
+      email: 'zehrapasa@elizadent.com'
     },
 
     showContact: true,
@@ -177,9 +185,9 @@ export const teamMembers: TeamMember[] = [
   {
     id: '3',
 
-    slug: 'mehmet-demir',
+    slug: 'mehmet-kucuk',
 
-    name: 'Dr. Mehmet Demir',
+    name: 'Dr. Mehmet Küçük',
 
     role: 'doctor',
 
@@ -194,8 +202,8 @@ export const teamMembers: TeamMember[] = [
     },
 
     shortBio: {
-      tr: 'Dr. Mehmet Demir, ortodontik tedavilerde diş dizilimi, çene kapanışı ve kişiye özel tedavi planlaması üzerine çalışmaktadır.',
-      en: 'Dr. Mehmet Demir focuses on orthodontic treatments, teeth alignment, bite correction, and personalized treatment planning.'
+      en: 'Dr. Mehmet Küçük focuses on orthodontic treatments, teeth alignment, bite correction, and personalized treatment planning.',
+      tr: 'Dr. Mehmet Küçük, ortodontik tedavilerde diş dizilimi, çene kapanışı ve kişiye özel tedavi planlaması üzerine çalışmaktadır.',
     },
 
     expertiseAreas: [
@@ -233,7 +241,7 @@ export const teamMembers: TeamMember[] = [
     image: '/doctors/doctor-3.png',
 
     contact: {
-      email: 'mehmetdemir@elizadent.com',
+      email: 'mehmetkucuk@elizadent.com',
       phone: '+905012663131'
     },
 
@@ -246,9 +254,9 @@ export const teamMembers: TeamMember[] = [
 {
   id: '4',
 
-  slug: 'ayse-karaca',
+  slug: 'ahmet-micoogullari',
 
-  name: 'Ayşe Karaca',
+  name: 'Ahmet Miçooğulları',
 
   role: 'admin',
 
@@ -289,9 +297,9 @@ export const teamMembers: TeamMember[] = [
 {
   id: '5',
 
-  slug: 'zeynep-arslan',
+  slug: 'idil-tukenmez',
 
-  name: 'Zeynep Arslan',
+  name: 'İdil Tükenmez',
 
   role: 'clinic',
 
@@ -327,9 +335,9 @@ export const teamMembers: TeamMember[] = [
 {
   id: '6',
 
-  slug: 'murat-demir',
+  slug: 'dilan-saglam',
 
-  name: 'Murat Demir',
+  name: 'Dilan Sağlam',
 
   role: 'admin',
 
