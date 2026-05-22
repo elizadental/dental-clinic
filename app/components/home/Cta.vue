@@ -1,6 +1,6 @@
 <!-- /components/home/Cta.vue -->
 <script setup lang="ts">
-const whatsappLink = "https://wa.me/905xxxxxxxxx"
+const whatsappLink = "https://wa.me/905312663131?text=Merhaba%20Eliza%20Dental%20Clinic%2C%20randevu%20almak%20istiyorum."
 </script>
 
 <template>
@@ -29,7 +29,7 @@ const whatsappLink = "https://wa.me/905xxxxxxxxx"
 
         <!-- Call -->
         <a
-          href="tel:+905xxxxxxxxx"
+          href="tel:+905312663131"
           class="inline-flex items-center justify-center rounded-full border border-slate-200 bg-white px-6 py-3 text-sm font-semibold text-slate-700 shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-sky-200 hover:text-sky-600 hover:shadow-md"
         >
           {{ $t('home.cta.call') }}
