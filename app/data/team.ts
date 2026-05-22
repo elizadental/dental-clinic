@@ -53,7 +53,7 @@ export const teamMembers: TeamMember[] = [
 
     slug: 'eyup-micoogullari',
 
-    name: 'Dr. Eyüp Miçooğulları',
+    name: 'Dt. Eyüp Miçooğulları',
 
     role: 'doctor',
 
@@ -68,8 +68,8 @@ export const teamMembers: TeamMember[] = [
     },
 
     shortBio: {
-      tr: 'Dr. Eyüp Miçoğulları, Eliza Dental Clinic bünyesinde estetik diş hekimliği ve gülüş tasarımı alanlarında hasta odaklı bir yaklaşımla hizmet vermektedir.',
-      en: 'Dr. Eyüp Miçoğulları provides patient-focused care at Eliza Dental Clinic with a focus on aesthetic dentistry and smile design.'
+      tr: 'Dt. Eyüp Miçoğulları, Eliza Dental Clinic bünyesinde estetik diş hekimliği ve gülüş tasarımı alanlarında hasta odaklı bir yaklaşımla hizmet vermektedir.',
+      en: 'Dt. Eyüp Miçoğulları provides patient-focused care at Eliza Dental Clinic with a focus on aesthetic dentistry and smile design.'
     },
 
     expertiseAreas: [
@@ -126,7 +126,7 @@ export const teamMembers: TeamMember[] = [
 
     slug: 'zehra-pasa',
 
-    name: 'Dr. Zehra Paşa',
+    name: 'Dt. Zehra Paşa',
 
     role: 'doctor',
 
@@ -141,8 +141,8 @@ export const teamMembers: TeamMember[] = [
     },
 
     shortBio: {
-      en: 'Dr. Zehra Paşa focuses on implant treatment and oral surgery with modern treatment planning and patient comfort in mind.',
-      tr: 'Dr. Zehra Paşa, implant tedavisi ve ağız cerrahisi uygulamalarında modern tedavi planlaması ve hasta konforunu ön planda tutmaktadır.',
+      en: 'Dt. Zehra Paşa focuses on implant treatment and oral surgery with modern treatment planning and patient comfort in mind.',
+      tr: 'Dt. Zehra Paşa, implant tedavisi ve ağız cerrahisi uygulamalarında modern tedavi planlaması ve hasta konforunu ön planda tutmaktadır.',
     },
 
     expertiseAreas: [
@@ -187,7 +187,7 @@ export const teamMembers: TeamMember[] = [
 
     slug: 'mehmet-kucuk',
 
-    name: 'Dr. Mehmet Küçük',
+    name: 'Dt. Mehmet Küçük',
 
     role: 'doctor',
 
@@ -202,8 +202,8 @@ export const teamMembers: TeamMember[] = [
     },
 
     shortBio: {
-      en: 'Dr. Mehmet Küçük focuses on orthodontic treatments, teeth alignment, bite correction, and personalized treatment planning.',
-      tr: 'Dr. Mehmet Küçük, ortodontik tedavilerde diş dizilimi, çene kapanışı ve kişiye özel tedavi planlaması üzerine çalışmaktadır.',
+      en: 'Dt. Mehmet Küçük focuses on orthodontic treatments, teeth alignment, bite correction, and personalized treatment planning.',
+      tr: 'Dt. Mehmet Küçük, ortodontik tedavilerde diş dizilimi, çene kapanışı ve kişiye özel tedavi planlaması üzerine çalışmaktadır.',
     },
 
     expertiseAreas: [
@@ -297,9 +297,9 @@ export const teamMembers: TeamMember[] = [
 {
   id: '5',
 
-  slug: 'idil-tukenmez',
+  slug: 'idil-Temizkan',
 
-  name: 'İdil Tükenmez',
+  name: 'İdil Temizkan',
 
   role: 'clinic',
 
