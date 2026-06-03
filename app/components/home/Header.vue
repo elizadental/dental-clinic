@@ -270,10 +270,10 @@ onUnmounted(() => {
   </div>
 </div>
 
-        <NuxtLink :to="localePath('/#gallery')" class="relative group transition-colors duration-200 hover:text-sky-500">
-          {{ $t('home.nav.gallery') }}
-          <span class="absolute left-1/2 -bottom-1 h-[1px] w-0 bg-sky-400 transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
-        </NuxtLink>
+        <NuxtLink :to="localePath('/blog')" class="relative group transition-colors duration-200 hover:text-sky-500">
+  {{ $t('home.nav.blog') }}
+  <span class="absolute left-1/2 -bottom-1 h-[1px] w-0 bg-sky-400 transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+</NuxtLink>
 
         <NuxtLink :to="localePath('/#doctors')" class="relative group transition-colors duration-200 hover:text-sky-500">
           {{ $t('home.nav.doctors') }}
@@ -377,9 +377,9 @@ onUnmounted(() => {
   </div>
 </div>
 
-      <NuxtLink @click="closeMobile" :to="localePath('/#gallery')" class="hover:text-sky-500 transition">
-        {{ $t('home.nav.gallery') }}
-      </NuxtLink>
+      <NuxtLink @click="closeMobile" :to="localePath('/blog')" class="hover:text-sky-500 transition">
+  {{ $t('home.nav.blog') }}
+</NuxtLink>
 
       <NuxtLink @click="closeMobile" :to="localePath('/#doctors')" class="hover:text-sky-500 transition">
         {{ $t('home.nav.doctors') }}

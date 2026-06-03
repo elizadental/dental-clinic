@@ -7,7 +7,7 @@
     "nav": {
       "home": "Home",
       "services": "Services",
-      "gallery": "Gallery",
+      "blog": "Blog",
       "doctors": "Doctors",
       "team": "Our Team",
       "contact": "Contact"
@@ -137,20 +137,31 @@
   "terms": "Terms",
   "copyright": "© 2026 ElizaDent Ağız ve Diş Sağlığı Polikliniği. All rights reserved.",
   "createdBy": "Designed & Developed by Selxxx Pieria"
+},
+"blog": {
+  "eyebrow": "Blog",
+  "title": "Oral and Dental Health Articles",
+  "subtitle": "Clear and helpful articles about dental treatments, oral care, and dental health.",
+  "readArticle": "Read Article",
+  "viewAll": "View All Articles",
+  "imageFallback": "Blog Image",
+  "empty": "No articles yet."
 }
   
     
   },
 "doctorPage": {
   "spokenLanguagesTitle": "Spoken Languages",
-  "expertiseTitle": "Areas of Expertise",
+  "expertiseTitle": "Practice & Interests",
   "educationTitle": "Education & Experience",
   "contactTitle": "Contact",
   "titleLabel": "Title",
   "phoneLabel": "Phone",
   "appointmentButton": "Book an Appointment",
   "emailLabel": "Email",
-  "backToTeam": "Back to Team"
+  "backToTeam": "Back to Team",
+   "biographyTitle": "Professional Biography",
+    "certificatesTitle": "Courses & Certifications"
 },
 "teamPage": {
   "hero": {

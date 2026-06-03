@@ -1,0 +1,17 @@
+minimumReleaseAgeExclude:
+  - '@shikijs/core'
+  - '@shikijs/engine-javascript'
+  - '@shikijs/engine-oniguruma'
+  - '@shikijs/langs'
+  - '@shikijs/primitive'
+  - '@shikijs/themes'
+  - '@shikijs/transformers'
+  - '@shikijs/types'
+  - isomorphic-git
+  - shiki
+
+allowBuilds:
+  '@parcel/watcher': true
+  esbuild: true
+  better-sqlite3: true
+  sqlite3: true

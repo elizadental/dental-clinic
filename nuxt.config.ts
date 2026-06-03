@@ -14,7 +14,7 @@ export default defineNuxtConfig({
     }
   },
   
-   modules: ['@nuxtjs/tailwindcss', '@nuxtjs/i18n', '@nuxt/icon','@nuxt/fonts'],
+   modules: ['@nuxtjs/tailwindcss', '@nuxtjs/i18n', '@nuxt/icon','@nuxt/fonts', '@nuxt/content'],
    fonts: {
   families: [
     {

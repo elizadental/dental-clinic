@@ -30,10 +30,10 @@ export type TeamMember = {
   specialty: LocaleText
 
   shortBio?: LocaleText
-
+  bioParagraphs?: LocaleText[]
   expertiseAreas?: LocaleText[]
   education?: LocaleText[]
-
+  certificates?: LocaleText[]
   spokenLanguages?: SpokenLanguageCode[]
 
   image: string
@@ -121,136 +121,182 @@ export const teamMembers: TeamMember[] = [
     order: 1
   },
 
-  {
-    id: '2',
+ {
+  id: '7',
 
-    slug: 'zehra-pasa',
+  slug: 'zehra-pasa',
 
-    name: 'Dt. Zehra Paşa',
+  name: 'Dt. Zehra Paşa',
 
-    role: 'doctor',
+  role: 'doctor',
 
-    title: {
-      tr: 'Diş Hekimi',
-      en: 'Dentist'
-    },
-
-    specialty: {
-      tr: 'İmplantoloji ve Ağız Cerrahisi',
-      en: 'Implantology & Oral Surgery'
-    },
-
-    shortBio: {
-      en: 'Dt. Zehra Paşa focuses on implant treatment and oral surgery with modern treatment planning and patient comfort in mind.',
-      tr: 'Dt. Zehra Paşa, implant tedavisi ve ağız cerrahisi uygulamalarında modern tedavi planlaması ve hasta konforunu ön planda tutmaktadır.',
-    },
-
-    expertiseAreas: [
-      {
-        tr: 'İmplant Tedavisi',
-        en: 'Implant Treatment'
-      },
-      {
-        tr: 'Ağız ve Çene Cerrahisi',
-        en: 'Oral & Maxillofacial Surgery'
-      }
-    ],
-
-    education: [
-      {
-        tr: 'Diş Hekimliği Fakültesi',
-        en: 'Faculty of Dentistry'
-      },
-      {
-        tr: 'İmplantoloji alanında klinik uygulama deneyimi',
-        en: 'Clinical experience in implantology'
-      }
-    ],
-
-    spokenLanguages: ['tr', 'en'],
-
-    image: '/doctors/doctor-2.png',
-
-    contact: {
-      email: 'zehrapasa@elizadent.com'
-    },
-
-    showContact: true,
-
-    featured: true,
-
-    order: 2
+  title: {
+    tr: 'Diş Hekimi',
+    en: 'Dentist'
   },
 
-  {
-    id: '3',
-
-    slug: 'mehmet-kucuk',
-
-    name: 'Dt. Mehmet Küçük',
-
-    role: 'doctor',
-
-    title: {
-      tr: 'Diş Hekimi',
-      en: 'Dentist'
-    },
-
-    specialty: {
-      tr: 'Ortodonti',
-      en: 'Orthodontics'
-    },
-
-    shortBio: {
-      en: 'Dt. Mehmet Küçük focuses on orthodontic treatments, teeth alignment, bite correction, and personalized treatment planning.',
-      tr: 'Dt. Mehmet Küçük, ortodontik tedavilerde diş dizilimi, çene kapanışı ve kişiye özel tedavi planlaması üzerine çalışmaktadır.',
-    },
-
-    expertiseAreas: [
-      {
-        tr: 'Ortodonti',
-        en: 'Orthodontics'
-      },
-      {
-        tr: 'Diş Dizilimi',
-        en: 'Teeth Alignment'
-      },
-      {
-        tr: 'Çene Kapanış Problemleri',
-        en: 'Bite Correction'
-      },
-      {
-        tr: 'Şeffaf Plak Tedavileri',
-        en: 'Clear Aligner Treatments'
-      }
-    ],
-
-    education: [
-      {
-        tr: 'Diş Hekimliği Fakültesi',
-        en: 'Faculty of Dentistry'
-      },
-      {
-        tr: 'Ortodonti alanında klinik uygulama deneyimi',
-        en: 'Clinical experience in orthodontics'
-      }
-    ],
-
-    spokenLanguages: ['tr', 'en'],
-
-    image: '/doctors/doctor-3.png',
-
-    contact: {
-      email: 'mehmetkucuk@elizadent.com',
-      phone: '+905012663131'
-    },
-
-    showContact: true,
-
-    featured: true,
-
-    order: 3
+  specialty: {
+    tr: 'Diş Hekimi',
+    en: ' Dentist'
   },
+
+  shortBio: {
+    tr: 'Dt. Zehra Paşa, koruyucu ve restoratif diş hekimliği alanlarında modern, güvenilir ve hasta odaklı tedavi yaklaşımı sunmaktadır.',
+    en: 'Dt. Zehra Paşa provides modern, reliable, and patient-focused care in preventive and restorative dentistry.'
+  },
+
+  bioParagraphs: [
+    {
+      tr: "Diş Hekimi Zehra Paşa, İzmir Katip Çelebi Üniversitesi Diş Hekimliği Fakültesi'nden 2025 yılında başarıyla mezun olmuştur. Lisans eğitimi boyunca teorik bilgisini yoğun klinik uygulamalarla pekiştirmiş; hasta iletişimi, teşhis ve tedavi planlamasında güçlü bir temel kazanmıştır. Koruyucu ve restoratif diş hekimliğine odaklanarak, özellikle güncel estetik yaklaşımlar ve kompozit restorasyonlar alanındaki klinik becerilerini geliştirmiştir.",
+      en: "Dentist Zehra Paşa graduated successfully from İzmir Katip Çelebi University Faculty of Dentistry in 2025. During her undergraduate education, she strengthened her theoretical knowledge through intensive clinical practice and built a strong foundation in patient communication, diagnosis, and treatment planning. With a focus on preventive and restorative dentistry, she developed her clinical skills especially in current aesthetic approaches and composite restorations."
+    },
+    {
+      tr: "Mesleki gelişiminde bilimsel araştırmaları ve güncel dental teknolojileri yakından takip etmeye önem veren Zehra Paşa, e-sigara kullanımının ağız sağlığı üzerindeki etkilerini inceleyen çalışmada araştırmacı olarak yer almıştır. Etik değerlere bağlılığı ve sürekli öğrenme motivasyonuyla öne çıkan Paşa, hastalarına modern, güvenilir ve konforlu bir sağlık hizmeti sunmayı amaçlamaktadır.",
+      en: "Zehra Paşa places importance on following scientific research and current dental technologies as part of her professional development. She also took part as a researcher in a study examining the effects of e-cigarette use on oral health. Standing out with her commitment to ethical values and motivation for continuous learning, Paşa aims to provide modern, reliable, and comfortable healthcare services to her patients."
+    }
+  ],
+
+  expertiseAreas: [
+    {
+      tr: 'Koruyucu Diş Hekimliği',
+      en: 'Preventive Dentistry'
+    },
+    {
+      tr: 'Restoratif Diş Hekimliği',
+      en: 'Restorative Dentistry'
+    },
+    {
+      tr: 'Kompozit Restorasyonlar',
+      en: 'Composite Restorations'
+    },
+    {
+      tr: 'Estetik Diş Hekimliği',
+      en: 'Aesthetic Dentistry'
+    }
+  ],
+
+  education: [
+    {
+      tr: 'İzmir Katip Çelebi Üniversitesi Diş Hekimliği Fakültesi, 2025',
+      en: 'İzmir Katip Çelebi University Faculty of Dentistry, 2025'
+    }
+  ],
+
+  certificates: [
+    {
+      tr: 'Tüm Detaylarıyla Kompozit Restorasyonlar Eğitimi',
+      en: 'Composite Restorations in Detail Training'
+    },
+    {
+      tr: 'İZDO Öğrenci Kongresi – İzmir Diş Hekimleri Odası, Ekim 2024',
+      en: 'İZDO Student Congress – İzmir Chamber of Dentists, October 2024'
+    },
+    {
+      tr: 'World Dental Congress – FDI Dünya Dişhekimliği Federasyonu, Eylül 2024',
+      en: 'World Dental Congress – FDI World Dental Federation, September 2024'
+    },
+    {
+      tr: '17. Diş Hekimliği Etkinliği – MEDYATEAM, Nisan 2024',
+      en: '17th Dentistry Event – MEDYATEAM, April 2024'
+    },
+    {
+      tr: 'Endodontide Acil Tedavi ve Sistemik İlaç Kullanımı Semineri – Prof. Dr. Bilge Hakan Şen, Mart 2024',
+      en: 'Emergency Treatment in Endodontics and Systemic Drug Use Seminar – Prof. Dr. Bilge Hakan Şen, March 2024'
+    },
+    {
+      tr: '30. Uluslararası Bilimsel Kongre – İzmir Diş Hekimleri Odası, Kasım 2023',
+      en: '30th International Scientific Congress – İzmir Chamber of Dentists, November 2023'
+    },
+    {
+      tr: '29. Uluslararası Bilimsel Kongre – İzmir Diş Hekimleri Odası, Kasım 2022',
+      en: '29th International Scientific Congress – İzmir Chamber of Dentists, November 2022'
+    }
+  ],
+
+  spokenLanguages: ['tr'],
+
+  image: '/doctors/doctor-2.png',
+
+  contact: {
+    email: 'zehrapasa@elizadent.com'
+  },
+
+  showContact: true,
+
+  featured: true,
+
+  order: 4
+},
+
+  // {
+  //   id: '3',
+
+  //   slug: 'mehmet-kucuk',
+
+  //   name: 'Dt. Mehmet Küçük',
+
+  //   role: 'doctor',
+
+  //   title: {
+  //     tr: 'Diş Hekimi',
+  //     en: 'Dentist'
+  //   },
+
+  //   specialty: {
+  //     tr: 'Ortodonti',
+  //     en: 'Orthodontics'
+  //   },
+
+  //   shortBio: {
+  //     en: 'Dt. Mehmet Küçük focuses on orthodontic treatments, teeth alignment, bite correction, and personalized treatment planning.',
+  //     tr: 'Dt. Mehmet Küçük, ortodontik tedavilerde diş dizilimi, çene kapanışı ve kişiye özel tedavi planlaması üzerine çalışmaktadır.',
+  //   },
+
+  //   expertiseAreas: [
+  //     {
+  //       tr: 'Ortodonti',
+  //       en: 'Orthodontics'
+  //     },
+  //     {
+  //       tr: 'Diş Dizilimi',
+  //       en: 'Teeth Alignment'
+  //     },
+  //     {
+  //       tr: 'Çene Kapanış Problemleri',
+  //       en: 'Bite Correction'
+  //     },
+  //     {
+  //       tr: 'Şeffaf Plak Tedavileri',
+  //       en: 'Clear Aligner Treatments'
+  //     }
+  //   ],
+
+  //   education: [
+  //     {
+  //       tr: 'Diş Hekimliği Fakültesi',
+  //       en: 'Faculty of Dentistry'
+  //     },
+  //     {
+  //       tr: 'Ortodonti alanında klinik uygulama deneyimi',
+  //       en: 'Clinical experience in orthodontics'
+  //     }
+  //   ],
+
+  //   spokenLanguages: ['tr', 'en'],
+
+  //   image: '/doctors/doctor-3.png',
+
+  //   contact: {
+  //     email: 'mehmetkucuk@elizadent.com',
+  //     phone: '+905012663131'
+  //   },
+
+  //   showContact: true,
+
+  //   featured: true,
+
+  //   order: 3
+  // },
 {
   id: '4',
 

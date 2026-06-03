@@ -1,5 +1,5 @@
 <script setup lang="ts">
-  const whatsappLink = "https://wa.me/905xxxxxxxxx"
+  // const whatsappLink = "https://wa.me/905xxxxxxxxx"
 </script>
 
 <template>
@@ -9,7 +9,8 @@
       <HomeHero />
       <HomeServices  />
       <HomeDoctors  />
-      <HomeGallery />
+      <!-- <HomeGallery /> -->
+       <HomeBlogPreview />
       <HomeCta />
       <HomeContact />
        

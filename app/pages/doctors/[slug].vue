@@ -110,7 +110,27 @@ if (!doctor.value) {
         </div>
       </div>
     </section>
+    <!-- BIOGRAPHY -->
+<div v-if="doctor.bioParagraphs?.length">
+  <h2 class="text-3xl px-8 font-bold tracking-tight text-slate-900 mb-6">
+    {{ $t('doctorPage.biographyTitle') }}
+  </h2>
 
+  <div
+    class="rounded-3xl border border-slate-100 bg-white p-8 shadow-sm"
+  >
+    <div
+      v-for="(paragraph, index) in doctor.bioParagraphs"
+      :key="index"
+      class="text-slate-600 leading-8 text-lg"
+      :class="{
+        'mb-6': index !== doctor.bioParagraphs.length - 1
+      }"
+    >
+      {{ getLocalizedText(paragraph) }}
+    </div>
+  </div>
+</div>
     <!-- CONTENT -->
     <section class="py-20 md:py-24">
       <div class="max-w-7xl mx-auto px-4">
@@ -143,31 +163,37 @@ if (!doctor.value) {
             </div>
 
             <!-- EDUCATION -->
-            <div v-if="doctor.education?.length">
-              <h2 class="text-3xl font-bold tracking-tight text-slate-900 mb-6">
-                {{ $t('doctorPage.educationTitle') }}
-              </h2>
-
-              <div class="space-y-4">
-                <div
-                  v-for="(item, index) in doctor.education"
-                  :key="index"
-                  class="rounded-2xl border border-slate-100 bg-slate-50/70 p-6"
-                >
-                  <div class="flex items-center gap-4">
-                    <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-white">
-                      <Icon name="lucide:graduation-cap" class="h-5 w-5 text-sky-500" />
-                    </div>
-
-                    <p class="font-medium text-slate-800">
-                      {{ getLocalizedText(item) }}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
+            
           </div>
+          <!-- CERTIFICATES -->
+<div v-if="doctor.certificates?.length">
+  <h2 class="text-3xl font-bold tracking-tight text-slate-900 mb-6">
+    {{ $t('doctorPage.certificatesTitle') }}
+  </h2>
 
+  <div class="space-y-4">
+    <div
+      v-for="(item, index) in doctor.certificates"
+      :key="index"
+      class="rounded-2xl border border-slate-100 bg-slate-50/70 p-6"
+    >
+      <div class="flex items-center gap-4">
+        <div
+          class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-white"
+        >
+          <Icon
+            name="lucide:award"
+            class="h-5 w-5 text-sky-500"
+          />
+        </div>
+
+        <p class="font-medium text-slate-800">
+          {{ getLocalizedText(item) }}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
           <!-- SIDEBAR -->
           <aside class="rounded-3xl border border-slate-100 bg-white p-6 shadow-sm lg:sticky lg:top-32">
             <h3 class="text-xl font-semibold text-slate-900 mb-5">

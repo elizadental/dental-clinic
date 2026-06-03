@@ -3,11 +3,11 @@
     "topBar": {
   "hours": "Pzt - Cmt: 09:00 - 18:00",
   "location": "Atatürk Mh. Nazım Hikmet Ran Cd. Şaban Fırıncı Plaza No:21/1, Samandağ/Hatay" 
-},
+    },
     "nav": {
       "home": "Ana Sayfa",
       "services": "Hizmetler",
-      "gallery": "Galeri",
+      "blog": "Blog",
       "doctors": "Hekimlerimiz",
       "team": "Ekibimiz",
       "contact": "İletişim"
@@ -18,7 +18,7 @@
       "cta": "Hemen İletişime Geç",
       "secondary": "Hizmetleri Gör"
     },
-"services": {
+    "services": {
   "eyebrow": "Tedaviler",
   "title": "Hizmetlerimiz",
   "subtitle": "Modern teknoloji ve kişiye özel yaklaşımla yüksek kaliteli diş tedavileri sunuyoruz.",
@@ -137,20 +137,31 @@
   "terms": "Şartlar",
   "copyright": "© 2026 ElizaDent Ağız ve Diş Sağlığı Polikliniği. Tüm hakları saklıdır.",
   "createdBy": "Web tasarım ve geliştirme: Seleucia Pieria"
+}, 
+"blog": {
+  "eyebrow": "Blog",
+  "title": "Ağız ve Diş Sağlığı Yazıları",
+  "subtitle": "Tedaviler, ağız bakımı ve diş sağlığı hakkında sade ve güvenilir bilgilendirici içerikler.",
+  "readArticle": "Yazıyı Oku",
+  "viewAll": "Tüm Yazıları Gör",
+  "imageFallback": "Blog Görseli",
+  "empty": "Henüz blog yazısı bulunmuyor."
 }
     
     
   },
 "doctorPage": {
   "spokenLanguagesTitle": "Konuşulan Diller",
-  "expertiseTitle": "Uzmanlık Alanları",
+  "expertiseTitle": "Çalışma ve İlgi Alanları",
   "educationTitle": "Eğitim ve Deneyim",
   "contactTitle": "İletişim",
   "titleLabel": "Unvan",
   "phoneLabel": "Telefon",
   "appointmentButton": "Randevu Al",
   "emailLabel": "E-posta",
-  "backToTeam": "Ekibimize Geri Dön"
+  "backToTeam": "Ekibimize Geri Dön",
+   "biographyTitle": "Mesleki Biyografi",
+    "certificatesTitle": "Kurslar ve Sertifikalar"
 },
 "teamPage": {
   "hero": {
