@@ -1,3 +1,6 @@
+<script setup lang="ts">
+const localePath = useLocalePath()
+</script>
 <template>
   <footer class="bg-slate-950 text-white pt-16 pb-8">
     <div class="max-w-7xl mx-auto px-4">
@@ -51,12 +54,42 @@
           </h4>
 
           <ul class="space-y-3 text-sm text-slate-400">
-            <li><NuxtLink to="/" class="footer-link">{{ $t('home.nav.home') }}</NuxtLink></li>
-            <li><NuxtLink to="/#services" class="footer-link">{{ $t('home.nav.services') }}</NuxtLink></li>
-            <li><NuxtLink to="/#gallery" class="footer-link">{{ $t('home.nav.gallery') }}</NuxtLink></li>
-            <li><NuxtLink to="/#doctors" class="footer-link">{{ $t('home.nav.doctors') }}</NuxtLink></li>
-            <li><NuxtLink to="/#contact" class="footer-link">{{ $t('home.nav.contact') }}</NuxtLink></li>
-          </ul>
+  <li>
+    <NuxtLink :to="localePath('/')" class="footer-link">
+      {{ $t('home.nav.home') }}
+    </NuxtLink>
+  </li>
+
+  <li>
+    <NuxtLink :to="localePath('/#services')" class="footer-link">
+      {{ $t('home.nav.services') }}
+    </NuxtLink>
+  </li>
+
+  <li>
+    <NuxtLink :to="localePath('/blog')" class="footer-link">
+      {{ $t('home.nav.blog') }}
+    </NuxtLink>
+  </li>
+
+  <li>
+    <NuxtLink :to="localePath('/#doctors')" class="footer-link">
+      {{ $t('home.nav.doctors') }}
+    </NuxtLink>
+  </li>
+
+  <li>
+    <NuxtLink :to="localePath('/ekibimiz')" class="footer-link">
+      {{ $t('home.nav.team') }}
+    </NuxtLink>
+  </li>
+
+  <li>
+    <NuxtLink :to="localePath('/#contact')" class="footer-link">
+      {{ $t('home.nav.contact') }}
+    </NuxtLink>
+  </li>
+</ul>
         </div>
 
         <!-- Contact -->
@@ -112,27 +145,27 @@
 
     <p class="mt-1 text-xs text-slate-400">
      
-      <!-- <a
+      <a
         href="https://seleuciapieria.com"
         target="_blank"
         rel="noopener noreferrer"
         class="font-normal text-slate-400 transition font- hover:text-sky-300"
       >
        <code class="font-bold tracking-tight leading-tight"> {{ $t('home.footer.createdBy') }} </code>
-      </a> -->
+      </a>
     </p>
   </div>
 
   <!-- Right: Legal Links -->
-  <div class="flex justify-center gap-4 md:justify-end">
-    <NuxtLink :to="$localePath('/privacy')" class="footer-link">
-      {{ $t('home.footer.privacy') }}
-    </NuxtLink>
+ <div class="flex justify-center gap-4 md:justify-end">
+  <NuxtLink :to="localePath('/privacy')" class="footer-link">
+    {{ $t('home.footer.privacy') }}
+  </NuxtLink>
 
-    <NuxtLink :to="$localePath('/terms')" class="footer-link">
-      {{ $t('home.footer.terms') }}
-    </NuxtLink>
-  </div>
+  <NuxtLink :to="localePath('/terms')" class="footer-link">
+    {{ $t('home.footer.terms') }}
+  </NuxtLink>
+</div>
 </div>
     </div>
   </footer>

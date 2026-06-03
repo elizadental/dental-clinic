@@ -5,12 +5,12 @@ const localePath = useLocalePath()
 useSeoMeta({
   title: () =>
     locale.value === 'en'
-      ? 'Terms of Use | Eliza Dental Clinic'
-      : 'Kullanım Şartları | Eliza Dental Clinic',
+      ? 'Terms of Use | Özel Hatay Elizadent Ağız ve Diş Sağlığı Polikliniği'
+      : 'Kullanım Şartları | Özel Hatay Elizadent Ağız ve Diş Sağlığı Polikliniği',
   description: () =>
     locale.value === 'en'
-      ? 'Terms of Use for the Eliza Dental Clinic website.'
-      : 'Eliza Dental Clinic web sitesi kullanım şartları.'
+      ? 'Terms of Use for the Özel Hatay Elizadent Ağız ve Diş Sağlığı Polikliniği website.'
+      : 'Özel Hatay Elizadent Ağız ve Diş Sağlığı Polikliniği web sitesi kullanım şartları.'
 })
 
 const updatedAt = '2026'
@@ -20,7 +20,7 @@ const content = computed(() => {
     return {
       title: 'Terms of Use',
       subtitle:
-        'These Terms of Use explain the conditions for using the Eliza Dental Clinic website.',
+        'These Terms of Use explain the conditions for using the Özel Hatay Elizadent Ağız ve Diş Sağlığı Polikliniği website.',
       updated: `Last updated: ${updatedAt}`,
       intro:
         'By accessing this website, you agree to use it only for lawful, informational, and personal purposes. If you do not agree with these terms, please do not use the website.',
@@ -28,7 +28,7 @@ const content = computed(() => {
         {
           title: '1. Website Owner',
           body: [
-            'This website belongs to Eliza Dental Clinic.',
+            'This website belongs to Özel Hatay Elizadent Ağız ve Diş Sağlığı Polikliniği.',
             'Address: Atatürk Mahallesi Nazım Hikmet Ran Caddesi No:21/1 Samandağ/Hatay',
             'Phone: +90 501 266 31 31',
             'Email: info@elizadent.com'
@@ -71,7 +71,7 @@ const content = computed(() => {
           body: [
             'This website may include links to third-party platforms such as Google Maps, Instagram, LinkedIn, Facebook, X, WhatsApp, or similar services.',
             'When you click these links, you leave the clinic website and the relevant third-party platform may apply its own terms and privacy policy.',
-            'Eliza Dental Clinic is not responsible for the content, security, or data practices of third-party platforms.'
+            'Özel Hatay Elizadent Ağız ve Diş Sağlığı Polikliniği is not responsible for the content, security, or data practices of third-party platforms.'
           ]
         },
         {
@@ -84,14 +84,14 @@ const content = computed(() => {
         {
           title: '8. Intellectual Property',
           body: [
-            'Texts, images, design elements, logos, and other website content belong to Eliza Dental Clinic or are used with permission unless otherwise stated.',
+            'Texts, images, design elements, logos, and other website content belong to Özel Hatay Elizadent Ağız ve Diş Sağlığı Polikliniği or are used with permission unless otherwise stated.',
             'You may not copy, reproduce, distribute, or use website content for commercial purposes without written permission.'
           ]
         },
         {
           title: '9. Limitation of Responsibility',
           body: [
-            'Eliza Dental Clinic is not responsible for decisions made solely based on website content without professional dental consultation.',
+            'Özel Hatay Elizadent Ağız ve Diş Sağlığı Polikliniği is not responsible for decisions made solely based on website content without professional dental consultation.',
             'The website does not provide emergency dental services. In urgent situations, please contact the clinic directly or seek appropriate medical assistance.'
           ]
         },
@@ -109,7 +109,7 @@ const content = computed(() => {
   return {
     title: 'Kullanım Şartları',
     subtitle:
-      'Bu Kullanım Şartları, Eliza Dental Clinic web sitesinin kullanım koşullarını açıklar.',
+      'Bu Kullanım Şartları, Özel Hatay Elizadent Ağız ve Diş Sağlığı Polikliniği web sitesinin kullanım koşullarını açıklar.',
     updated: `Son güncelleme: ${updatedAt}`,
     intro:
       'Bu web sitesine erişerek siteyi yalnızca hukuka uygun, bilgilendirme ve kişisel kullanım amaçlarıyla kullanmayı kabul etmiş olursunuz. Bu şartları kabul etmiyorsanız lütfen web sitesini kullanmayınız.',
@@ -117,7 +117,7 @@ const content = computed(() => {
       {
         title: '1. Web Sitesi Sahibi',
         body: [
-          'Bu web sitesi Eliza Dental Clinic’e aittir.',
+          'Bu web sitesi Özel Hatay Elizadent Ağız ve Diş Sağlığı Polikliniği’ne aittir.',
           'Adres: Atatürk Mahallesi Nazım Hikmet Ran Caddesi No:21/1 Samandağ/Hatay',
           'Telefon: +90 501 266 31 31',
           'E-posta: info@elizadent.com'
@@ -160,7 +160,7 @@ const content = computed(() => {
         body: [
           'Bu web sitesinde Google Haritalar, Instagram, LinkedIn, Facebook, X, WhatsApp veya benzeri üçüncü taraf platformlara bağlantılar bulunabilir.',
           'Bu bağlantılara tıkladığınızda klinik web sitesinden ayrılırsınız ve ilgili üçüncü taraf platformun kendi kullanım şartları ve gizlilik politikası geçerli olabilir.',
-          'Eliza Dental Clinic, üçüncü taraf platformların içeriklerinden, güvenliğinden veya veri işleme uygulamalarından sorumlu değildir.'
+          'Özel Hatay Elizadent Ağız ve Diş Sağlığı Polikliniği, üçüncü taraf platformların içeriklerinden, güvenliğinden veya veri işleme uygulamalarından sorumlu değildir.'
         ]
       },
       {
@@ -173,14 +173,14 @@ const content = computed(() => {
       {
         title: '8. Fikri Mülkiyet',
         body: [
-          'Metinler, görseller, tasarım unsurları, logolar ve diğer web sitesi içerikleri aksi belirtilmedikçe Eliza Dental Clinic’e aittir veya izinli olarak kullanılmaktadır.',
+          'Metinler, görseller, tasarım unsurları, logolar ve diğer web sitesi içerikleri aksi belirtilmedikçe Özel Hatay Elizadent Ağız ve Diş Sağlığı Polikliniği’e aittir veya izinli olarak kullanılmaktadır.',
           'Web sitesi içerikleri yazılı izin olmadan kopyalanamaz, çoğaltılamaz, dağıtılamaz veya ticari amaçla kullanılamaz.'
         ]
       },
       {
         title: '9. Sorumluluğun Sınırlandırılması',
         body: [
-          'Eliza Dental Clinic, profesyonel diş hekimi danışmanlığı alınmadan yalnızca web sitesi içeriğine dayanılarak verilen kararlardan sorumlu değildir.',
+          'Özel Hatay Elizadent Ağız ve Diş Sağlığı Polikliniği, profesyonel diş hekimi danışmanlığı alınmadan yalnızca web sitesi içeriğine dayanılarak verilen kararlardan sorumlu değildir.',
           'Web sitesi acil diş sağlığı hizmeti sunmaz. Acil durumlarda doğrudan klinikle iletişime geçmeniz veya uygun sağlık desteği almanız gerekir.'
         ]
       },
@@ -241,21 +241,57 @@ const content = computed(() => {
           </article>
         </div>
 
-        <div class="mt-12 flex flex-col gap-4 rounded-3xl border border-slate-100 bg-slate-50 p-6 sm:flex-row sm:items-center sm:justify-between">
-          <div>
-            <h3 class="font-semibold text-slate-900">
-              Eliza Dental Clinic
-            </h3>
+        <div
+  class="mt-12 overflow-hidden rounded-3xl border border-slate-100 bg-gradient-to-br from-sky-50 via-white to-slate-50 p-6 shadow-sm"
+>
+  <div class="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
+    <!-- Clinic Info -->
+    <div class="flex items-start gap-4">
+      <div
+        class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-white shadow-sm ring-1 ring-sky-100"
+      >
+        <Icon name="lucide:lock-keyhole" class="h-6 w-6 text-sky-600" />
+      </div>
 
-            <p class="mt-1 text-sm text-slate-500">
-              info@elizadent.com · +90 501 266 31 31
-            </p>
-          </div>
+      <div>
+        <p class="mb-1 text-xs font-semibold uppercase tracking-[0.18em] text-sky-600">
+          {{ locale === 'en' ? 'Privacy Contact' : 'Gizlilik İletişimi' }}
+        </p>
 
-          <NuxtLink :to="localePath('/privacy')" class="btn-clinic">
-            <span>{{ locale === 'en' ? 'View Privacy Policy' : 'Gizlilik Politikasını Gör' }}</span>
-          </NuxtLink>
+        <h3 class="max-w-2xl text-base font-semibold leading-7 text-slate-950 md:text-lg">
+          Özel Hatay Elizadent Ağız ve Diş Sağlığı Polikliniği
+        </h3>
+
+        <div class="mt-3 flex flex-col gap-2 text-sm text-slate-500 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4">
+          <a
+            href="mailto:info@elizadent.com"
+            class="inline-flex items-center gap-2 transition hover:text-sky-600"
+          >
+            <Icon name="lucide:mail" class="h-4 w-4 text-sky-500" />
+            info@elizadent.com
+          </a>
+
+          <a
+            href="tel:+905012663131"
+            class="inline-flex items-center gap-2 transition hover:text-sky-600"
+          >
+            <Icon name="lucide:phone" class="h-4 w-4 text-sky-500" />
+            +90 501 266 31 31
+          </a>
         </div>
+      </div>
+    </div>
+
+    <!-- Action -->
+    <NuxtLink
+      :to="localePath('/privacy')"
+      class="btn-clinic shrink-0"
+    >
+      <span>{{ locale === 'en' ? 'View Privacy Policy' : 'Gizlilik Politikasını Gör' }}</span>
+      <Icon name="lucide:arrow-right" class="h-4 w-4" />
+    </NuxtLink>
+  </div>
+</div>
       </div>
     </section>
   </main>

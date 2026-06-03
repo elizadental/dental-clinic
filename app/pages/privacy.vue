@@ -3,11 +3,11 @@ const { locale } = useI18n()
 const localePath = useLocalePath()
 
 useSeoMeta({
-  title: () => locale.value === 'en' ? 'Privacy Policy | Eliza Dental Clinic' : 'Gizlilik Politikası | Eliza Dental Clinic',
+  title: () => locale.value === 'en' ? 'Privacy Policy | Özel Hatay Elizadent Ağız ve Diş Sağlığı Polikliniği' : 'Gizlilik Politikası | Özel Hatay Elizadent Ağız ve Diş Sağlığı Polikliniği',
   description: () =>
     locale.value === 'en'
-      ? 'Privacy Policy for Eliza Dental Clinic website.'
-      : 'Eliza Dental Clinic web sitesi gizlilik politikası.'
+      ? 'Privacy Policy for Özel Hatay Elizadent Ağız ve Diş Sağlığı Polikliniği website.'
+      : 'Özel Hatay Elizadent Ağız ve Diş Sağlığı Polikliniği web sitesi gizlilik politikası.'
 })
 
 const updatedAt = '2026'
@@ -17,15 +17,15 @@ const content = computed(() => {
     return {
       title: 'Privacy Policy',
       subtitle:
-        'This Privacy Policy explains how Eliza Dental Clinic handles personal data in relation to this website.',
+        'This Privacy Policy explains how Özel Hatay Elizadent Ağız ve Diş Sağlığı Polikliniği handles personal data in relation to this website.',
       updated: `Last updated: ${updatedAt}`,
       intro:
-        'Eliza Dental Clinic respects your privacy. This website is currently designed as an informational clinic website. It does not currently include a contact form, appointment form, newsletter form, payment form, or patient portal.',
+        'Özel Hatay Elizadent Ağız ve Diş Sağlığı Polikliniği respects your privacy. This website is currently designed as an informational clinic website. It does not currently include a contact form, appointment form, newsletter form, payment form, or patient portal.',
       sections: [
         {
           title: '1. Data Controller',
           body: [
-            'Trade name: Eliza Dental Clinic',
+            'Trade name: Özel Hatay Elizadent Ağız ve Diş Sağlığı Polikliniği',
             'Address: Atatürk Mahallesi Nazım Hikmet Ran Caddesi No:21/1 Samandağ/Hatay',
             'Phone: +90 501 266 31 31',
             'Email: info@elizadent.com'
@@ -87,15 +87,15 @@ const content = computed(() => {
   return {
     title: 'Gizlilik Politikası',
     subtitle:
-      'Bu Gizlilik Politikası, Eliza Dental Clinic web sitesiyle bağlantılı kişisel verilerin nasıl ele alındığını açıklar.',
+      'Bu Gizlilik Politikası, Özel Hatay Elizadent Ağız ve Diş Sağlığı Polikliniği web sitesiyle bağlantılı kişisel verilerin nasıl ele alındığını açıklar.',
     updated: `Son güncelleme: ${updatedAt}`,
     intro:
-      'Eliza Dental Clinic gizliliğinize önem verir. Bu web sitesi şu anda bilgilendirme amaçlı bir klinik web sitesi olarak tasarlanmıştır. Sitede şu aşamada iletişim formu, randevu formu, bülten formu, ödeme formu veya hasta paneli bulunmamaktadır.',
+      'Özel Hatay Elizadent Ağız ve Diş Sağlığı Polikliniği gizliliğinize önem verir. Bu web sitesi şu anda bilgilendirme amaçlı bir klinik web sitesi olarak tasarlanmıştır. Sitede şu aşamada iletişim formu, randevu formu, bülten formu, ödeme formu veya hasta paneli bulunmamaktadır.',
     sections: [
       {
         title: '1. Veri Sorumlusu',
         body: [
-          'Ticari ad: Eliza Dental Clinic',
+          'Ticari ad: Özel Hatay Elizadent Ağız ve Diş Sağlığı Polikliniği',
           'Adres: Atatürk Mahallesi Nazım Hikmet Ran Caddesi No:21/1 Samandağ/Hatay',
           'Telefon: +90 501 266 31 31',
           'E-posta: info@elizadent.com'
@@ -200,20 +200,57 @@ const content = computed(() => {
           </article>
         </div>
 
-        <div class="mt-12 flex flex-col gap-4 rounded-3xl border border-slate-100 bg-slate-50 p-6 sm:flex-row sm:items-center sm:justify-between">
-          <div>
-            <h3 class="font-semibold text-slate-900">
-              Eliza Dental Clinic
-            </h3>
-            <p class="mt-1 text-sm text-slate-500">
-              info@elizadent.com · +90 501 266 31 31
-            </p>
-          </div>
+        <div
+  class="mt-12 overflow-hidden rounded-3xl border border-slate-100 bg-gradient-to-br from-sky-50 via-white to-slate-50 p-6 shadow-sm"
+>
+  <div class="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
+    <!-- Clinic Info -->
+    <div class="flex items-start gap-4">
+      <div
+        class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-white shadow-sm ring-1 ring-sky-100"
+      >
+        <Icon name="lucide:shield-check" class="h-6 w-6 text-sky-600" />
+      </div>
 
-          <NuxtLink :to="localePath('/terms')" class="btn-clinic">
-            <span>{{ locale === 'en' ? 'View Terms' : 'Kullanım Şartlarını Gör' }}</span>
-          </NuxtLink>
+      <div>
+        <p class="mb-1 text-xs font-semibold uppercase tracking-[0.18em] text-sky-600">
+          {{ locale === 'en' ? 'Clinic Information' : 'Klinik Bilgileri' }}
+        </p>
+
+        <h3 class="max-w-2xl text-base font-semibold leading-7 text-slate-950 md:text-lg">
+          Özel Hatay Elizadent Ağız ve Diş Sağlığı Polikliniği
+        </h3>
+
+        <div class="mt-3 flex flex-col gap-2 text-sm text-slate-500 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4">
+          <a
+            href="mailto:info@elizadent.com"
+            class="inline-flex items-center gap-2 transition hover:text-sky-600"
+          >
+            <Icon name="lucide:mail" class="h-4 w-4 text-sky-500" />
+            info@elizadent.com
+          </a>
+
+          <a
+            href="tel:+905012663131"
+            class="inline-flex items-center gap-2 transition hover:text-sky-600"
+          >
+            <Icon name="lucide:phone" class="h-4 w-4 text-sky-500" />
+            +90 501 266 31 31
+          </a>
         </div>
+      </div>
+    </div>
+
+    <!-- Action -->
+    <NuxtLink
+      :to="localePath('/terms')"
+      class="btn-clinic shrink-0"
+    >
+      <span>{{ locale === 'en' ? 'View Terms' : 'Kullanım Şartlarını Gör' }}</span>
+      <Icon name="lucide:arrow-right" class="h-4 w-4" />
+    </NuxtLink>
+  </div>
+</div>
       </div>
     </section>
   </main>

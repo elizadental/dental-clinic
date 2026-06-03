@@ -108,4 +108,4 @@ Tedavi kararı verilirken yalnızca estetik görünüm değil; çiğneme fonksiy
 
 Diş köprüsü ve implant tedavisi, eksik dişlerin yerine konulmasında etkili seçeneklerdir. Ancak her hastanın ihtiyacı farklıdır. Bu nedenle en doğru karar, detaylı diş hekimi muayenesi sonrasında kişiye özel olarak verilmelidir.
 
-Eksik dişleriniz için hangi tedavinin size daha uygun olduğunu öğrenmek için Eliza Dental Clinic ile iletişime geçebilir, ağız ve diş sağlığınız için size özel tedavi seçeneklerini değerlendirebilirsiniz.
+Eksik dişleriniz için hangi tedavinin size daha uygun olduğunu öğrenmek için Eliza Dent Klinik ile iletişime geçebilir, ağız ve diş sağlığınız için size özel tedavi seçeneklerini değerlendirebilirsiniz.

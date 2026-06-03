@@ -266,7 +266,7 @@ useSeoMeta({
         <div class="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
           <div>
             <p class="text-sm font-semibold uppercase tracking-[0.2em] text-sky-300">
-              Eliza Dental Clinic
+              ElizaDent Klinik
             </p>
 
             <h2 class="mt-4 max-w-2xl text-3xl font-bold tracking-tight md:text-4xl">

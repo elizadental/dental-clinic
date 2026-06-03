@@ -214,11 +214,15 @@ onUnmounted(() => {
   <div class="max-w-7xl mx-auto px-4 py-2 flex items-center">
     <!-- LOGO -->
     <div class="flex items-center">
+      <NuxtLink :to="localePath('/')" class="flex items-center gap-2">
+       
+        
       <img
         src="/elizadentpng.png"
         alt="Eliza Dental Clinic"
         class="h-14 md:h-20 w-auto object-contain"
       />
+      </NuxtLink>
     </div>
 
     <!-- DESKTOP NAV -->

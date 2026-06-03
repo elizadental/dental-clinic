@@ -48,79 +48,189 @@ export type TeamMember = {
 }
 
 export const teamMembers: TeamMember[] = [
-  {
-    id: '1',
+{
+  id: '1',
 
-    slug: 'eyup-micoogullari',
+  slug: 'eyup-micoogullari',
 
-    name: 'Dt. Eyüp Miçooğulları',
+  name: 'Dt. Eyüp Miçooğulları',
 
-    role: 'doctor',
+  role: 'doctor',
 
-    title: {
-      tr: 'Diş Hekimi',
-      en: 'Dentist'
-    },
-
-    specialty: {
-      tr: 'Estetik Diş Hekimliği ve Gülüş Tasarımı',
-      en: 'Aesthetic Dentistry & Smile Design'
-    },
-
-    shortBio: {
-      tr: 'Dt. Eyüp Miçoğulları, Eliza Dental Clinic bünyesinde estetik diş hekimliği ve gülüş tasarımı alanlarında hasta odaklı bir yaklaşımla hizmet vermektedir.',
-      en: 'Dt. Eyüp Miçoğulları provides patient-focused care at Eliza Dental Clinic with a focus on aesthetic dentistry and smile design.'
-    },
-
-    expertiseAreas: [
-      {
-        tr: 'Estetik Diş Hekimliği',
-        en: 'Aesthetic Dentistry'
-      },
-      {
-        tr: 'Gülüş Tasarımı',
-        en: 'Smile Design'
-      },
-      {
-        tr: 'Diş Beyazlatma',
-        en: 'Teeth Whitening'
-      },
-      {
-        tr: 'Lamina ve Porselen Kaplamalar',
-        en: 'Veneers & Porcelain Crowns'
-      },
-      {
-        tr: 'İmplant Destekli Estetik Restorasyonlar',
-        en: 'Implant-Supported Aesthetic Restorations'
-      }
-    ],
-
-    education: [
-      {
-        tr: 'Diş Hekimliği Fakültesi',
-        en: 'Faculty of Dentistry'
-      },
-      {
-        tr: 'Estetik diş hekimliği alanında klinik deneyim',
-        en: 'Clinical experience in aesthetic dentistry'
-      }
-    ],
-
-    spokenLanguages: ['tr', 'en', 'ar'],
-
-    image: '/doctors/doctor-1.png',
-
-    contact: {
-      email: 'eyupmico@elizadent.com'
-    },
-
-    showContact: true,
-
-    featured: true,
-
-    order: 1
+  title: {
+    tr: 'Diş Hekimi',
+    en: 'Dentist'
   },
 
+  specialty: {
+    tr: 'Diş Hekimi',
+    en: 'Dentist'
+  },
+
+  shortBio: {
+    tr: 'Dt. Eyüp Miçooğulları, implantoloji, cerrahi tedaviler, protez ve estetik diş hekimliği uygulamalarında modern ve hasta odaklı çözümler sunmaktadır.',
+    en: 'Dt. Eyüp Miçooğulları provides modern, patient-focused solutions in implantology, surgical treatments, prosthetics, and aesthetic dentistry.'
+  },
+
+  bioParagraphs: [
+    {
+      tr: '1995 yılında Hatay’da doğan Dt. Eyüp Miçooğulları, lisans eğitimini Yakın Doğu Üniversitesi Diş Hekimliği Fakültesi’nde başarıyla tamamlamıştır. Mezuniyetinin ardından farklı kliniklerde görev yaparak hem yerli hem de yabancı hastaların tedavi süreçlerinde geniş bir klinik deneyim ve vizyon kazanmıştır.',
+      en: 'Born in Hatay in 1995, Dt. Eyüp Miçooğulları successfully completed his undergraduate education at Near East University Faculty of Dentistry. After graduation, he worked in different clinics and gained broad clinical experience and perspective through the treatment processes of both local and international patients.'
+    },
+    {
+      tr: 'Mesleki çalışmalarında özellikle implantoloji, cerrahi müdahaleler, protez ve estetik diş hekimliği uygulamalarına odaklanan Dt. Miçooğulları, sektördeki global gelişmeleri ve yenilikçi tedavi yaklaşımlarını yakından takip etmektedir. Dijital diş hekimliğinin sunduğu ileri teknolojik imkânlardan yararlanarak hastalarına fonksiyonellik ve yüksek estetiği bir arada sunmayı amaçlamaktadır.',
+      en: 'In his professional practice, Dt. Miçooğulları focuses especially on implantology, surgical procedures, prosthetic treatments, and aesthetic dentistry. He closely follows global developments and innovative treatment approaches in the field. By using the advanced technological possibilities offered by digital dentistry, he aims to provide both functionality and high aesthetics together.'
+    },
+    {
+      tr: 'Her hastanın benzersiz ihtiyaçlarına yönelik kişiselleştirilmiş, konforlu ve modern çözümler üreten Dt. Eyüp Miçooğulları, genel diş hekimliği hizmetlerini yüksek kalite standartlarında, güven ve hasta memnuniyeti esasıyla sunmaya devam etmektedir.',
+      en: 'Producing personalized, comfortable, and modern solutions for each patient’s unique needs, Dt. Eyüp Miçooğulları continues to provide general dentistry services with high quality standards, trust, and patient satisfaction at the center.'
+    }
+  ],
+
+  expertiseAreas: [
+    {
+      tr: 'Estetik Diş Hekimliği',
+      en: 'Aesthetic Dentistry'
+    },
+    {
+      tr: 'İmplant Üstü ve Protez Uygulamaları',
+      en: 'Implant-Supported Prosthetic Treatments'
+    },
+    {
+      tr: 'İmplant Operasyonları ve Cerrahi Tedaviler',
+      en: 'Implant Operations & Surgical Treatments'
+    },
+    {
+      tr: 'Gülüş Tasarımı',
+      en: 'Smile Design'
+    },
+    {
+      tr: 'Zirkonyum Kronlar',
+      en: 'Zirconium Crowns'
+    },
+    {
+      tr: 'Kompozit Lamina',
+      en: 'Composite Laminate Veneers'
+    },
+    {
+      tr: 'Sabit Protezler',
+      en: 'Fixed Prosthetics'
+    }
+  ],
+
+  education: [
+    {
+      tr: 'Yakın Doğu Üniversitesi Diş Hekimliği Fakültesi',
+      en: 'Near East University Faculty of Dentistry'
+    }
+  ],
+
+certificates: [
+  {
+    tr: 'Anterior Kompozit Restorasyonlar: Kırık, Diastema ve Lamina Uygulamaları Hands-On Eğitimi',
+    en: 'Anterior Composite Restorations: Fracture, Diastema, Laminate Hands-On'
+  },
+  {
+    tr: 'İmplantoloji Temelleri - Cerrahi Eğitimi',
+    en: 'Basic Of Implantology - Surgery Course'
+  }
+],
+
+  spokenLanguages: ['tr'],
+
+  image: '/doctors/doctor-1.png',
+
+  contact: {
+    email: 'eyupmico@elizadent.com'
+  },
+
+  showContact: true,
+
+  featured: true,
+
+  order: 1
+},
+{
+  id: '2',
+
+  slug: 'hasan-huseyin-demir',
+
+  name: 'Dt. Hasan Hüseyin Demir',
+
+  role: 'doctor',
+
+  title: {
+    tr: 'Diş Hekimi',
+    en: 'Dentist'
+  },
+
+ specialty: {
+    tr: 'Diş Hekimi',
+    en: ' Dentist'
+  },
+
+  shortBio: {
+    tr: 'Dt. Hasan Hüseyin Demir, genel diş hekimliği uygulamalarında hasta konforunu, güvenli tedavi sürecini ve güncel klinik yaklaşımları ön planda tutmaktadır.',
+    en: 'Dt. Hasan Hüseyin Demir focuses on patient comfort, safe treatment processes, and current clinical approaches in general dentistry.'
+  },
+
+  bioParagraphs: [
+    {
+      tr: 'Ege Üniversitesi Diş Hekimliği Fakültesi’nden başarıyla mezun olan Dt. Hasan Hüseyin Demir, lisans eğitimi süresince edindiği güçlü teorik altyapıyı yoğun klinik staj dönemiyle pekiştirmiştir. Bu süreçte kanal tedavisi, kompozit dolgu uygulamaları, diş çekimi ve protez planlama gibi temel klinik uygulamalarda kapsamlı deneyim kazanmıştır.',
+      en: 'Dt. Hasan Hüseyin Demir successfully graduated from Ege University Faculty of Dentistry. During his undergraduate education, he strengthened his solid theoretical foundation through an intensive clinical internship period. In this process, he gained comprehensive experience in essential clinical practices such as root canal treatment, composite fillings, tooth extraction, and prosthetic planning.'
+    },
+    {
+      tr: 'Hasta memnuniyetini ve konforunu her zaman ön planda tutan, sorumluluk sahibi ve dikkatli bir hekim olarak klinik çalışma disiplinine büyük önem vermektedir. Takım çalışmasına uyumlu yapısı ve güçlü hasta iletişimi sayesinde, tedavi süreçlerini hastaları için güvenli ve huzurlu bir deneyime dönüştürmeyi amaçlamaktadır. Öğrenmeye ve mesleki gelişime açık vizyonuyla güncel diş hekimliği teknolojilerini ve tedavi yöntemlerini yakından takip etmektedir.',
+      en: 'As a responsible and attentive dentist who always prioritizes patient satisfaction and comfort, he places great importance on clinical working discipline. With his team-oriented approach and strong patient communication skills, he aims to turn treatment processes into a safe and comfortable experience for his patients. With a vision open to learning and professional development, he closely follows current dental technologies and treatment methods.'
+    }
+  ],
+
+  expertiseAreas: [
+    {
+      tr: 'Kanal Tedavisi',
+      en: 'Root Canal Treatment'
+    },
+    {
+      tr: 'Kompozit Dolgu Uygulamaları',
+      en: 'Composite Filling Applications'
+    },
+    {
+      tr: 'Diş Çekimi',
+      en: 'Tooth Extraction'
+    },
+    {
+      tr: 'Protez Planlama',
+      en: 'Prosthetic Planning'
+    },
+    {
+      tr: 'Genel Diş Hekimliği',
+      en: 'General Dentistry'
+    }
+  ],
+
+  education: [
+    {
+      tr: 'Ege Üniversitesi Diş Hekimliği Fakültesi',
+      en: 'Ege University Faculty of Dentistry'
+    }
+  ],
+
+  certificates: [],
+
+  spokenLanguages: ['tr'],
+
+  image: '/doctors/doctor-3.png',
+
+    contact: {
+    email: 'hasanhuseyindemir@elizadent.com'
+  },
+
+  showContact: true,
+
+  featured: true,
+
+  order: 3
+},
  {
   id: '7',
 
@@ -156,24 +266,32 @@ export const teamMembers: TeamMember[] = [
     }
   ],
 
-  expertiseAreas: [
-    {
-      tr: 'Koruyucu Diş Hekimliği',
-      en: 'Preventive Dentistry'
-    },
-    {
-      tr: 'Restoratif Diş Hekimliği',
-      en: 'Restorative Dentistry'
-    },
-    {
-      tr: 'Kompozit Restorasyonlar',
-      en: 'Composite Restorations'
-    },
-    {
-      tr: 'Estetik Diş Hekimliği',
-      en: 'Aesthetic Dentistry'
-    }
-  ],
+ expertiseAreas: [
+  {
+    tr: 'Restoratif Diş Hekimliği',
+    en: 'Restorative Dentistry'
+  },
+  {
+    tr: 'Kompozit Restorasyonlar',
+    en: 'Composite Restorations'
+  },
+  {
+    tr: 'Estetik Diş Hekimliği',
+    en: 'Aesthetic Dentistry'
+  },
+  {
+    tr: 'Anterior Estetik Restorasyonlar',
+    en: 'Anterior Aesthetic Restorations'
+  },
+  {
+    tr: 'Süt Dişi Tedavileri',
+    en: 'Primary Tooth Treatments'
+  },
+  {
+    tr: 'Kanal Tedavisi',
+    en: 'Root Canal Treatment'
+  }
+],
 
   education: [
     {
@@ -225,7 +343,7 @@ export const teamMembers: TeamMember[] = [
 
   featured: true,
 
-  order: 4
+  order: 2
 },
 
   // {

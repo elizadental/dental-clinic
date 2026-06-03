@@ -1,6 +1,6 @@
 <!-- /components/home/Cta.vue -->
 <script setup lang="ts">
-const whatsappLink = "https://wa.me/905312663131?text=Merhaba%20Eliza%20Dental%20Clinic%2C%20randevu%20almak%20istiyorum."
+const whatsappLink = "https://wa.me/905312663131"
 </script>
 
 <template>
