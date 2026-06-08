@@ -6,61 +6,61 @@ const services = [
   {
     key: 'esthetic',
     icon: 'lucide:sparkles',
-    image: '/images/services/esthetic-dentistry.jpg',
+    image: '/images/services/esthetic-dentistry.webp',
     to: '/services/esthetic-dentistry'
   },
   {
     key: 'implant',
     icon: 'lucide:badge-plus',
-    image: '/images/services/dental-implant.jpg',
+    image: '/images/services/dental-implant.webp',
     to: '/services/dental-implant'
   },
   {
     key: 'whitening',
     icon: 'lucide:sun',
-    image: '/images/services/teeth-whitening.jpg',
+    image: '/images/services/teeth-whitening.webp',
     to: '/services/teeth-whitening'
   },
   {
     key: 'surgery',
     icon: 'lucide:scissors',
-    image: '/images/services/oral-surgery.jpg',
+    image: '/images/services/oral-surgery.webp',
     to: '/services/oral-surgery'
   },
   {
     key: 'endo',
     icon: 'lucide:activity',
-    image: '/images/services/root-canal-treatment.jpg',
+    image: '/images/services/root-canal-treatment.webp',
     to: '/services/root-canal-treatment'
   },
   {
     key: 'smile',
     icon: 'lucide:smile',
-    image: '/images/services/smile-design.jpg',
+    image: '/images/services/smile-design.webp',
     to: '/services/smile-design'
   },
   {
     key: 'prosthesis',
     icon: 'lucide:layers',
-    image: '/images/services/dental-prosthetics.jpg',
+    image: '/images/services/dental-prosthetics.webp',
     to: '/services/dental-prosthetics'
   },
   {
     key: 'pedodonti',
     icon: 'lucide:baby',
-    image: '/images/services/pediatric-dentistry.jpg',
+    image: '/images/services/pediatric-dentistry.webp',
     to: '/services/pediatric-dentistry'
   },
   {
     key: 'periodontoloji',
     icon: 'lucide:heart-pulse',
-    image: '/images/services/periodontology.jpg',
+    image: '/images/services/periodontology.webp',
     to: '/services/periodontology'
   },
   {
     key: 'ortho',
     icon: 'lucide:align-justify',
-    image: '/images/services/orthodontics.jpg',
+    image: '/images/services/orthodontics.webp',
     to: '/services/orthodontics'
   }
 ]

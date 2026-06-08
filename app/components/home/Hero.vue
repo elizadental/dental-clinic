@@ -6,15 +6,15 @@ const whatsappLink = 'https://wa.me/905312663131'
 
 const heroImages = [
   {
-    src: '/images/hero/hero_img_1.png',
+    src: '/images/hero/hero_img_1.webp',
     alt: 'Eliza Dental Clinic modern dental treatment room',
   },
   {
-    src: '/images/hero/hero_img_2.png',
+    src: '/images/hero/hero_img_2.webp',
     alt: 'Eliza Dental Clinic healthy tooth concept',
   },
   {
-    src: '/images/hero/hero_img_3.png',
+    src: '/images/hero/hero_img_3.webp',
     alt: 'Eliza Dental Clinic dental health background',
   },
 ]

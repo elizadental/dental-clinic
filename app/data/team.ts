@@ -503,21 +503,21 @@ certificates: [
 
   name: 'Dilan Sağlam',
 
-  role: 'admin',
+  role: 'clinic',
 
   title: {
-    tr: 'Hasta İlişkileri Sorumlusu',
-    en: 'Patient Relations Specialist'
+    tr: 'Klinik Asistanı',
+    en: 'Clinical Assistant'
   },
 
   specialty: {
-    tr: 'Hasta İletişimi ve Bilgilendirme',
-    en: 'Patient Communication & Guidance'
+     tr: 'Klinik Destek ve Hasta Konforu',
+    en: 'Clinical Support & Patient Comfort'
   },
 
   shortBio: {
-    tr: 'Hasta iletişimi, bilgilendirme ve klinik deneyiminin düzenli ilerlemesi konusunda destek sağlar.',
-    en: 'Supports patient communication, guidance, and a smooth clinic experience.'
+    tr: 'Tedavi süreçlerinde klinik ekibe destek olur ve hastaların konforlu bir deneyim yaşamasına yardımcı olur.',
+    en: 'Supports the clinical team during treatment processes and helps patients have a comfortable experience.'
   },
 
   expertiseAreas: [],
