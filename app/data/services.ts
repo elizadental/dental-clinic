@@ -38,7 +38,7 @@ export type ServiceContent = {
 export const services: ServiceDetail[] = [
   {
     slug: 'esthetic-dentistry',
-    image: '/images/services/esthetic-dentistry.jpg',
+    image: '/images/services/esthetic-dentistry.webp',
     icon: 'lucide:sparkles',
     related: ['smile-design', 'teeth-whitening', 'dental-prosthetics'],
     content: {
@@ -160,7 +160,7 @@ export const services: ServiceDetail[] = [
   },
  {
   slug: 'dental-implant',
-  image: '/images/services/dental-implant.jpg',
+  image: '/images/services/dental-implant.webp',
   icon: 'lucide:badge-plus',
   related: ['esthetic-dentistry', 'dental-prosthetics', 'periodontology'],
   content: {
@@ -339,7 +339,7 @@ export const services: ServiceDetail[] = [
   }
 },{
   slug: 'teeth-whitening',
-  image: '/images/services/teeth-whitening.jpg',
+  image: '/images/services/teeth-whitening.webp',
   icon: 'lucide:sun',
   related: ['esthetic-dentistry', 'smile-design', 'dental-prosthetics'],
   content: {
@@ -509,7 +509,7 @@ export const services: ServiceDetail[] = [
 },
 {
   slug: 'oral-surgery',
-  image: '/images/services/oral-surgery.jpg',
+  image: '/images/services/oral-surgery.webp',
   icon: 'lucide:scissors',
   related: ['dental-implant', 'root-canal-treatment', 'periodontology'],
   content: {
@@ -699,7 +699,7 @@ export const services: ServiceDetail[] = [
 },
 {
   slug: 'root-canal-treatment',
-  image: '/images/services/root-canal-treatment.jpg',
+  image: '/images/services/root-canal-treatment.webp',
   icon: 'lucide:activity',
   related: ['esthetic-dentistry', 'dental-prosthetics', 'oral-surgery'],
   content: {
@@ -897,7 +897,7 @@ export const services: ServiceDetail[] = [
 },
 {
   slug: 'smile-design',
-  image: '/images/services/smile-design.jpg',
+  image: '/images/services/smile-design.webp',
   icon: 'lucide:smile',
   related: ['esthetic-dentistry', 'teeth-whitening', 'dental-prosthetics'],
   content: {
@@ -1079,7 +1079,7 @@ export const services: ServiceDetail[] = [
 },
 {
   slug: 'dental-prosthetics',
-  image: '/images/services/dental-prosthetics.jpg',
+  image: '/images/services/dental-prosthetics.webp',
   icon: 'lucide:layers',
   related: ['dental-implant', 'esthetic-dentistry', 'smile-design'],
   content: {
@@ -1273,7 +1273,7 @@ export const services: ServiceDetail[] = [
 },
 {
   slug: 'pediatric-dentistry',
-  image: '/images/services/pediatric-dentistry.jpg',
+  image: '/images/services/pediatric-dentistry.webp',
   icon: 'lucide:baby',
   related: ['esthetic-dentistry', 'orthodontics', 'periodontology'],
   content: {
@@ -1475,7 +1475,7 @@ export const services: ServiceDetail[] = [
 },
 {
   slug: 'periodontology',
-  image: '/images/services/periodontology.jpg',
+  image: '/images/services/periodontology.webp',
   icon: 'lucide:heart-pulse',
   related: ['dental-implant', 'esthetic-dentistry', 'teeth-whitening'],
   content: {
@@ -1669,7 +1669,7 @@ export const services: ServiceDetail[] = [
 },
 {
   slug: 'orthodontics',
-  image: '/images/services/orthodontics.jpg',
+  image: '/images/services/orthodontics.webp',
   icon: 'lucide:align-justify',
   related: ['smile-design', 'pediatric-dentistry', 'esthetic-dentistry'],
   content: {
