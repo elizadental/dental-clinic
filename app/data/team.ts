@@ -445,7 +445,7 @@ certificates: [
 
   spokenLanguages: ['tr'],
 
-  image: '/team/admin-1.png',
+  image: '/team/admin-1.webp',
 
   contact: {
     email: 'info@elizadent.com',
@@ -488,7 +488,7 @@ certificates: [
 
   spokenLanguages: ['tr'],
 
-  image: '/team/clinic-1.png',
+  image: '/team/clinic-1.webp',
 
   showContact: false,
 
@@ -526,7 +526,7 @@ certificates: [
 
   spokenLanguages: ['tr'],
 
-  image: '/team/admin-2.png',
+  image: '/team/clinic-2.webp',
 
   contact: {
     email: 'info@elizadent.com'
