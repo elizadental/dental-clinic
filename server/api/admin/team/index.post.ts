@@ -1,0 +1,34 @@
+import { createError, readBody } from 'h3'
+import { requireAdmin } from '../../../utils/requireAdmin'
+import { normalizeTeamMemberPayload } from '../../../utils/teamPayload'
+
+export default defineEventHandler(async (event) => {
+  const { supabase } = await requireAdmin(event)
+
+  const body = await readBody(event)
+  const payload = normalizeTeamMemberPayload(body)
+
+  const { data, error } = await supabase
+    .from('team_members')
+    .insert(payload)
+    .select('*')
+    .single()
+
+  if (error) {
+    if (error.code === '23505') {
+      throw createError({
+        statusCode: 409,
+        statusMessage: 'A team member with this slug already exists.'
+      })
+    }
+
+    throw createError({
+      statusCode: 500,
+      statusMessage: error.message
+    })
+  }
+
+  return {
+    member: data
+  }
+})

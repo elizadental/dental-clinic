@@ -21,12 +21,13 @@
     "vue": "^3.5.32",
     "vue-router": "^5.0.4"
   },
-  "packageManager": "pnpm@11.5.1",
+  "packageManager": "pnpm@11.7.0",
   "devDependencies": {
     "@iconify-json/flagpack": "^1.2.7",
     "@iconify-json/logos": "^1.2.11",
     "@iconify-json/lucide": "^1.2.105",
     "@iconify-json/mdi": "^1.2.3",
+    "@nuxtjs/supabase": "^2.0.9",
     "@nuxtjs/tailwindcss": "^6.14.0"
   }
 }

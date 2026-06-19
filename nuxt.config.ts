@@ -22,8 +22,19 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
     '@nuxt/icon',
     '@nuxt/fonts',
-    '@nuxt/content'
+    '@nuxt/content',
+    '@nuxtjs/supabase'
   ],
+supabase: {
+  redirect: false,
+  types: false
+},
+
+runtimeConfig: {
+  public: {
+    adminEmail: ''
+  }
+},
 
   fonts: {
     families: [

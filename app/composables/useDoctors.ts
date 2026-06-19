@@ -1,29 +1,59 @@
-import { computed } from 'vue'
-import { teamMembers } from '~/data/team'
+import type {
+  LocaleText,
+  SpokenLanguageCode,
+  TeamMemberRow
+} from '~~/shared/types/team-member'
 
 type LocaleCode = 'tr' | 'en'
-type SpokenLanguageCode = 'tr' | 'en' | 'ar'
 
 export function useDoctors() {
   const { locale, t } = useI18n()
   const localePath = useLocalePath()
+  const { getPublicTeamMembers } = usePublicTeam()
 
   const currentLocale = computed<LocaleCode>(() => {
     return locale.value === 'en' ? 'en' : 'tr'
   })
 
+  const {
+    data: teamMembers,
+    status,
+    error,
+    refresh
+  } = useAsyncData<TeamMemberRow[]>(
+    'public-team-members-for-doctors',
+    () => getPublicTeamMembers(),
+    {
+      default: () => []
+    }
+  )
+
   const doctors = computed(() => {
-    return teamMembers
+    return teamMembers.value
       .filter((member) => member.role === 'doctor')
-      .sort((a, b) => a.order - b.order)
+      .sort((a, b) => a.display_order - b.display_order)
+  })
+
+  const staffMembers = computed(() => {
+    return teamMembers.value
+      .filter((member) => member.role !== 'doctor')
+      .sort((a, b) => a.display_order - b.display_order)
+  })
+
+  const isLoadingDoctors = computed(() => {
+    return status.value === 'pending'
   })
 
   function getDoctorBySlug(slug: string) {
-    return doctors.value.find((doctor) => doctor.slug === slug)
+    return doctors.value.find((doctor) => doctor.slug === slug) || null
   }
 
-  function getLocalizedText(text: { tr: string; en: string }) {
-    return text[currentLocale.value]
+  function getLocalizedText(text: LocaleText | null | undefined) {
+    if (!text) {
+      return ''
+    }
+
+    return text[currentLocale.value] || text.tr || text.en || ''
   }
 
   function getDoctorBioLink(slug: string) {
@@ -35,7 +65,13 @@ export function useDoctors() {
   }
 
   return {
+    teamMembers,
     doctors,
+    staffMembers,
+    isLoadingDoctors,
+    error,
+    refresh,
+
     getDoctorBySlug,
     getLocalizedText,
     getDoctorBioLink,
