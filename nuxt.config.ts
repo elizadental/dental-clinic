@@ -7,6 +7,18 @@ export default defineNuxtConfig({
     enabled: true
   },
 
+  vite: {
+    ssr: {
+      noExternal: ['tslib']
+    }
+  },
+
+  nitro: {
+    externals: {
+      inline: ['tslib']
+    }
+  },
+
   app: {
     head: {
       link: [
@@ -25,16 +37,17 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@nuxtjs/supabase'
   ],
-supabase: {
-  redirect: false,
-  types: false
-},
 
-runtimeConfig: {
-  public: {
-    adminEmail: ''
-  }
-},
+  supabase: {
+    redirect: false,
+    types: false
+  },
+
+  runtimeConfig: {
+    public: {
+      adminEmail: ''
+    }
+  },
 
   fonts: {
     families: [
