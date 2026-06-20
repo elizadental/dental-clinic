@@ -37,7 +37,7 @@ const localePath = useLocalePath()
               <Icon name="lucide:linkedin" class="w-5 h-5" />
             </a>
 
-            <a href="#" aria-label="Facebook" class="footer-social">
+            <a href="https://www.facebook.com/profile.php?id=61589740613074" aria-label="Facebook" class="footer-social">
               <Icon name="lucide:facebook" class="w-5 h-5" />
             </a>
 
