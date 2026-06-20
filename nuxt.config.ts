@@ -35,7 +35,8 @@ export default defineNuxtConfig({
     '@nuxt/icon',
     '@nuxt/fonts',
     '@nuxt/content',
-    '@nuxtjs/supabase'
+    '@nuxtjs/supabase',
+    '@nuxtjs/sitemap'
   ],
 
   supabase: {
@@ -48,7 +49,31 @@ export default defineNuxtConfig({
       adminEmail: ''
     }
   },
+site: {
+  url: 'https://www.elizadent.com',
+  name: 'Eliza Dental Clinic'
+},
 
+sitemap: {
+  urls: [
+    '/',
+    '/en',
+    '/gallery',
+    '/en/gallery',
+    '/doctors',
+    '/en/doctors',
+    '/services/dental-implant',
+    '/en/services/dental-implant',
+    '/services/teeth-whitening',
+    '/en/services/teeth-whitening',
+    '/services/orthodontics',
+    '/en/services/orthodontics',
+    '/services/smile-design',
+    '/en/services/smile-design',
+    '/contact',
+    '/en/contact'
+  ]
+},
   fonts: {
     families: [
       {

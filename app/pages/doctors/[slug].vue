@@ -23,10 +23,15 @@ const doctor = computed(() => {
   return getDoctorBySlug(route.params.slug as string)
 })
 
+const requestEvent = useRequestEvent()
+
 const isNotFound = computed(() => {
   return !isLoadingDoctors.value && !error.value && !doctor.value
 })
 
+if (requestEvent && isNotFound.value) {
+  setResponseStatus(requestEvent, 404, 'Doctor Not Found ')
+}
 useSeoMeta({
   title: () => doctor.value ? `${doctor.value.name} | Elizadent` : 'Doktor | Elizadent',
   description: () => doctor.value?.short_bio ? getLocalizedText(doctor.value.short_bio) : 'Elizadent doktor profili.'
